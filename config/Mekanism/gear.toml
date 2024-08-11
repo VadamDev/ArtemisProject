@@ -16,7 +16,7 @@
 		#Enable the 'Fast' mode for the Atomic Disassembler.
 		fastMode = true
 		#Enable the 'Vein Mining' mode for the Atomic Disassembler.
-		veinMining = false
+		veinMining = true
 		#The bonus attack damage of the Atomic Disassembler when it is out of power. (Value is in number of half hearts)
 		#Range: 0 ~ 1000
 		minDamage = 4

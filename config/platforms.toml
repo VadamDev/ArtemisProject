@@ -32,7 +32,7 @@ frameClimbMode = "HYBRID"
 	#Other blocks are supported as long as the extend FallingBlock and use Material.SAND
 	canManuallyAdd = true
 	#When enabled the amount of snow/sand built up on platforms will change with the weather
-	isEnvironmentReactive = true
+	isEnvironmentReactive = false
 	#When enabled walking on platforms will disturb the collected snow/sand
 	#Regardless of setting you can still remove layers by right clicking with a shovel
 	isEntityReactive = true

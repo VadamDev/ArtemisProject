@@ -1,5 +1,5 @@
 #Enable this if you want to get retrogen (generation of ores/crystals) for already existing chunks
-retrogen = true
+retrogen = false
 #Enable this if you want to see in the log where crystals are spawned
 verboseSpawn = false
 #Enable this if you want resonating ore in nether biomes

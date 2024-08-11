@@ -25,7 +25,7 @@
 	#If the RF converter block should be enabled
 	rfConverter = true
 	#If the chunk loader block should be enabled
-	chunkLoader = true
+	chunkLoader = false
 	#If the Aura Imbalance effect of grass and trees dying in the area if the Aura levels are too low should occur
 	grassDieEffect = true
 	#If the Aura Imbalance effect of nether blocks degrading in the area if the Aura levels are too low should occur

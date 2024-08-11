@@ -7,7 +7,7 @@
 	#Useful for multiplayer scenarios.
 	#NOTE: This may break with mods that add content in the end. (A big example is YUNG's better end islands)
 	#You should see if those mods have ways to replenish dragon eggs themselves.
-	replenish_eggs = true
+	replenish_eggs = false
 	#Should dragon eggs generate in treasure chest loot tables?
 	#Useful for multiplayer scenarios and offering alternative ways to obtain eggs.
 	#Egg chance values can be modified below. If you'd like to change the loot tables the eggs appear

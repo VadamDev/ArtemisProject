@@ -7,7 +7,7 @@
 #Amount of LP the Sacrificial Dagger should provide for each damage dealt.
 ["Config Values"]
 	#Range: 0 ~ 10000
-	sacrificialDaggerConversion = 100
+	sacrificialDaggerConversion = 50
 	#Declares the amount of LP gained per HP sacrificed for the given entity.
 	#Setting the value to 0 will blacklist it.
 	#Use the registry name of the entity followed by a ';' and then the value you want.

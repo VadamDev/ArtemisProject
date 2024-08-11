@@ -1,5 +1,5 @@
 #If enabled, players automatically attempt to use sleeping bags when placed.
-autoUse = true
+autoUse = false
 #If enabled, players cannot sleep again for a period of time after sleeping.
 restrictSleeping = false
 #If restrictSleeping is true, this value will determine the length of wait time (larger numbers sleep sooner).
@@ -7,10 +7,10 @@ restrictSleeping = false
 restMultiplier = 2.0
 #The time of day that hammocks can be used.
 #Allowed Values: NONE, DAY, NIGHT, DAY_OR_NIGHT
-hammockUse = "DAY"
+hammockUse = "DAY_OR_NIGHT"
 #The time of day that sleeping bags can be used.
 #Allowed Values: NONE, DAY, NIGHT, DAY_OR_NIGHT
-sleepingBagUse = "NIGHT"
+sleepingBagUse = "DAY_OR_NIGHT"
 #What percentage of players must sleep to skip the day.
 #A percentage value of 0 will allow the day to be skipped by just 1 player, and a percentage value of 100 will require all players to sleep before skipping the day.
 #A value of less than 0 will default to the playerSleepingPercentage game rule.

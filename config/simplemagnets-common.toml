@@ -5,7 +5,7 @@
 
     # Should the magnet display a message on screen when turned on or off?
     # Allowed values: true, false - Default: true
-    showToggleMessage = true
+    showToggleMessage = false
 
     # Should the Demagnetization Coil's range be highlighted when looking at it?
     # Allowed values: true, false - Default: true

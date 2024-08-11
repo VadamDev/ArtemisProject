@@ -1,3 +1,5 @@
+// priority: 1
+
 ServerEvents.tags('item', event => {
 	/*
 	  Cast Iron
@@ -93,5 +95,5 @@ ServerEvents.recipes(event => {
 	*/
 
 	event.remove({output: 'tfmg:polarizer'})
-	event.shapeless('tfmg:magnetic_ingot', ['#forge:ingots/steel', 'create:crushed_raw_iron'])
+	event.shapeless('tfmg:magnetic_ingot', ['#forge:ingots/steel', '2x create:crushed_raw_iron'])
 })

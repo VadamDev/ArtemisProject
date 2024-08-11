@@ -9,10 +9,10 @@
 		"Generate Dragon Skeleton Chance" = 300
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Cave Chance" = 180
+		"Generate Dragon Cave Chance" = 250
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Roost Chance" = 360
+		"Generate Dragon Roost Chance" = 600
 		#1 out of this number chance per block that gold will generate in dragon lairs.
 		#Range: 1 ~ 10000
 		"Dragon Den Gold Amount" = 4
@@ -23,7 +23,7 @@
 	[Generation.Structures-Features]
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from spawn.
 		#Range: 1 ~ 10000
-		"Dangerous World Gen Dist From Spawn" = 800
+		"Dangerous World Gen Dist From Spawn" = 1024
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 		#Range: 1 ~ 10000
 		"Dangerous World Gen Dist Seperation" = 300
@@ -46,7 +46,7 @@
 		#Range: 0 ~ 2
 		"Dragon Griefing" = 0
 		#True if tamed dragons can follow the griefing rules.
-		"Tamed Dragon Griefing" = true
+		"Tamed Dragon Griefing" = false
 		#The percentage chance for a block to drop as an item when a dragon breaks it.
 		#Range: 0.0 ~ 1.0
 		"Dragon Block Breaking Drop Chance" = 0.10000000149011612
@@ -166,7 +166,7 @@
 		"Use Siren Shader" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Sirens Chance" = 400
+		"Spawn Sirens Chance" = 600
 		#how long(in ticks) can a siren use its sing effect on a player, without a cooldown.
 		#Range: 100 ~ 24000
 		"Siren Max Sing Time" = 12000
@@ -188,7 +188,7 @@
 		"Death Worms Target Monsters" = true
 		#Deathworm spawn weight. Higher = lower chance to spawn
 		#Range: 1 ~ 10000
-		"Death Worm Spawn Weight" = 30
+		"Death Worm Spawn Weight" = 70
 
 	[Mobs.Cockatrice]
 		#Maximum cockatrice health
@@ -227,7 +227,7 @@
 		"Stymphalian Birds Target Animals" = false
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Stymhphalian Bird Chance" = 100
+		"Spawn Stymhphalian Bird Chance" = 250
 
 	[Mobs.Trolls]
 		#True if trolls are allowed to spawn
@@ -253,7 +253,7 @@
 		"Myrmex Hatch Length" = 35000
 		#One out of this number chance per chunk to generate a myrmex hive.
 		#Range: 1 ~ 10000
-		"Myrmex Colony Gen Chance" = 150
+		"Myrmex Colony Gen Chance" = 200
 		#How many maximum individuals a myrmex colony can have.
 		#Range: 10 ~ 10000
 		"Myrmex Colony Max Size" = 80
@@ -291,7 +291,7 @@
 	[Mobs.SeaSerpents]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Sea Serpent Chance" = 250
+		"Spawn Sea Serpent Chance" = 800
 		#Whether or not sea serpents can break weak blocks in their way
 		"Sea Serpent Griefing" = true
 		#Default sea serpent health, this is scaled to the sea serpent's particular size
@@ -304,7 +304,7 @@
 	[Mobs.Hippocampus]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Hippocampus Chance" = 40
+		"Spawn Hippocampus Chance" = 80
 		#Change this to slow down or speed up hippocampus swimming.
 		#Range: 0.0 ~ 2.0
 		"Hippocampus Swim Speed Modifier" = 1.0
@@ -322,7 +322,7 @@
 	[Mobs.Gorgons]
 		#Maximum gorgon health
 		#Range: 1.0 ~ 10000.0
-		"Gorgon Max Health" = 100.0
+		"Gorgon Max Health" = 300.0
 
 	[Mobs.Others]
 		#True if dread liches are allowed to spawn

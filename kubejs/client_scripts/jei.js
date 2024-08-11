@@ -25,6 +25,18 @@ JEIEvents.hideItems(event => {
 		Item.of('tfmg:polarizer')
 	])
 
+	/*
+	  Angel Ring
+	*/
+
+	event.hide([
+		Item.of('angelring:energetic_angel_ring'),
+		Item.of('angelring:leadstone_angel_ring'),
+		Item.of('angelring:hardened_angel_ring'),
+		Item.of('angelring:reinforced_angel_ring'),
+		Item.of('angelring:resonant_angel_ring')
+	])
+
 	//Random Tweaks
 	event.hide([
 		//.ignoreNBT is deprecated now

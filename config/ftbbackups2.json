@@ -12,7 +12,7 @@
 	*/
 	"retention_mode": "MAX_BACKUPS",
 	// Applies to retention_mode:MAX_BACKUPS, Sets the maximum number of backups to keep
-	"max_backups": 5,
+	"max_backups": 8,
 	// Applies to retention_mode:TIERED, The latest x number of backups will be retained
 	"keep_latest": 5,
 	// Applies to retention_mode:TIERED, Sets number of hourly backups to keep
@@ -46,7 +46,7 @@
 	*/
 	"additional_files": [],
 	// Display file size in backup message
-	"display_file_size": false,
+	"display_file_size": true,
 	// backup location
 	"backup_location": ".",
 	// Specify the backup format. Valid options are ZIP and DIRECTORY
