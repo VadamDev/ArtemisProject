@@ -38,6 +38,8 @@
 	enableChunkLoader = true
 	#Trace quarry work
 	logAllQuarryWork = false
+	#Custom player
+	customPlayer = false
 
 #QuarryPlus Machines. Set true to enable machine or item.
 [machines]

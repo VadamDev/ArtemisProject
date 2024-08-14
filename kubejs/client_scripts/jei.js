@@ -42,7 +42,9 @@ JEIEvents.hideItems(event => {
 		//.ignoreNBT is deprecated now
 		Item.of('ae2:facade'),
 		Item.of('enderio:filled_soul_vial'),
-		Item.of('enderio:broken_spawner')
+		Item.of('enderio:broken_spawner'),
+
+		Item.of('enderio:energy_conduit')
 	])
 })
 
