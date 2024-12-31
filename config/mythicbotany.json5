@@ -11,7 +11,7 @@
   "lockAlfheim": true,
   
   // Whether to replace the recipe for the Gaia Pylon with a recipe that requires Alfsteel.
-  "replaceGaiaRecipe": false,
+  "replaceGaiaRecipe": true,
   
   "alftools": {
   

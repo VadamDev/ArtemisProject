@@ -239,6 +239,12 @@
 	"Upgrade Regeneration Rate" = 30
 	#If true, Rats that have the Psychic upgrade will pick up blocks and throw them towards enemies.
 	"Psychic Throws Blocks" = false
+	#Defines how much of a multiplier rats get when armor is put on them. For example, putting a diamond helmet on when this is set to 3 gives the rat 9 armor points.
+	#Range: 1 ~ 1000
+	"Rats Armor Multiplier" = 3
+	#How much damage a rat should take when eaten while having the Carrat Upgrade.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Damage per Carrat Upgrade bite" = 0.0
 
 ["Misc Rat Adjustments"]
 	#Defines the amount of rats you can store in a sack at one time.
@@ -260,4 +266,7 @@
 	"Rats Spawn with Santa Hats" = false
 	#If true, wild rats will rarely spawn wearing a randomly colored party hat. Rats will spawn with Party hats during the New Year's Eve and special dates regardless, this will enable you to find them year round.
 	"Rats Spawn with Party Hats" = false
+	#Defines how large the radius staff can get. Do note that the bigger the radius, the larger the performance impact as rats need to search a bigger area for tasks. Going above 16 is not recommended.
+	#Range: 1 ~ 64
+	"Max Staff Radius" = 16
 

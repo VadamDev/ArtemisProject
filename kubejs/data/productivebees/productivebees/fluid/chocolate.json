@@ -1,0 +1,12 @@
+{
+  "primaryColor": "#914139",
+  "secondaryColor": "#804f40",
+  "particleColor": "#914139",
+  "flowerBlock": "minecraft:cocoa",
+  "conditions": [
+    {
+      "modid": "im_just_a_placeholder",
+      "type": "forge:mod_loaded"
+    }
+  ]
+}

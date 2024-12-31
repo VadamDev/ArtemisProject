@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "item": "minecraft:redstone"
-  }
+  },
+  "materialCount": 196608
 }

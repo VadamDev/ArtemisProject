@@ -5,7 +5,8 @@
     "thermal",
     "mekanism",
     "create",
-    "tfmg"
+    "tfmg",
+	"electrodynamics"
   ],
   "stoneStrata": [
     "stone",
@@ -77,16 +78,15 @@
     "tungsten",
     "uranium",
     "zinc",
-    "cast_iron"
+    "cast_iron",
+	"salt"
   ],
   "priorityOverrides": {
     "forge:nuggets/steel": "mekanism",
     "forge:dusts/steel": "mekanism",
     "forge:gears/steel": "mekanism",
     "forge:ingots/steel": "mekanism",
-    "forge:ores/steel": "mekanism",
-    "forge:plates/steel": "mekanism",
-    "forge:rods/steel": "mekanism",
+	"forge:plates/steel": "mekanism",
     "forge:storage_blocks/steel": "mekanism"
   },
   "customTags": {},
@@ -96,7 +96,9 @@
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
   "ignoredTags": [],
-  "ignoredItems": [],
+  "ignoredItems": [
+    ".*chisel_chipped_integration.*"
+  ],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"
   ],

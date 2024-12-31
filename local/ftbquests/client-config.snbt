@@ -3,11 +3,11 @@
 		# Default: false
 		old_scroll_wheel: false
 		
-		# Default: 2
+		# Default: 4
 		# Range: -∞ ~ +∞
 		pinned_quests_inset_x: 2
 		
-		# Default: 2
+		# Default: 4
 		# Range: -∞ ~ +∞
 		pinned_quests_inset_y: 2
 		

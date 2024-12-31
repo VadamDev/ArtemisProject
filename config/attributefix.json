@@ -154,6 +154,17 @@
         "value": 100
       }
     },
+    "minecolonies:mc_mob_damage": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 20,
+        "value": 20
+      }
+    },
     "attributeslib:cold_damage": {
       "enabled": false,
       "min": {
@@ -414,7 +425,7 @@
         "value": 0
       },
       "max": {
-        "default": 100,
+        "default": 20,
         "value": 1000000
       }
     },
@@ -451,6 +462,17 @@
         "value": 100
       }
     },
+    "ars_nouveau:ars_elemental.perk.summon_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "eidolon:magic_power": {
       "enabled": false,
       "min": {
@@ -460,17 +482,6 @@
       "max": {
         "default": 10,
         "value": 10
-      }
-    },
-    "reach-entity-attributes:attack_range": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
       }
     },
     "tetra:ability_cooldown": {
@@ -526,17 +537,6 @@
       "max": {
         "default": 64,
         "value": 64
-      }
-    },
-    "reach-entity-attributes:reach": {
-      "enabled": false,
-      "min": {
-        "default": -1024,
-        "value": -1024
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
       }
     },
     "irons_spellbooks:blood_magic_resist": {
@@ -645,7 +645,7 @@
         "value": 0
       },
       "max": {
-        "default": 200,
+        "default": 30,
         "value": 1000000
       }
     },

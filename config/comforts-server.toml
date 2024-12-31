@@ -10,7 +10,7 @@ restMultiplier = 2.0
 hammockUse = "DAY_OR_NIGHT"
 #The time of day that sleeping bags can be used.
 #Allowed Values: NONE, DAY, NIGHT, DAY_OR_NIGHT
-sleepingBagUse = "DAY_OR_NIGHT"
+sleepingBagUse = "NIGHT"
 #What percentage of players must sleep to skip the day.
 #A percentage value of 0 will allow the day to be skipped by just 1 player, and a percentage value of 100 will require all players to sleep before skipping the day.
 #A value of less than 0 will default to the playerSleepingPercentage game rule.

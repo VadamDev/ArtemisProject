@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "item": "minecraft:lapis_lazuli"
-  }
+  },
+  "materialCount": 196608
 }

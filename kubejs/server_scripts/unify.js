@@ -1,4 +1,4 @@
-// priority: 1
+// priority: 100
 
 ServerEvents.tags('item', event => {
 	/*
@@ -6,9 +6,54 @@ ServerEvents.tags('item', event => {
 	*/
 
 	event.add('forge:storage_blocks/cast_iron', 'createbigcannons:cast_iron_block')
+	
+	/*
+	   Netherite
+	*/
+	
+	event.add('forge:nuggets/netherite', 'createdeco:netherite_nugget')
+	
+	/*
+	  Silicon
+	*/
+	
+	event.remove('forge:silicon', 'tinyredstone:silicon')
+	event.remove('forge:silicon', 'enderio:silicon')
+	
+	/*
+	   Coal Coke
+	*/
+	
+	event.remove('forge:coal_coke', 'electrodynamics:coalcoke')
 })
 
 ServerEvents.recipes(event => {
+	/*
+	  Plates
+	*/
+	
+	const metalsToUnify = ['iron', 'copper', 'lead', 'steel', 'bronze']
+	
+	metalsToUnify.forEach(plateName => {
+		event.remove({id: 'electrodynamics:plate_' + plateName})
+	})
+	
+	event.remove({id: 'tfmg:sequenced_assembly/heavy_plate'})
+	
+	/*
+	  Gears
+	*/
+	
+	metalsToUnify.forEach(gearName => {
+		event.remove({id: 'electrodynamics:gear_' + gearName})
+	})
+	
+	event.remove({id: 'industrialforegoing:iron_gear'})
+	event.remove({id: 'industrialforegoing:gold_gear'})
+	event.remove({id: 'industrialforegoing:diamond_gear'})
+	
+	event.remove({id: 'enderio:iron_gear'})
+	
 	/*
 	  Steel
 	*/
@@ -20,6 +65,18 @@ ServerEvents.recipes(event => {
 
 	event.remove({id: 'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals'})
 	event.remove({output: 'ad_astra:etrionic_blast_furnace'})
+	
+	event.remove({id: 'ad_astra:steel_ingot'})
+	event.remove({id: 'ad_astra:steel_ingot_from_steel_block'})
+	event.remove({id: 'ad_astra:steel_block'})
+	
+	event.remove({id: 'electrodynamics:blasting/steel_ingot_from_iron_ingot'})
+	event.remove({id: 'electrodynamics:blasting/steel_ingot_from_dust'})
+	event.remove({id: 'electrodynamics:smelting/steel_ingot_from_dust'})
+	
+	event.remove({id: 'enderio:smelting/mffs/steel_ingot'})
+	
+	event.remove({id: 'tfmg:crafting/steel_from_block'})
 
 	event.remove({output: 'tfmg:steel_helmet'})
 	event.remove({output: 'tfmg:steel_chestplate'})
@@ -89,11 +146,103 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({id: 'tfmg:crushing/coal_coke_dust'}, 'tfmg:coal_coke', 'thermal:coal_coke')
 	event.remove({id: 'tfmg:crafting/coal_coke_block'})
-
+	
+	event.remove({output: 'electrodynamics:coalcoke'})
+	
 	/*
-	  Magnetic
+	   Copper
 	*/
-
-	event.remove({output: 'tfmg:polarizer'})
-	event.shapeless('tfmg:magnetic_ingot', ['#forge:ingots/steel', '2x create:crushed_raw_iron'])
+	
+	event.remove({id: 'electrodynamics:copper_nuggets_to_copper_ingot'})
+	event.remove({id: 'pneumaticcraft:copper_ingot_from_nugget'})
+	
+	/*
+	  Bronze
+	*/
+	
+	event.remove({id: 'silentgear:bronze_ingot'})
+	event.remove({id: 'electrodynamics:dust_bronze'})
+	
+	/*
+	  Silicon
+	*/
+	
+	event.remove({output: 'tinyredstone:silicon'})
+	
+	event.remove({input: 'tinyredstone:silicon_compound'})
+	event.remove({output: 'tinyredstone:silicon_compound'})
+	
+	event.replaceOutput({mod: 'enderio'}, 'enderio:silicon', 'ae2:silicon')
+	
+	event.remove({id: 'enderio:sag_milling/clay'})
+	event.custom({
+		"type": "enderio:sag_milling",
+		"energy": 2400,
+		"input": {
+			"item": "minecraft:clay"
+		},
+		"outputs": [
+		{
+			"chance": 1.0,
+			"item": {
+				"count": 2,
+				"item": "minecraft:clay_ball"
+			},
+			"optional": false
+		},
+		{
+			"chance": 0.1,
+			"item": {
+				"item": "minecraft:clay_ball"
+			},
+			"optional": false
+		},
+		{
+			"chance": 0.8,
+			"item": {
+				"count": 2,
+				"item": "ae2:silicon"
+			},
+			"optional": false
+		}]
+	})
+	
+	event.remove({id: 'enderio:sag_milling/redstone_ore'})
+	event.custom({
+		"type": "enderio:sag_milling",
+		"energy": 2400,
+		"input": {
+			"tag": "forge:ores/redstone"
+		},
+		"outputs": [
+		{
+			"chance": 1.0,
+			"item": {
+				"count": 8,
+				"item": "minecraft:redstone"
+			},
+			"optional": false
+		},
+		{
+			"chance": 0.2,
+			"item": {
+				"item": "minecraft:redstone"
+			},
+			"optional": false
+		},
+		{
+			"chance": 0.8,
+			"item": {
+				"item": "ae2:silicon"
+			},
+			"optional": false
+		},
+		{
+			"chance": 0.15,
+			"item": {
+				"item": "minecraft:cobblestone"
+				},
+			"optional": false
+		}]
+	})
 })

@@ -10,6 +10,8 @@
 		pattern_includes = ""
 		#Disables switch remote linking.
 		without_switch_linking = false
+		#Disables the sculk sensor's response to switches.
+		without_sculk_triggering = false
 
 	#Miscellaneous settings
 	[server.miscellaneous]

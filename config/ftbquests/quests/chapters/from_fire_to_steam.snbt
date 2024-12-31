@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "from_fire_to_steam"
+	group: "2006F9EECAE8A294"
+	id: "588D15592C8873E9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "0DD661FF1D84A37C"
+		tasks: [{
+			count: 16L
+			id: "3FDB81A9DA624B78"
+			item: { Count: 16, id: "minecraft:andesite" }
+			type: "item"
+		}]
+		title: "The... Start?"
+		x: -2.5d
+		y: -0.5d
+	}]
+	title: "From fire to steam"
+}

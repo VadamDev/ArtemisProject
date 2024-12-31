@@ -9,8 +9,6 @@
 	"ScreenShake(on/off)" = true
 	#custombossbar(on/off)
 	"custombossbar(on/off)" = true
-	#AddedServerlist(on/off)
-	"AddedServerlist(on/off)" = true
 	#BossMusic(on/off)
 	"BossMusic(on/off)" = true
 	#BossMusicVolume(denominator)
@@ -53,6 +51,15 @@
 	#Sandstorm's Timer
 	#Range: 0 ~ 1000000
 	SandstormTimer = 160
+	#Soul Render's Timer
+	#Range: 0 ~ 1000000
+	SoulRenderCooldown = 100
+	#Gauntlet of Maelstrom's Timer
+	#Range: 0 ~ 1000000
+	gauntletofMaelstromCooldown = 80
+	#The Immolator's Timer
+	#Range: 0 ~ 1000000
+	immolatorCooldown = 300
 
 ["Entity damage"]
 	#Void Rune's Damage
@@ -65,7 +72,7 @@
 	#Range: 0.0 ~ 1000000.0
 	DeathLaserdamage = 5.0
 	#Death Laser's Hp Damage
-	#Range: 0.0 ~ 1.0
+	#Range: 0.0 ~ 100.0
 	DeathLaserHpdamage = 0.05
 	#Player's Laser's Damage
 	#Range: 0.0 ~ 1000000.0
@@ -106,6 +113,15 @@
 	#Ancient Desert Stele's Damage
 	#Range: 0.0 ~ 1000000.0
 	"Ancient Desert Stele Damage" = 18.0
+	#Player's Phantom Arrow's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Phantom Arrow Damage" = 5.0
+	#Phantom Halberd's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Phantom Halberd Damage" = 12.0
+	#Cursed Sandstorm's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Cursed Sandstorm Damage" = 6.0
 
 ["Ender Guardian"]
 	#EnderGuardian's Health Multiplier
@@ -372,14 +388,6 @@
 	#Range: 0.0 ~ 1000000.0
 	KobolediatorDamageMultiplier = 1.0
 
-[wadjet]
-	#Wadjet's Health Multiplier
-	#Range: 0.0 ~ 1000000.0
-	WadjetHealthMultiplier = 1.0
-	#Wadjet's Damage Multiplier
-	#Range: 0.0 ~ 1000000.0
-	WadjetDamageMultiplier = 1.0
-
 [Maledictus]
 	#Maledictus's Health Multiplier
 	#Range: 0.0 ~ 1000000.0
@@ -405,6 +413,20 @@
 	#Maledictus's Jump Smash Hp Damage
 	#Range: 0.0 ~ 1.0
 	"Maledictus's Jump Smash Hp Damage" = 0.08
+	#Maledictus's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Maledictus's prevent attacks from far away Range" = 12.0
+	#Maledictus's Healing with out target
+	#Range: 0.0 ~ 1000000.0
+	MaledictusNatureHealing = 10.0
+	#Maledictus's Phantom Halberd Damage
+	#Range: 0.0 ~ 1000000.0
+	"Maledictus' Phantom Halberd Damage'" = 10.0
+	#Maledictus's Phantom Arrow's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Maledictus's Phantom Arrow Damage" = 5.0
+	#Maledictus's cracked block breaking ignore the MobGriefing
+	MaledictusBlockBreaking = true
 
 [spawning]
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -469,4 +491,28 @@
 	#Allowed height variance for the check - if the variance is lower than this value the structure will not spawn (has no effect if the are check is disabled)
 	#Range: 0 ~ 32
 	cursedPyramidHeightVariance = 2
+
+[Block]
+	#Cursed Tombstone Summon cooldown Minute
+	#Range: 3 ~ 300
+	"Cursed Tombstone Summon cooldown Minute" = 30
+
+[Wadjet]
+	#Wadjet's Health Multiplier
+	#Range: 0.0 ~ 1000000.0
+	WadjetHealthMultiplier = 1.0
+	#Wadjet's Damage Multiplier
+	#Range: 0.0 ~ 1000000.0
+	WadjetDamageMultiplier = 1.0
+
+[Aptrgangr]
+	#Aptrgangr's Health Multiplier
+	#Range: 0.0 ~ 1000000.0
+	AptrgangrHealthMultiplier = 1.0
+	#Aptrgangr's Damage Multiplier
+	#Range: 0.0 ~ 1000000.0
+	AptrgangrDamageMultiplier = 1.0
+	#Axe Blade's Damage
+	#Range: 0.0 ~ 1000000.0
+	AptrgangrAxeBladeDamage = 8.0
 

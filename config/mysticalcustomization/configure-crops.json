@@ -1,1 +1,122 @@
-{}
+{
+	//Ender IO
+	"mysticalagriculture:copper_alloy": {
+		"enabled": false
+	},
+	"mysticalagriculture:redstone_alloy": {
+		"enabled": false
+	},
+	"mysticalagriculture:conductive_alloy": {
+		"enabled": false
+	},
+	"mysticalagriculture:dark_steel": {
+		"enabled": false
+	},
+	"mysticalagriculture:pulsating_alloy": {
+		"enabled": false
+	},
+	"mysticalagriculture:energetic_alloy": {
+		"enabled": false
+	},
+	"mysticalagriculture:vibrant_alloy": {
+		"enabled": false
+	},
+	"mysticalagriculture:end_steel": {
+		"enabled": false
+	},
+	"mysticalagriculture:soularium": {
+		"enabled": false
+	},
+	
+	//Alloys / Metals
+	"mysticalagriculture:bronze": {
+		"enabled": false
+	},
+	"mysticalagriculture:brass": {
+		"enabled": false
+	},
+	"mysticalagriculture:steel": {
+		"enabled": false
+	},
+	"mysticalagriculture:graphite": {
+		"enabled": false
+	},
+	"mysticalagriculture:constantan": {
+		"enabled": false
+	},
+	"mysticalagriculture:electrum": {
+		"enabled": false
+	},
+	"mysticalagriculture:invar": {
+		"enabled": false
+	},
+	"mysticalagriculture:signalum": {
+		"enabled": false
+	},
+	"mysticalagriculture:lumium": {
+		"enabled": false
+	},
+	"mysticalagriculture:flux_infused_ingot": {
+		"enabled": false
+	},
+	"mysticalagriculture:refined_glowstone": {
+		"enabled": false
+	},
+	"mysticalagriculture:refined_obsidian": {
+		"enabled": false
+	},
+	"mysticalagriculture:fluix": {
+		"enabled": false
+	},
+	"mysticalagriculture:enderium": {
+		"enabled": false
+	},
+	"mysticalagriculture:flux_infused_gem": {
+		"enabled": false
+	},
+	
+	//Botania
+	"mysticalagriculture:manasteel": {
+		"enabled": false
+	},
+	"mysticalagriculture:elementium": {
+		"enabled": false
+	},
+	"mysticalagriculture:terrasteel": {
+		"enabled": false
+	},
+	
+	//Twilight Forest
+	"mysticalagriculture:ironwood": {
+		"enabled": false
+	},
+	"mysticalagriculture:knightmetal": {
+		"enabled": false
+	},
+	"mysticalagriculture:fiery_ingot": {
+		"enabled": false
+	},
+	
+	//Unknown seeds
+	"mysticalagriculture:rubber": {
+		"enabled": false
+	},
+	"mysticalagriculture:silicon": {
+		"enabled": false
+	},
+	"mysticalagriculture:mithril": {
+		"enabled": false
+	},
+	"mysticalagriculture:tungsten": {
+		"enabled": false
+	},
+	"mysticalagriculture:chrome": {
+		"enabled": false
+	},
+	"mysticalagriculture:platinum": {
+		"enabled": false
+	},
+	"mysticalagriculture:iridium": {
+		"enabled": false
+	}
+}
