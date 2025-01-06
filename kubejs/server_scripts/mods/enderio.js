@@ -28,15 +28,18 @@ ServerEvents.recipes(event => {
 		makeConduit('8x enderio:ender_fe_conduit', 'enderio:vibrant_alloy_ingot')
 		
 		//New void chassis recipe that respects modpack progression
-		event.shaped('enderio:void_chassis', [
-				' V ',
+		event.shaped('2x enderio:void_chassis', [
+				'BVB',
 				'BFB',
-				' B '
-				], {
-			        V: 'enderio:grains_of_infinity',
-			        B: 'minecraft:iron_bars',
-			        F: 'thermal:machine_frame'
-			    })
+				'BVB'
+			], {
+				V: 'enderio:grains_of_infinity',
+			    B: 'minecraft:iron_bars',
+			    F: 'thermal:machine_frame'
+		})
+		
+		//New ensouled chassis recipe that respects modpack progression
+		event.replaceInput({id: 'enderio:ensouled_chassis'}, 'minecraft:quartz', 'enderio:void_chassis')
 	}
 
 	removeRecipes()

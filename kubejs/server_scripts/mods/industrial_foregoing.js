@@ -2,11 +2,26 @@
 
 ServerEvents.recipes(event => {
 	function removeRecipes() {
+		//New machine frame recipe that respect modpack progression
+		event.remove({id: 'industrialforegoing:machine_frame_pity'})
+		
 		//Remove laserdrill default recipe
 		event.remove({id: 'industrialforegoing:ore_laser_base'})
 	}
 
 	function addRecipes() {
+		//New machine frame recipe that respect modpack progression
+		event.shaped('industrialforegoing:machine_frame_pity', [
+			'LIL',
+			'IRI',
+			'LGL'
+		], {
+			L: '#minecraft:logs',
+			I: '#forge:ingots/iron',
+			R: '#forge:storage_blocks/redstone',
+			G: '#forge:gears/steel'
+		})
+		
 		//New laser drill recipe that respects the modpack progression
 		event.shaped('industrialforegoing:ore_laser_base', [
 			'A A',

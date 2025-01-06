@@ -5,6 +5,32 @@
       "name": "VadamDev",
       "uniqueId": "dbb306de-11d2-43e5-8e20-fcbc0c02026c"
     },
+    "time": 1736158337557,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/p4r5VkxTRI"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "VadamDev",
+      "uniqueId": "dbb306de-11d2-43e5-8e20-fcbc0c02026c"
+    },
+    "time": 1735971565104,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/WvxExUqyfp"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "VadamDev",
+      "uniqueId": "dbb306de-11d2-43e5-8e20-fcbc0c02026c"
+    },
     "time": 1735594672966,
     "type": "Profiler (live)",
     "data": {

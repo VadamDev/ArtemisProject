@@ -36,7 +36,7 @@ Comment: 'controls whether or not the quarry will mine blocks that have been pla
 T:default=true -> MAINTAIN_MINING_AREA='true'
 Comment: 'Controls whether the quarry can bypass claims or not'
 T:default=false -> BYPASS_CLAIMS='false'
-T:default=true -> DISPENSE_GUIDEBOOK='true'
+T:default=true -> DISPENSE_GUIDEBOOK='false'
 Comment: 'When set to true, this will make transformers tick, but give them the ability to hum as they do in real life. If you need to gain performance, you can disable this to stop transformers from ticking and thus producing sound.'
 T:default=true -> SHOULD_TRANSFORMER_HUM='true'
 Comment: 'The Watts a transformer needs to see to be considered under "full load" and thus hum as loud as it can. Set to 0 to have it hum under any load greater than 0 Watts'

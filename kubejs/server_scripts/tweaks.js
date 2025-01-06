@@ -7,19 +7,6 @@ ServerEvents.recipes(event => {
 		*/
 		event.remove({input: 'projectred_exploration:wool_gin'})
 		event.remove({output: 'projectred_exploration:wool_gin'})
-		
-		/*
-		  Mystical
-		*/
-		event.remove({output: 'mysticalagriculture:infusion_altar'})
-		event.remove({output: 'mysticalagriculture:infusion_pedestal'})
-		
-		/*
-		  Ad Astra / Giselle Addon
-		*/
-
-		event.remove({output: 'ad_astra:coal_generator'})
-		event.remove({output: 'ad_astra_giselle_addon:gravity_normalizer'})
 
 		/*
 		  Iron Furnace
@@ -63,6 +50,18 @@ ServerEvents.recipes(event => {
 		*/
 		
 		event.remove({id: 'alexsmobs:transmutation_table'})
+		
+		/*
+		   Time In A Bottle
+		*/
+		
+		event.remove({id: 'tiab:time_in_a_bottle'})
+		
+		/*
+		   Thermal
+		*/
+		
+		event.remove({id: 'thermal:machine_frame'})		
 	}
 
 	function addRecipes() {
@@ -88,30 +87,6 @@ ServerEvents.recipes(event => {
 		  Wool to string
 		*/
 		event.shapeless('4x minecraft:string', ['#minecraft:wool'])
-		
-		/*
-		  Mystical
-		*/
-		event.shaped('2x mysticalagriculture:infusion_pedestal', [
-			'AWA',
-			' S ',
-			' S '
-		], {
-			A: 'mythicbotany:alfsteel_nugget',
-			W: 'minecraft:red_wool',
-			S: 'minecraft:stone'
-		})
-		
-		event.shaped('mysticalagriculture:infusion_altar', [
-			'GWG',
-			' S ',
-			'STS'
-		], {
-			G: 'minecraft:gold_ingot',
-			W: 'minecraft:red_wool',
-			S: 'minecraft:stone',
-			T: 'botania:terrasteel_ingot'
-		})
 		
 		/*
 		  Iron Furnace
@@ -179,7 +154,7 @@ ServerEvents.recipes(event => {
 				], {
 			        G: '#forge:nuggets/gold',
 			        D: '#forge:dyes/blue',
-			        B: [Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 1).strongNBT(),Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 2).strongNBT(),Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 3).strongNBT()]
+			        B: [Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 1).strongNBT(), Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 2).strongNBT(), Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 3).strongNBT()]
 			    })
 				
 		/*
@@ -194,6 +169,38 @@ ServerEvents.recipes(event => {
 			        S: 'bloodmagic:demonslate',
 			        N: 'minecraft:netherite_ingot',
 			        C: 'naturescompass:naturescompass'
+				})
+				
+		/*
+		   Time In A Bottle
+		*/
+		
+		event.shaped('tiab:time_in_a_bottle', [
+		        'SUS',
+				'ABA',
+				'IDI'
+				], {
+			        S: 'mysticalagriculture:speed_iii_augment',
+			        U: 'productivebees:upgrade_time',
+			        A: 'forbidden_arcanus:arcane_crystal_dust',
+					B: 'minecraft:glass_bottle',
+					I: 'eidolon:gold_inlay',
+					D: 'forbidden_arcanus:deorum_ingot'
+				})
+				
+		/*
+		   Thermal
+		*/
+		
+		event.shaped('thermal:machine_frame', [
+		        'IGI',
+				'GTG',
+				'SGS'
+				], {
+			        I: '#forge:ingots/iron',
+			        G: '#forge:glass',
+			        T: '#forge:gears/tin',
+					S: '#forge:ingots/steel'
 				})
 
 		/*

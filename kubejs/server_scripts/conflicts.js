@@ -1,3 +1,5 @@
+//Author VadamDev
+
 ServerEvents.recipes(event => {
 	//Useless tf book
 	event.remove({output: Item.of('patchouli:guide_book', '{"patchouli:book":"twilightforest:guide"}')})

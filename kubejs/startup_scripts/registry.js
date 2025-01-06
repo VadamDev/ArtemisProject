@@ -1,4 +1,6 @@
-Platform.mods.kubejs.name = "Artemis: Project"
+StartupEvents.registry('item', event => {
+	event.create('pellet_exoticmatter').texture('kubejs:item/pellet_exoticmatter').displayName('§fExotic Matter Pellet').fireResistant(true).rarity('epic').glow(true)
+})
 
 EnderIOEvents.conduits(event => {
 	event.registerEnergyConduit("fe_conduit", "Energy Conduit", 1280)

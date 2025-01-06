@@ -1,4 +1,5 @@
 // priority: 100
+//Author VadamDev
 
 ServerEvents.tags('item', event => {
 	/*
@@ -47,6 +48,8 @@ ServerEvents.recipes(event => {
 	metalsToUnify.forEach(gearName => {
 		event.remove({id: 'electrodynamics:gear_' + gearName})
 	})
+	
+	event.remove({id: 'electrodynamics:gear_tin'}) //No plate recipe, so its here and not in the forEach loop
 	
 	event.remove({id: 'industrialforegoing:iron_gear'})
 	event.remove({id: 'industrialforegoing:gold_gear'})

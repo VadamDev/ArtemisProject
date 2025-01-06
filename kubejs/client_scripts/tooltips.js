@@ -18,6 +18,12 @@ ItemEvents.tooltip(event => {
 		['', Text.of('Decoration Only').red().italic().underlined(true), '']
 	)
 	
+	//BHC
+	addTooltip('bhc:red_heart', 1, Text.of('Dropped by hostile mobs').italic().red(), true)
+	addTooltip('bhc:yellow_heart', 1, Text.of('Dropped by bosses').italic().yellow(), true)
+	addTooltip('bhc:green_heart', 1, Text.of('Dropped by the Ender Dragon').italic().green(), true)
+	addTooltip('bhc:blue_heart', 1, Text.of('Dropped by Wardens').italic().blue(), true)
+	
 	//TODO: add pipez ?
 })
 

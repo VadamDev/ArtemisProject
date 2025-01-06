@@ -6,6 +6,7 @@
     "mekanism",
     "create",
     "tfmg",
+	"ad_astra",
 	"electrodynamics"
   ],
   "stoneStrata": [
@@ -84,9 +85,7 @@
   "priorityOverrides": {
     "forge:nuggets/steel": "mekanism",
     "forge:dusts/steel": "mekanism",
-    "forge:gears/steel": "mekanism",
     "forge:ingots/steel": "mekanism",
-	"forge:plates/steel": "mekanism",
     "forge:storage_blocks/steel": "mekanism"
   },
   "customTags": {},

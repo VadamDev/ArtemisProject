@@ -1,0 +1,9 @@
+{
+	"x": 2,
+	"y": 48,
+	"width": 98,
+	"height": 20,
+	"langKey": "packmenu.artemis.curseforge",
+	"action": "OPEN_URL",
+	"data": "https://curseforge.com/minecraft/modpacks/artemis-project"
+}
