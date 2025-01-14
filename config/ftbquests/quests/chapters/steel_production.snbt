@@ -1,0 +1,217 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_production"
+	group: "28ECA53A292863BA"
+	icon: "thermal:coal_coke"
+	id: "66B45F85246712A8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			description: ["Make some cast iron using a heated basin"]
+			id: "11AAD82270617ADB"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 30L
+				id: "3DA71492B8F24616"
+				item: { Count: 30, id: "tfmg:cast_iron_ingot" }
+				type: "item"
+			}]
+			title: "Make some cast iron"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11AAD82270617ADB"]
+			description: [
+				"Build your first coke oven."
+				"More explanations available with Create Ponder (hold Z on the item)"
+			]
+			id: "59EFE894F414D463"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 9L
+				id: "1F545649E2A4E1B8"
+				item: { Count: 9, id: "tfmg:coke_oven" }
+				type: "item"
+			}]
+			title: "Make a Coke Oven"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59EFE894F414D463"]
+			id: "29CF2EC67D96BF72"
+			size: 1.25d
+			tasks: [{
+				id: "00057D34B4A00B0E"
+				item: "thermal:coal_coke"
+				type: "item"
+			}]
+			title: "Coke Production"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29CF2EC67D96BF72"]
+			id: "72ACCE7627E5EA6A"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				count: 2L
+				id: "6912AD914BA6F444"
+				item: "tfmg:coal_coke_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4302C605B3824F68"
+				"2F0564A9633CFA08"
+			]
+			id: "5ABDF685DCC3C788"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				id: "11A5D6E4F0163A96"
+				item: "tfmg:blasting_mixture"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			id: "4302C605B3824F68"
+			tasks: [{
+				id: "64A2235186E91E56"
+				item: "tfmg:limesand"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			id: "2F0564A9633CFA08"
+			tasks: [{
+				count: 3L
+				id: "1D88E5A8483618EA"
+				item: { Count: 3, id: "create:crushed_raw_iron" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"72ACCE7627E5EA6A"
+				"5ABDF685DCC3C788"
+				"0B767681E8A8D128"
+			]
+			description: [
+				"Build a Blast Furnace."
+				"Build instructions are available by pondering on the Blast Furnace Output!"
+			]
+			icon_scale: 0.9d
+			id: "09435A046F09076E"
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				id: "3704ECCBCBD52781"
+				item: "tfmg:blast_furnace_output"
+				type: "item"
+			}]
+			title: "Build a Blast Furnace"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			id: "0B767681E8A8D128"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				count: 32L
+				id: "5EC2DFF5BE7BB7A6"
+				item: { Count: 32, id: "tfmg:fireproof_brick" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["09435A046F09076E"]
+			icon: "tfmg:molten_steel_bucket"
+			id: "48D923F3BA6936C0"
+			shape: "octagon"
+			size: 2.25d
+			tasks: [{
+				id: "6BB917DF5CABE530"
+				title: "Molten Steel"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48D923F3BA6936C0"]
+			id: "4DD7D067088146E1"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "65845E12B57F33E7"
+				item: "tfmg:casting_spout"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36049BB059797D03"]
+			description: ["Items can be removed from the container using a funnel"]
+			id: "2980FD569D24BE2F"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "08BA0EC4169ED434"
+				item: "tfmg:casting_basin"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DD7D067088146E1"]
+			id: "36049BB059797D03"
+			tasks: [{
+				id: "41F491009B701479"
+				item: "tfmg:ingot_mold"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2980FD569D24BE2F"]
+			description: ["New technologies ahead :)"]
+			id: "1BAFEC6886EE2343"
+			shape: "pentagon"
+			size: 3.0d
+			tasks: [{
+				id: "574E72760B77EE3E"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.0d
+		}
+	]
+	title: "Steel Production"
+}

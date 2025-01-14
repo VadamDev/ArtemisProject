@@ -8,6 +8,9 @@ JEIEvents.hideItems(event => {
 	//Ad Astra
 	event.hide(['ad_astra:coal_generator', 'ad_astra_giselle_addon:gravity_normalizer'])
 	
+	//Draconic
+	event.hide(['draconicevolution:generator'])
+	
 	//MFFS
 	event.hide('mffs:steel_compound')
 	

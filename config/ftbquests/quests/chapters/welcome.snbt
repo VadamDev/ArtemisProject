@@ -1,0 +1,86 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "welcome"
+	group: "34B0A06D2C533574"
+	icon: "minecraft:dirt"
+	id: "35C7E302ABBD8CB0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Welcome to Artemis: Project, I hope you will have a great time there ! :)"]
+			icon: "ad_astra:moon_globe"
+			id: "7A664C3AB5699FB0"
+			rewards: [
+				{
+					count: 16
+					id: "0531B9596AF92F0A"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					id: "30FB7EB224B59BF5"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "55386C9E48C570AD"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			title: "Welcome to: Artemis Project"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			description: [
+				"This modpack features a small questline thats helps the progression."
+				""
+				"It's absolutly not mandatory to complete / follow them but can act as a path for players not familiar with mods."
+			]
+			disable_toast: true
+			icon: "ftbquests:book"
+			id: "1C6663C4A1D5EC54"
+			size: 2.0d
+			tasks: [{
+				id: "7C2C262F5379C52C"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			description: [
+				"Teams can be created by clicking the top left button in your inventory."
+				""
+				"It allows multiple people to complete the same quests together."
+			]
+			disable_toast: true
+			icon: "minecraft:armor_stand"
+			id: "4C7E68798324016E"
+			size: 2.0d
+			tasks: [{
+				id: "309BAA400DBF97E3"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+	]
+	title: "Welcome"
+}

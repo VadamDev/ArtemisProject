@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ratlantis"
+	group: "26D31B373A8461E6"
+	icon: "rats:chunky_cheese_token"
+	id: "28B407EDA74E5252"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Ratlantis"
+}

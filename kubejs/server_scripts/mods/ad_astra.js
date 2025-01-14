@@ -444,6 +444,47 @@ ServerEvents.recipes(event => {
 				"item": "ad_astra:calorite_engine"
 			}
 		})
+		
+		//Globes
+		event.shaped('ad_astra:mars_globe', [
+			'M',
+			'G',
+			'A'
+		], {
+			M: 'ad_astra:mars_stone',
+			G: 'ad_astra:moon_globe',
+			A: 'rats:oratchalcum_ingot'
+		})
+		
+		event.shaped('ad_astra:mercury_globe', [
+			'M',
+			'G',
+			'A'
+		], {
+			M: 'ad_astra:mercury_stone',
+			G: 'ad_astra:mars_globe',
+			A: 'twilightforest:fiery_ingot'
+		})
+		
+		event.shaped('ad_astra:venus_globe', [
+			'M',
+			'G',
+			'A'
+		], {
+			M: 'ad_astra:venus_stone',
+			G: 'ad_astra:mars_globe',
+			A: 'cataclysm:ignitium_ingot'
+		})
+		
+		event.shaped('ad_astra:glacio_globe', [
+			'M',
+			'G',
+			'A'
+		], {
+			M: 'ad_astra:glacio_stone',
+			G: 'ad_astra:venus_globe',
+			A: 'mythicbotany:alfsteel_ingot'
+		})
 	}
 
 	removeRecipes()
