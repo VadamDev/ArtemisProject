@@ -1,4 +1,4 @@
-//Author VadamDev
+//Author: VadamDev
 
 ServerEvents.recipes(event => {
 	const thermalPulverizerRecipe = (output, input) => {

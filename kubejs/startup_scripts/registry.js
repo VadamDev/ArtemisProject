@@ -1,3 +1,5 @@
+//Author: VadamDev
+
 StartupEvents.registry('item', event => {
 	event.create('pellet_exoticmatter').texture('kubejs:item/pellet_exoticmatter').displayName('§fExotic Matter Pellet').fireResistant(true).rarity('epic').glow(true)
 })

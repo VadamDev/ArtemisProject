@@ -1,4 +1,4 @@
-//Author VadamDev
+//Author: VadamDev
 
 ServerEvents.recipes(event => {
 	function removeRecipes() {

@@ -1,3 +1,5 @@
+//Author: VadamDev
+
 ItemEvents.tooltip(event => {
 	const addTooltip = (itemId, lineIndex, text, append, shouldShift) => insertLine(event, itemId, lineIndex, text, append, shouldShift);
 	

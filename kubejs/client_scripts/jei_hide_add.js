@@ -1,3 +1,5 @@
+//Author: VadamDev
+
 JEIEvents.hideItems(event => {
 	//TFMG
 	event.hide(['tfmg:steel_helmet', 'tfmg:steel_chestplate', 'tfmg:steel_leggings', 'tfmg:steel_boots'])

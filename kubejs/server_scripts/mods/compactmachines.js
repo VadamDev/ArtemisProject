@@ -1,4 +1,4 @@
-//Author VadamDev
+//Author: VadamDev
 
 //Add tags for easier tunnels recipes
 ServerEvents.tags('item', event => {
