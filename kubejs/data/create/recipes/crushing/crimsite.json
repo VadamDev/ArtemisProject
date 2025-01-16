@@ -16,7 +16,7 @@
       "item": "minecraft:iron_nugget"
     },
 	{
-      "chance": 0.15,
+      "chance": 0.1,
       "item": "tfmg:fireclay_ball"
     }
   ]

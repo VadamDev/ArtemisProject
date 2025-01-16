@@ -9,12 +9,13 @@ ServerEvents.recipes(event => {
 		event.shaped('mekanism:metallurgic_infuser', [
 		    'RFR',
 			'OSO',
-			'RFR'
+			'BFB'
 		], {
 			R: 'minecraft:redstone',
 			F: 'minecraft:furnace',
 			O: 'mekanism:ingot_osmium',
-			S: 'mekanism:steel_casing'
+			S: 'mekanism:steel_casing',
+			B: 'mekanism:block_steel'
 		})
 		
 		event.custom({
