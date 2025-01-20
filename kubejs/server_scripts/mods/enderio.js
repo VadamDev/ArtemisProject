@@ -27,6 +27,9 @@ ServerEvents.recipes(event => {
 		makeConduit('8x enderio:enhanced_fe_conduit', 'enderio:energetic_alloy_ingot')
 		makeConduit('8x enderio:ender_fe_conduit', 'enderio:vibrant_alloy_ingot')
 		
+		//Fix alloy smelter recipe since primitive alloy smelter is removed
+		event.replaceInput({id: 'enderio:alloy_smelter'}, 'enderio:dark_steel_ingot', '#forge:ingots/iron')
+		
 		//New void chassis recipe that respects modpack progression
 		event.shaped('2x enderio:void_chassis', [
 				'BVB',

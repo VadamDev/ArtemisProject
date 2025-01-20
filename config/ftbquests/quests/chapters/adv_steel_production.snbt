@@ -37,10 +37,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"582F48D9D7FD3DAE"
-				"615AEB2B81C2A5A3"
-			]
+			dependencies: ["582F48D9D7FD3DAE"]
 			id: "2484EC60E5CED531"
 			shape: "rsquare"
 			size: 2.0d
@@ -78,21 +75,6 @@
 			}]
 			x: 6.25d
 			y: 1.25d
-		}
-		{
-			icon_scale: 0.8d
-			id: "615AEB2B81C2A5A3"
-			optional: true
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "1A25BE481F6BD5E5"
-				max_input: 1000L
-				type: "forge_energy"
-				value: 80L
-			}]
-			x: 4.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["448A7B57DF88E762"]

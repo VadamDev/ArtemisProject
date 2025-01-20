@@ -47,4 +47,23 @@ ServerEvents.recipes(event => {
 	], {
 		L: Ingredient.of('#minecraft:logs').subtract(Ingredient.of(['#botania:livingwood_logs', '#botania:dreamwood_logs']))
 	})
+	
+	//Valhelsia Furniture chair / table conflicts with vanilla slabs
+	const valhWoodTypes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'cherry', 'dark_oak', 'mangrove', 'crimson', 'warped']
+	
+	valhWoodTypes.forEach(wood => {
+		//Chair
+		event.remove({id: 'valhelsia_furniture:' + wood + '_chair'})
+		event.shaped('2x valhelsia_furniture:' + wood + '_chair', ['LPL'], {
+			P: 'minecraft:' + wood + '_planks',
+			L: 'minecraft:' + wood + '_log'
+		})
+		
+		//Table
+		event.remove({id: 'valhelsia_furniture:' + wood + '_table'})
+		event.shaped('valhelsia_furniture:' + wood + '_table', ['PLP'], {
+			P: 'minecraft:' + wood + '_planks',
+			L: 'minecraft:' + wood + '_log'
+		})
+	})
 })

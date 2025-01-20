@@ -96,7 +96,8 @@
   "blockTagInheritance": {},
   "ignoredTags": [],
   "ignoredItems": [
-    ".*chisel_chipped_integration.*"
+    ".*chisel_chipped_integration.*",
+	".*betterend.*"
   ],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"
