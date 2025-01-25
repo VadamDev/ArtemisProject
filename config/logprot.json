@@ -1,7 +1,7 @@
 {
   "invulTime": {
     "desc:": "Maximum time in ticks the logging player is invulnerable, 20 ticks is 1sec. Default is 50secs so 1000 ticks",
-    "invulTime": 1000
+    "invulTime": 3000
   },
   "ignoreFallDamage": {
     "desc:": "Allows fall-damage to bypass the protection, default: true",

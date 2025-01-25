@@ -16,14 +16,14 @@ ServerEvents.recipes(event => {
 		//New angel ring recipe
 		event.shaped('angelring:angel_ring', [
 			'F F',
-			'PTP',
-			'BRB'
+			'RSR',
+			'BIB'
 		], {
-			F: 'minecraft:feather',
-			P: 'botania:pixie_dust',
-			T: Item.of('botania:flight_tiara'),
+			F: 'forbidden_arcanus:golden_feather',
+			R: 'bloodmagic:reagentteleposition',
+			S: 'bloodmagic:airsigil',
 			B: 'minecraft:blaze_rod',
-			R: 'angelring:itemdiamondring'
+			I: 'bloodmagic:reagentbinding'
 		})
 	}
 

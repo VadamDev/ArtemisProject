@@ -35,6 +35,8 @@ EnableAdvancedConfig = false
     #
     OutputMultiplier = 1.0
 
+    FuelOutputItem = "mekanism:ingot_uranium"
+
 [Turbine]
     #
     # Valid range: [5,)

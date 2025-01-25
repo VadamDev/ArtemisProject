@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
 				' D '
 				], {
 			        C: 'thermal:rf_coil',
-			        G: 'thermal:electrum_gear',
+			        G: 'thermal:iron_gear',
 			        F: 'thermal:machine_frame',
 			        D: 'thermal:dynamo_stirling'
 			    })
@@ -178,13 +178,13 @@ ServerEvents.recipes(event => {
 		event.shaped('tiab:time_in_a_bottle', [
 		        'SUS',
 				'ABA',
-				'IDI'
+				'MDM'
 				], {
 			        S: 'mysticalagriculture:speed_iii_augment',
 			        U: 'productivebees:upgrade_time',
 			        A: 'forbidden_arcanus:arcane_crystal_dust',
 					B: 'minecraft:glass_bottle',
-					I: 'eidolon:gold_inlay',
+					M: 'forbidden_arcanus:mundabitur_dust',
 					D: 'forbidden_arcanus:deorum_ingot'
 				})
 				
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
 			output: {
 				item: 'supplementaries:bomb_blue'
 			},
-			mana: 100000
+			mana: 10000
 		})
 	}
 

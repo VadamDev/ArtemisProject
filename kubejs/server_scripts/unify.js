@@ -26,6 +26,12 @@ ServerEvents.tags('item', event => {
 	*/
 	
 	event.remove('forge:coal_coke', 'electrodynamics:coalcoke')
+	
+	/*
+	   Thallasium
+	*/
+	
+	event.remove('forge:ingots/iron', 'betterend:thallasium_ingot')
 })
 
 ServerEvents.recipes(event => {
@@ -49,7 +55,7 @@ ServerEvents.recipes(event => {
 		event.remove({id: 'electrodynamics:gear_' + gearName})
 	})
 	
-	event.remove({id: 'electrodynamics:gear_tin'}) //No plate recipe, so its here and not in the forEach loop
+	event.remove({id: 'electrodynamics:gear_tin'}) //No plate recipe, so its here and not in the loop above
 	
 	event.remove({id: 'industrialforegoing:iron_gear'})
 	event.remove({id: 'industrialforegoing:gold_gear'})
@@ -248,4 +254,10 @@ ServerEvents.recipes(event => {
 			"optional": false
 		}]
 	})
+	
+	/*
+	   Thallasium
+	*/
+	
+	event.smelting('minecraft:iron_ingot', 'betterend:thallasium_ingot')
 })

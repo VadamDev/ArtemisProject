@@ -53,7 +53,6 @@ ServerEvents.recipes(event => {
 		event.shapeless(Item.of('compactmachines:tunnel', 2, '{definition:{id:"compactmachines:fluid"}}'), [
 			'#kubejs:pipes/fluid', 'fluxnetworks:flux_dust',
 			'minecraft:redstone'
-			
 		])
 
 		event.shapeless(Item.of('compactmachines:tunnel', 2, '{definition:{id:"compactmachines:energy"}}'), [

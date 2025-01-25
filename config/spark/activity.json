@@ -180,44 +180,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/X6t9MfMS46"
     }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "VadamDev",
-      "uniqueId": "dbb306de-11d2-43e5-8e20-fcbc0c02026c"
-    },
-    "time": 1732470369318,
-    "type": "Profiler (live)",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/nc2565EoY9"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "VadamDev",
-      "uniqueId": "dbb306de-11d2-43e5-8e20-fcbc0c02026c"
-    },
-    "time": 1732469298127,
-    "type": "Profiler (live)",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/kUT3x0WdAp"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "VadamDev",
-      "uniqueId": "dbb306de-11d2-43e5-8e20-fcbc0c02026c"
-    },
-    "time": 1732287213703,
-    "type": "Profiler (live)",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/caQKAkcyWh"
-    }
   }
 ]

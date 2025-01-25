@@ -412,6 +412,11 @@
 		}
 		{
 			dependencies: ["4CE00B90BCF076B4"]
+			description: [
+				"There, you made it. I hope you had fun playing this modpack!"
+				""
+				"The end ..?"
+			]
 			icon: "ad_astra:permafrost"
 			id: "415E0A85DED3645B"
 			shape: "square"

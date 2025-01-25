@@ -2,6 +2,5 @@
 	chapter_groups: [
 		{ id: "34B0A06D2C533574", title: "Introduction" }
 		{ id: "28ECA53A292863BA", title: "Main Questline" }
-		{ id: "26D31B373A8461E6", title: "Exploration" }
 	]
 }
