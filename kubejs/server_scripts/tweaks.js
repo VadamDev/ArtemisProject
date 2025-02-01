@@ -61,15 +61,10 @@ ServerEvents.recipes(event => {
 		   Thermal
 		*/
 		
-		event.remove({id: 'thermal:machine_frame'})		
+		event.remove({id: 'thermal:machine_frame'})
 	}
 
-	function addRecipes() {
-		/*
-		  Auto Andesite
-		*/
-		event.recipes.createSplashing('minecraft:andesite', 'minecraft:gravel')
-		
+	function addRecipes() {		
 		/*
 		  Nametag
 		*/
@@ -202,6 +197,63 @@ ServerEvents.recipes(event => {
 			        T: '#forge:gears/tin',
 					S: '#forge:ingots/steel'
 				})
+				
+		/*
+		   Phantom Spawn Egg
+		*/
+		
+		event.custom({
+			"type": "bloodmagic:altar",
+			"altarSyphon": 5000,
+			"consumptionRate": 5,
+			"drainRate": 5,
+			"input": {
+				"item": "minecraft:bat_spawn_egg"
+			},
+			"output": {
+				"item": "minecraft:phantom_spawn_egg"
+			},
+			"upgradeLevel": 0
+		})
+		
+		/*
+		   Mana Cell Mythic Botany compat
+		*/
+		
+		event.custom({
+			"type": "mythicbotany:infuser",
+			"fromColor": 255,
+			"group": "infuser",
+			"ingredients": [
+				{
+					"item": "appbot:mana_cell_housing"
+				},
+				{
+					"item": "botania:mana_pearl"
+				},
+				{
+					"item": "botania:mana_diamond"
+				},
+				{
+					"item": "ae2:sky_dust"
+				},
+				{
+					"item": "ae2:quartz_vibrant_glass"
+				}
+			],
+			"mana": 2000000,
+			"output": {
+				"count": 1,
+				"item": "megacells:mega_mana_cell_housing"
+			},
+			"toColor": 65280
+		})
+		
+		/*
+		   Add recipe to disabled patchouli book in case the player doesn't have an eccentric tome
+		*/
+		
+		event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"simplyswords:runic_grimoire"}'), ['minecraft:book', 'simplyswords:iron_sai'])
 
 		/*
 		  Blue Bomb

@@ -32,6 +32,12 @@ ServerEvents.tags('item', event => {
 	*/
 	
 	event.remove('forge:ingots/iron', 'betterend:thallasium_ingot')
+	
+	/*
+	   Hearth Canister x Ice And Fire compat
+	*/
+	
+	event.add('forge:wither_bones', 'iceandfire:witherbone')
 })
 
 ServerEvents.recipes(event => {

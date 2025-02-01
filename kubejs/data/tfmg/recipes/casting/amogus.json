@@ -1,0 +1,20 @@
+{
+  "type": "tfmg:casting",
+  "ingredients": [
+    {
+      "fluid": "tfmg:molten_steel",
+      "amount": 1
+    }
+  ],
+  "processingTime": 300,
+  "results": [
+    {
+      "count": 1,
+      "item": "mekanism:ingot_steel"
+    },
+    {
+      "count": 1,
+      "item": "mekanism:block_steel"
+    }
+  ]
+}

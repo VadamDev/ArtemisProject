@@ -30,6 +30,7 @@ ServerEvents.recipes(event => {
 		mekanismCrushing('thermal:niter', 'thermal:niter_dust')
 		mekanismCrushing('thermal:sulfur', 'thermal:sulfur_dust')
 		mekanismCrushing('minecraft:quartz', 'thermal:quartz_dust')
+		mekanismCrushing('minecraft:ender_pearl', 'thermal:ender_pearl_dust')
 		
 		//Silver duplication
 		mekanismCrushing('thermal:silver_ingot', 'thermal:silver_dust')
