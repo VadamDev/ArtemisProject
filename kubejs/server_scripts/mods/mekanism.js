@@ -2,7 +2,7 @@
 
 ServerEvents.recipes(event => {
 	function removeRecipes() {
-		//New metllurgic Infuser recipe
+		//New metallurgic Infuser recipe
 		event.remove({id: 'mekanism:metallurgic_infuser'})
 	}
 
@@ -13,12 +13,12 @@ ServerEvents.recipes(event => {
 				"input": {
 					"ingredient": {
 						"item": input
-						}
-					},
-					"output": {
-						"item": output
 					}
-				})
+				},
+				"output": {
+					"item": output
+				}
+			})
 		}
 		
 		//Obsidian dust recipe
@@ -29,8 +29,15 @@ ServerEvents.recipes(event => {
 		mekanismCrushing('thermal:cinnabar', 'thermal:cinnabar_dust')
 		mekanismCrushing('thermal:niter', 'thermal:niter_dust')
 		mekanismCrushing('thermal:sulfur', 'thermal:sulfur_dust')
-		mekanismCrushing('minecraft:quartz', 'thermal:quartz_dust')
 		mekanismCrushing('minecraft:ender_pearl', 'thermal:ender_pearl_dust')
+		mekanismCrushing('redstone_arsenal:flux_ingot', 'redstone_arsenal:flux_dust')
+		mekanismCrushing('minecraft:dragon_head', 'thermal_extra:ancient_dust')
+		mekanismCrushing('minecraft:amethyst_shard', 'thermal_extra:amethyst_dust')
+		mekanismCrushing('thermal_extra:soul_infused_ingot', 'thermal_extra:soul_infused_dust')
+		mekanismCrushing('thermal_extra:shellite_ingot', 'thermal_extra:shellite_dust')
+		mekanismCrushing('thermal_extra:twinite_ingot', 'thermal_extra:twinite_dust')
+		mekanismCrushing('thermal_extra:dragonsteel_ingot', 'thermal_extra:dragonsteel_dust')
+		mekanismCrushing('thermal:coal_coke', 'tfmg:coal_coke_dust')
 		
 		//Silver duplication
 		mekanismCrushing('thermal:silver_ingot', 'thermal:silver_dust')

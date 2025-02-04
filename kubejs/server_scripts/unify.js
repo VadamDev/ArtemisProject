@@ -2,56 +2,86 @@
 //Author VadamDev
 
 ServerEvents.tags('item', event => {
-	/*
-	  Cast Iron
-	*/
-
+	//Cast Iron
 	event.add('forge:storage_blocks/cast_iron', 'createbigcannons:cast_iron_block')
 	
-	/*
-	   Netherite
-	*/
-	
+	//Netherite
 	event.add('forge:nuggets/netherite', 'createdeco:netherite_nugget')
 	
-	/*
-	  Silicon
-	*/
+	//Silicon
+	event.remove('forge:silicon', ['tinyredstone:silicon', 'enderio:silicon'])
 	
-	event.remove('forge:silicon', 'tinyredstone:silicon')
-	event.remove('forge:silicon', 'enderio:silicon')
-	
-	/*
-	   Coal Coke
-	*/
-	
+	//Coal Coke
 	event.remove('forge:coal_coke', 'electrodynamics:coalcoke')
 	
-	/*
-	   Thallasium
-	*/
-	
+	//Thallasium
 	event.remove('forge:ingots/iron', 'betterend:thallasium_ingot')
 	
-	/*
-	   Hearth Canister x Ice And Fire compat
-	*/
-	
+	//BHC x Ice and Fire necrotic bones compat
 	event.add('forge:wither_bones', 'iceandfire:witherbone')
 })
 
 ServerEvents.recipes(event => {
 	/*
+	  Dusts
+	*/
+
+	const thermalPulverizer = (input, output) => {
+		event.custom({
+			type: 'thermal:pulverizer',
+			ingredient: {item: input},
+			result: [{item: output}],
+			experience: 0.1
+		})
+	}
+	
+	thermalPulverizer('minecraft:coal', 'mekanism:dust_coal')
+	thermalPulverizer('minecraft:charcoal', 'mekanism:dust_charcoal')
+	thermalPulverizer('thermal:coal_coke', 'tfmg:coal_coke_dust')
+
+	/*
 	  Plates
 	*/
 	
 	const metalsToUnify = ['iron', 'copper', 'lead', 'steel', 'bronze']
-	
 	metalsToUnify.forEach(plateName => {
 		event.remove({id: 'electrodynamics:plate_' + plateName})
 	})
 	
 	event.remove({id: 'tfmg:sequenced_assembly/heavy_plate'})
+	
+	event.replaceInput({mod: 'createdeco'}, 'create:copper_sheet', '#forge:plates/copper')
+	event.replaceInput({mod: 'createdeco'}, 'create:iron_sheet', '#forge:plates/iron')
+	
+	const missingThermalPlates = ['signalum', 'lumium', 'enderium', 'tin', 'lead', 'silver', 'nickel', 'bronze', 'electrum', 'invar', 'constantan']
+	missingThermalPlates.forEach(metal => {
+		event.recipes.createPressing('thermal:' + metal + '_plate', 'thermal:' + metal + '_ingot')
+	})
+	
+	event.remove({id: 'createdeco:pressing/netherite_sheet'})
+	event.recipes.createPressing('thermal:netherite_plate', 'minecraft:netherite_ingot')
+	
+	const missingThermalExtraPlates = ['soul_infused', 'shellite', 'twinite', 'dragonsteel', 'abyssal']
+	missingThermalExtraPlates.forEach(metal => {
+		event.recipes.createPressing('thermal_extra:' + metal + '_plate', 'thermal_extra:' + metal + '_ingot')
+	})
+	
+	const thermalPress = (input, output) => {
+		event.custom({
+			"type": "thermal:press",
+			"ingredient": {
+				"item": input
+			},
+			"result": [{
+				"item": output
+			}]
+		})
+	}
+	
+	thermalPress('create:brass_ingot', 'create:brass_sheet')
+	thermalPress('create:andesite_alloy', 'createdeco:andesite_sheet')
+	thermalPress('create:zinc_ingot', 'createdeco:zinc_sheet')
+	thermalPress('createdeco:industrial_iron_ingot', 'createdeco:industrial_iron_sheet')
 	
 	/*
 	  Gears
@@ -177,6 +207,12 @@ ServerEvents.recipes(event => {
 	
 	event.remove({id: 'silentgear:bronze_ingot'})
 	event.remove({id: 'electrodynamics:dust_bronze'})
+	
+	/*
+	   Uranium
+	*/
+	
+	event.remove({id: 'biggerreactors:compat/mekanism/enriching/enrichment_uranium_chunk'})
 	
 	/*
 	  Silicon

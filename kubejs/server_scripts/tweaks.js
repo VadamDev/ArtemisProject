@@ -1,73 +1,22 @@
 //Author: VadamDev
 
 ServerEvents.recipes(event => {
-	function removeRecipes() {		
-		/*
-		   Useless Wool Gin
-		*/
-		event.remove({input: 'projectred_exploration:wool_gin'})
-		event.remove({output: 'projectred_exploration:wool_gin'})
-
-		/*
-		  Iron Furnace
-		*/
-
+	function removeRecipes() {
+		//IronFurnace Generator Augment
 		event.remove({output: 'ironfurnaces:augment_generator'})
-		event.remove({output: 'ironfurnaces:augment_factory'})
-
-		/*
-		  Bigger reactor
-		*/
-
-		event.remove({output: 'biggerreactors:reactor_casing'})
-
-		/*
-		  Charging Gadgets
-		*/
-
-		event.remove({output: 'charginggadgets:charging_station'})
-
-		/*
-		  Chunk Loader
-		*/
-
-		event.remove({output: 'createchunkloading:chunk_loader'})
 		
-		/*
-		   Mob Grinding Utils
-		*/
-		
-		event.remove({id: 'mob_grinding_utils:recipe_saw_upgrade_looting'})
-
-        /*
-		   Explorer Compass
-		*/
-		
-		event.remove({id: 'explorerscompass:explorers_compass'})
-		
-		/*
-		   Transmutation table
-		*/
-		
-		event.remove({id: 'alexsmobs:transmutation_table'})
-		
-		/*
-		   Time In A Bottle
-		*/
-		
-		event.remove({id: 'tiab:time_in_a_bottle'})
-		
-		/*
-		   Thermal
-		*/
-		
-		event.remove({id: 'thermal:machine_frame'})
+		//AlexMobs Transmutation table
+		event.remove({id: 'alexsmobs:transmutation_table'})		
 	}
 
-	function addRecipes() {		
-		/*
-		  Nametag
-		*/
+	function addRecipes() {
+		//Update existing eccentric tomes
+		event.shapeless(Item.of('eccentrictome:tome', '{"eccentrictome:mods":{ad_astra:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"ad_astra:astrodux"}}},advancedperipherals:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}}},alexsmobs:{0:{Count:1b,id:"alexsmobs:animal_dictionary"}},apotheosis:{0:{Count:1b,id:"patchouli:guide_book",tag:{Enchantments:[],"patchouli:book":"apotheosis:apoth_chronicle"}}},ars_nouveau:{0:{Count:1b,id:"ars_nouveau:worn_notebook"}},bloodmagic:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"bloodmagic:guide"}}},botania:{0:{Count:1b,id:"botania:lexicon"}},buildinggadgets2:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"buildinggadgets2:buildinggadgets2book"}}},electrodynamics:{0:{Count:1b,id:"electrodynamics:guidebook"}},elementalcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"elementalcraft:element_book"}}},extendedcrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"extendedcrafting:guide"}}},industrialforegoing:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"industrialforegoing:industrial_foregoing"}}},integrateddynamics:{0:{Count:1b,id:"integrateddynamics:on_the_dynamics_of_integration"}},irons_spellbooks:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"irons_spellbooks:iss_guide_book"}}},mffs:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"mffs:handbook"}}},modonomicon:{0:{Count:1b,id:"modonomicon:modonomicon",tag:{"modonomicon:book_id":"theurgy:the_hermetica"}}},modularrouters:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"modularrouters:book"}}},mysticalagriculture:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"mysticalagriculture:guide"}}},pneumaticcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}}},productivebees:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"productivebees:guide"}}},securitycraft:{0:{Count:1b,id:"securitycraft:sc_manual"}},simplyswords:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"simplyswords:runic_grimoire"}}},solcarrot:{0:{Count:1b,id:"solcarrot:food_book",tag:{Enchantments:[]}}},sushigocrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"sushigocrafting:sushigocrafting"}}},twilightdelight:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"twilightdelight:twilight_guide"}}},unusualprehistory:{0:{Count:1b,id:"unusualprehistory:encyclopedia"}}},"eccentrictome:version":1}'), Item.of('eccentrictome:tome'))
+
+		//Easy Wool gin
+		event.replaceInput({id: 'projectred_exploration:wool_gin'}, 'projectred_core:iron_coil', '#forge:ingots/iron')
+
+		//Nametag
 		event.shaped('minecraft:name_tag', [
 			' IS',
 			' PI',
@@ -77,131 +26,106 @@ ServerEvents.recipes(event => {
 			S: 'minecraft:string',
 			P: 'minecraft:paper'
 		})
-		
-		/*
-		  Wool to string
-		*/
-		event.shapeless('4x minecraft:string', ['#minecraft:wool'])
-		
-		/*
-		  Iron Furnace
-		*/
 
+		//IronFurnace Augment Factory
+		event.remove({output: 'ironfurnaces:augment_factory'})
 		event.shaped('2x ironfurnaces:augment_factory', [
-				' C ',
-				'GSG',
-				' C '
-				], {
-			        C: 'minecraft:cobblestone',
-			        G: 'thermal:steel_gear',
-			        S: 'mekanism:energized_smelter'
-			    })
+			' C ',
+			'GSG',
+			' C '
+		], {
+			C: 'minecraft:cobblestone',
+			G: 'thermal:steel_gear',
+			S: 'mekanism:energized_smelter'
+		})
 
-		/*
-		  Bigger reactor
-		*/
-
+		//BiggerReactor Casing
+		event.remove({output: 'biggerreactors:reactor_casing'})
 		event.shaped('4x biggerreactors:reactor_casing', [
-				'SLS',
-				'LGL',
-				'SLS'
-				], {
-			        S: 'thermal:steel_plate',
-			        L: 'thermal:lead_ingot',
-			        G: 'biggerreactors:graphite_block'
-			    })
-
-		/*
-		  Charging Station
-		*/
-
+			'SLS',
+			'LGL',
+			'SLS'
+		], {
+		    S: 'thermal:steel_plate',
+		    L: 'thermal:lead_ingot',
+		    G: 'biggerreactors:graphite_block'
+		})
+		
+		//Charging Station
+		event.remove({output: 'charginggadgets:charging_station'})
 		event.shaped('charginggadgets:charging_station', [
-				' C ',
-				'GFG',
-				' D '
-				], {
-			        C: 'thermal:rf_coil',
-			        G: 'thermal:iron_gear',
-			        F: 'thermal:machine_frame',
-			        D: 'thermal:dynamo_stirling'
-			    })
-
-		/*
-		  Chunk Loader
-		*/
+			' C ',
+			'GFG',
+			' D '
+		], {
+			C: 'thermal:rf_coil',
+			G: 'thermal:iron_gear',
+			F: 'thermal:machine_frame',
+			D: 'thermal:dynamo_stirling'
+		})
+		
+		//Create Chunk Loader
+		event.remove({output: 'createchunkloading:chunk_loader'})
 
 		event.shapeless('createchunkloading:chunk_loader', 'chickenchunks:chunk_loader')
 		event.shapeless('chickenchunks:chunk_loader', 'createchunkloading:chunk_loader')
 		
-		/*
-		  Unpack resonating plates
-		*/
+		//Unpack resonating plates
 		event.shapeless('9x deepresonance:resonating_plate', 'deepresonance:resonating_plate_block')
 		
-		/*
-		   Mob Grinding Utils upgrade
-		*/
-		
+		//MobGrindingUtils looting upgrade
+		event.remove({id: 'mob_grinding_utils:recipe_saw_upgrade_looting'})
 		event.shaped('mob_grinding_utils:saw_upgrade_looting', [
-		        'GDG',
-				'DBD',
-				'GDG'
-				], {
-			        G: '#forge:nuggets/gold',
-			        D: '#forge:dyes/blue',
-			        B: [Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 1).strongNBT(), Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 2).strongNBT(), Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 3).strongNBT()]
-			    })
-				
-		/*
-		   Explorer Compass
-		*/
+			'GDG',
+			'DBD',
+			'GDG'
+		], {
+		    G: '#forge:nuggets/gold',
+		    D: '#forge:dyes/blue',
+		    B: [Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 1).strongNBT(), Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 2).strongNBT(), Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 3).strongNBT()]
+		})
 		
+		//Explorer Compass
+		event.remove({id: 'explorerscompass:explorers_compass'})
 		event.shaped('explorerscompass:explorerscompass', [
-		        ' S ',
-				'NCN',
-				' N '
-				], {
-			        S: 'bloodmagic:demonslate',
-			        N: 'minecraft:netherite_ingot',
-			        C: 'naturescompass:naturescompass'
-				})
-				
-		/*
-		   Time In A Bottle
-		*/
+			' S ',
+			'NCN',
+			' N '
+		], {
+		    S: 'bloodmagic:demonslate',
+		    N: 'minecraft:netherite_ingot',
+		    C: 'naturescompass:naturescompass'
+		})
 		
+		//Time In A Bottle
+		event.remove({id: 'tiab:time_in_a_bottle'})
 		event.shaped('tiab:time_in_a_bottle', [
-		        'SUS',
-				'ABA',
-				'MDM'
-				], {
-			        S: 'mysticalagriculture:speed_iii_augment',
-			        U: 'productivebees:upgrade_time',
-			        A: 'forbidden_arcanus:arcane_crystal_dust',
-					B: 'minecraft:glass_bottle',
-					M: 'forbidden_arcanus:mundabitur_dust',
-					D: 'forbidden_arcanus:deorum_ingot'
-				})
-				
-		/*
-		   Thermal
-		*/
+			'SUS',
+			'ABA',
+			'MDM'
+		], {
+		    S: 'mysticalagriculture:speed_iii_augment',
+		    U: 'productivebees:upgrade_time',
+		    A: 'forbidden_arcanus:arcane_crystal_dust',
+			B: 'minecraft:glass_bottle',
+			M: 'forbidden_arcanus:mundabitur_dust',
+			D: 'forbidden_arcanus:deorum_ingot'
+		})
 		
+		//Thermal Machine Frame
+		event.remove({id: 'thermal:machine_frame'})
 		event.shaped('thermal:machine_frame', [
-		        'IGI',
-				'GTG',
-				'SGS'
-				], {
-			        I: '#forge:ingots/iron',
-			        G: '#forge:glass',
-			        T: '#forge:gears/tin',
-					S: '#forge:ingots/steel'
-				})
-				
-		/*
-		   Phantom Spawn Egg
-		*/
+			'IGI',
+			'GTG',
+			'SGS'
+		], {
+		    I: '#forge:ingots/iron',
+		    G: '#forge:glass',
+		    T: '#forge:gears/tin',
+			S: '#forge:ingots/steel'
+		})
 		
+		//Phantom Spawn Egg
 		event.custom({
 			"type": "bloodmagic:altar",
 			"altarSyphon": 5000,
@@ -216,10 +140,7 @@ ServerEvents.recipes(event => {
 			"upgradeLevel": 0
 		})
 		
-		/*
-		   Mana Cell Mythic Botany compat
-		*/
-		
+		//Mana Cell Mythic Botany compat
 		event.custom({
 			"type": "mythicbotany:infuser",
 			"fromColor": 255,
@@ -250,10 +171,26 @@ ServerEvents.recipes(event => {
 		})
 		
 		/*
-		   Add recipe to disabled patchouli book in case the player doesn't have an eccentric tome
+		   Missing flywheel recipes
 		*/
 		
-		event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"simplyswords:runic_grimoire"}'), ['minecraft:book', 'simplyswords:iron_sai'])
+		event.shaped('tfmg:lead_flywheel', [
+		    'MMM',
+			'MSM',
+			'MMM'
+		], {
+			M: '#forge:ingots/lead',
+			S: 'create:shaft'
+		})
+		
+		event.shaped('tfmg:nickel_flywheel', [
+		    'MMM',
+			'MSM',
+			'MMM'
+		], {
+			M: '#forge:ingots/nickel',
+			S: 'create:shaft'
+		})
 
 		/*
 		  Blue Bomb

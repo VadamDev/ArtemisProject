@@ -1,9 +1,6 @@
 //Author: VadamDev
 
-ServerEvents.recipes(event => {
-	//Useless tf book
-	event.remove({output: Item.of('patchouli:guide_book', '{"patchouli:book":"twilightforest:guide"}')})
-	
+ServerEvents.recipes(event => {	
 	//Remove minecraft recipe, productive bee's one is better
 	event.remove({id: 'minecraft:beehive'})
 		
@@ -12,7 +9,7 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'functionalstorage:oak_drawer_alternate_x2'})
 	event.remove({id: 'functionalstorage:oak_drawer_alternate_x4'})
 	
-	// Black Dye / Fire for Standing Torch
+	//Black Dye / Fire for Standing Torch
 	event.remove({id: 'additional_lights:fire_for_standing_torch_s'})		 
 	event.shaped('additional_lights:fire_for_standing_torch_s', [
 		'W',
@@ -22,7 +19,7 @@ ServerEvents.recipes(event => {
 		C: '#minecraft:coals'
 	})
 		
-	// Structurize / Construction Wand
+	//Structurize / Construction Wand
 	const straightWandRecipe = (output, material) => {		
 		event.shaped(output, [ 'SSM' ], {
 			M: material,
@@ -39,7 +36,24 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'structurize:sceptersteel'})
 	straightWandRecipe('structurize:sceptersteel', '#forge:ingots/iron')
 	
-	// Quark log to stick recipe but without Botania magic wood
+	//Simply Swords / Construction Wand
+	const reverseWandRecipe = (output, material) => {
+		event.shaped(output, ['S  ', ' S ', '  M'], {
+			S: '#forge:rods/wooden',
+			M: material
+		})
+	}
+	
+	event.remove({id: 'simplyswords:iron_spear'})
+	reverseWandRecipe('simplyswords:iron_spear', '#forge:ingots/iron')
+	
+	event.remove({id: 'simplyswords:gold_spear'})
+	reverseWandRecipe('simplyswords:gold_spear', '#forge:ingots/gold')
+	
+	event.remove({id: 'simplyswords:diamond_spear'})
+	reverseWandRecipe('simplyswords:diamond_spear', '#forge:gems/diamond')
+	
+	//EnderIO log to stick recipe but without Botania magic wood
 	event.remove({id: 'enderio:stick'})
 	event.shaped('16x minecraft:stick', [
 		'L',

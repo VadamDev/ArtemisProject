@@ -3,7 +3,7 @@
 ServerEvents.recipes(event => {
 	function removeRecipes() {
 		/*
-		   RFTools
+		  RFTools
 		*/
 		
 		event.remove({id: 'deepresonance:machine_frame'})
@@ -11,8 +11,8 @@ ServerEvents.recipes(event => {
 		event.remove({id: 'rftoolsbuilder:builder'})
 		
 		/*
-		   RFTools Dim,
-		   Endgame stuff
+		  RFTools Dim,
+		  Endgame stuff
 		*/
 		
 		event.remove({id: 'rftoolsdim:empty_dimension_tab'})

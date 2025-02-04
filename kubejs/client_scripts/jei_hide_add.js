@@ -33,6 +33,7 @@ JEIEvents.hideItems(event => {
 		'advancedperipherals:rs_bridge',
 		'tinyredstone:silicon',
 		'tinyredstone:silicon_compound',
+		'createdeco:netherite_sheet',
 		
 		'twilightforest:uncrafting_table',
 		
