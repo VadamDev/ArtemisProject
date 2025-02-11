@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "item": "minecraft:gold_ingot"
-  }
+  },
+  "materialCount": 131072
 }

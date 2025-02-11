@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "item": "minecraft:iron_ingot"
-  }
+  },
+  "materialCount": 196608
 }

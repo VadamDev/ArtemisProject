@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "item": "minecraft:emerald"
-  }
+  },
+  "materialCount": 196608
 }

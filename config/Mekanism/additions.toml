@@ -43,7 +43,7 @@
 		#Config options regarding baby enderman.
 		[additions.spawning.baby-enderman]
 			#Enable the spawning of baby enderman. Think baby zombies.
-			shouldSpawn = true
+			shouldSpawn = false
 			#The multiplier for weight of baby enderman spawns, compared to the adult mob.
 			#Range: 0.0 ~ 100.0
 			weightPercentage = 0.5

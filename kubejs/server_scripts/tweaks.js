@@ -66,9 +66,28 @@ ServerEvents.recipes(event => {
 		
 		//Create Chunk Loader
 		event.remove({output: 'createchunkloading:chunk_loader'})
-
-		event.shapeless('createchunkloading:chunk_loader', 'chickenchunks:chunk_loader')
+		event.shaped('createchunkloading:chunk_loader', [
+			' G ',
+			'GLG',
+			' G '
+		], {
+		    G: 'create:framed_glass',
+			L: 'chickenchunks:chunk_loader'
+		})
+		
 		event.shapeless('chickenchunks:chunk_loader', 'createchunkloading:chunk_loader')
+		
+		//Easy Spot Loader
+		event.remove({id: 'chickenchunks:spot_loader'})
+		event.shapeless('9x chickenchunks:spot_loader', 'chickenchunks:chunk_loader')
+		
+		event.shaped('chickenchunks:chunk_loader', [
+			'SSS',
+			'SSS',
+			'SSS'
+		], {
+		    S: 'chickenchunks:spot_loader'
+		})
 		
 		//Unpack resonating plates
 		event.shapeless('9x deepresonance:resonating_plate', 'deepresonance:resonating_plate_block')

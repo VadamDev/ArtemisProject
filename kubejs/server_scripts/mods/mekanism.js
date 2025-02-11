@@ -39,6 +39,14 @@ ServerEvents.recipes(event => {
 		mekanismCrushing('thermal_extra:dragonsteel_ingot', 'thermal_extra:dragonsteel_dust')
 		mekanismCrushing('thermal:coal_coke', 'tfmg:coal_coke_dust')
 		
+		const missingPlateAndIngotsCrushing = ['signalum', 'lumium', 'enderium', 'bronze', 'electrum', 'invar', 'constantan']
+		missingPlateAndIngotsCrushing.forEach(material => {
+			mekanismCrushing('thermal:' + material + '_plate', 'thermal:' + material + '_dust')
+			mekanismCrushing('thermal:' + material + '_ingot', 'thermal:' + material + '_dust')
+		})
+		
+		event.remove({id: 'mekanism:processing/bronze/dust/from_ingot'})
+		
 		//Silver duplication
 		mekanismCrushing('thermal:silver_ingot', 'thermal:silver_dust')
 		
