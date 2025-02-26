@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
 			}
 		})
 		
-		//New metllurgic Infuser recipe
+		//New metallurgic Infuser recipe
 		event.shaped('mekanism:metallurgic_infuser', [
 		    'RFR',
 			'OSO',

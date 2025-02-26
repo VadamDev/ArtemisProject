@@ -347,7 +347,7 @@ ServerEvents.recipes(event => {
 				"D": { "item": "ad_astra:cable_duct" },
 				"E": { "item": "ad_astra:steel_cable" },
 				"F": { "item": "mekanism:alloy_reinforced" },
-				"G": { "item": "tfmg:resistor" },
+				"G": { "item": "tfmg:machine_input" },
 				"H": { "item": "mekanism:ultimate_energy_cube" },
 				"I": { "item": "draconicevolution:draconium_core" },
 				"J": { "item": "thermal_extra:upgrade_augment" },

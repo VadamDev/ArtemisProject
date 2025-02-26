@@ -24,7 +24,7 @@
   "terminals": {
     "terminalStyle": "full",
     "pinAutoCraftedItems_comment": "Pin items that the player auto-crafts to the top of the terminal",
-    "pinAutoCraftedItems": true
+    "pinAutoCraftedItems": false
   },
   "search": {
     "searchModNameInTooltips_comment": "Should the mod name be included when searching in tooltips.",

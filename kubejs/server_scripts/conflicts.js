@@ -53,12 +53,9 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'simplyswords:diamond_spear'})
 	reverseWandRecipe('simplyswords:diamond_spear', '#forge:gems/diamond')
 	
-	//EnderIO log to stick recipe but without Botania magic wood
+	//Log to stick recipe but without Botania magic wood
 	event.remove({id: 'enderio:stick'})
-	event.shaped('16x minecraft:stick', [
-		'L',
-		'L'
-	], {
+	event.shaped('16x minecraft:stick', [ 'L', 'L' ], {
 		L: Ingredient.of('#minecraft:logs').subtract(Ingredient.of(['#botania:livingwood_logs', '#botania:dreamwood_logs']))
 	})
 	

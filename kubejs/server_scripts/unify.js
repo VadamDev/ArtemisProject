@@ -52,6 +52,8 @@ ServerEvents.recipes(event => {
 	
 	event.replaceInput({mod: 'createdeco'}, 'create:copper_sheet', '#forge:plates/copper')
 	event.replaceInput({mod: 'createdeco'}, 'create:iron_sheet', '#forge:plates/iron')
+
+	event.remove({id: 'createaddition:pressing/electrum_ingot'})
 	
 	const missingThermalPlates = ['signalum', 'lumium', 'enderium', 'tin', 'lead', 'silver', 'nickel', 'bronze', 'electrum', 'invar', 'constantan']
 	missingThermalPlates.forEach(metal => {
@@ -166,6 +168,13 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('tfmg:sulfuric_acid', 500), ['#forge:dusts/sulfur', 'tfmg:nitrate_dust', Fluid.water(500)])
 
 	/*
+	  Electrodynamics
+	*/
+
+	const duplicatesRawMaterialBlocks = ['tin', 'lead', 'silver', 'uranium']
+	duplicatesRawMaterialBlocks.forEach(metal => event.remove({id: 'electrodynamics:raw_ore_block_' + metal}))
+
+	/*
 	  Coke
 	*/
 
@@ -213,6 +222,7 @@ ServerEvents.recipes(event => {
 	*/
 	
 	event.remove({id: 'biggerreactors:compat/mekanism/enriching/enrichment_uranium_chunk'})
+	event.remove({id: 'alexscaves:block_of_uranium'})
 	
 	/*
 	  Silicon

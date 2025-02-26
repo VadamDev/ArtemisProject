@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "tag": "forge:ingots/bronze"
-  }
+  },
+  "enabled": false
 }

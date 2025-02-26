@@ -152,3 +152,10 @@
 	# Valid range: 1 to 9223372036854775807 (inclusive)
 	fluidCapacity = 1000
 
+# Recipe related properties
+[recipes]
+	# If enabled, the Frying Pan and Grill will inherit all the cooking recipes from the
+	# vanilla Campfire.
+	# Valid values: true, false
+	inheritCampfireRecipes = true
+

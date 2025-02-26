@@ -25,6 +25,20 @@ ItemEvents.tooltip(event => {
 	addTooltip('bhc:yellow_heart', 1, Text.of('Dropped by bosses').italic().yellow(), true)
 	addTooltip('bhc:green_heart', 1, Text.of('Dropped by the Ender Dragon').italic().green(), true)
 	addTooltip('bhc:blue_heart', 1, Text.of('Dropped by Wardens').italic().blue(), true)
+
+	//TFMG
+	event.add('tfmg:rotor', ['', '§c§nUse it to make the alternator from Create Craft & Additions', ''])
+	event.add('tfmg:stator', ['', '§c§nUses them to make the alternator from Create Craft & Additions', ''])
+
+	//Create Additions
+	event.add('createaddition:connector', ['', '§c2048 FE/t', ''])
+	event.add('createaddition:large_connector', ['', '§c8192 FE/t', ''])
+	event.add('createaddition:modular_accumulator', ['', '§7Capacity: 1M FE per block', '§7Max Size: 5x5x7', ''])
+
+	//Create
+	event.add('create:chromatic_compound', ['', '§fA material used to create §7Shadow Steel §fand §7Refined Radiance§f.', ''])
+	event.add('create:refined_radiance', ['', '§2A chromatic material forged from §aabsorbed light§2.', ''])
+	event.add('create:shadow_steel', ['', '§2A chromatic material forged §ain the void§2.', ''])
 	
 	//TODO: add pipez ?
 })

@@ -16,6 +16,9 @@ ServerEvents.recipes(event => {
 		//Easy Wool gin
 		event.replaceInput({id: 'projectred_exploration:wool_gin'}, 'projectred_core:iron_coil', '#forge:ingots/iron')
 
+		//Convert back Dragon Mounts Eggs to Vanilla Eggs
+		event.shapeless('minecraft:dragon_egg', Item.of('dragonmounts:dragon_egg'))
+
 		//Nametag
 		event.shaped('minecraft:name_tag', [
 			' IS',
@@ -188,11 +191,8 @@ ServerEvents.recipes(event => {
 			},
 			"toColor": 65280
 		})
-		
-		/*
-		   Missing flywheel recipes
-		*/
-		
+
+		//Missing flywheel recipes
 		event.shaped('tfmg:lead_flywheel', [
 		    'MMM',
 			'MSM',
@@ -210,10 +210,8 @@ ServerEvents.recipes(event => {
 			M: '#forge:ingots/nickel',
 			S: 'create:shaft'
 		})
-
-		/*
-		  Blue Bomb
-		*/
+		
+		//Blue Bomb
 		event.custom({
 			type: 'botania:mana_infusion',
 			input: {
