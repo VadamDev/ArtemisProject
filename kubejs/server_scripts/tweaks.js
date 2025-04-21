@@ -134,19 +134,6 @@ ServerEvents.recipes(event => {
 			D: 'forbidden_arcanus:deorum_ingot'
 		})
 		
-		//Thermal Machine Frame
-		event.remove({id: 'thermal:machine_frame'})
-		event.shaped('thermal:machine_frame', [
-			'IGI',
-			'GTG',
-			'SGS'
-		], {
-		    I: '#forge:ingots/iron',
-		    G: '#forge:glass',
-		    T: '#forge:gears/tin',
-			S: '#forge:ingots/steel'
-		})
-		
 		//Phantom Spawn Egg
 		event.custom({
 			"type": "bloodmagic:altar",
@@ -160,6 +147,17 @@ ServerEvents.recipes(event => {
 				"item": "minecraft:phantom_spawn_egg"
 			},
 			"upgradeLevel": 0
+		})
+
+		//Point blank villager workstation
+		event.shaped('pointblank:workstation', [
+			'SSS',
+			' M ',
+			'MCM'
+		], {
+		    S: 'minecraft:smooth_stone_slab',
+		    M: 'pointblank:gunmetal_ingot',
+		    C: 'pointblank:processor'
 		})
 		
 		//Mana Cell Mythic Botany compat
@@ -190,25 +188,6 @@ ServerEvents.recipes(event => {
 				"item": "megacells:mega_mana_cell_housing"
 			},
 			"toColor": 65280
-		})
-
-		//Missing flywheel recipes
-		event.shaped('tfmg:lead_flywheel', [
-		    'MMM',
-			'MSM',
-			'MMM'
-		], {
-			M: '#forge:ingots/lead',
-			S: 'create:shaft'
-		})
-		
-		event.shaped('tfmg:nickel_flywheel', [
-		    'MMM',
-			'MSM',
-			'MMM'
-		], {
-			M: '#forge:ingots/nickel',
-			S: 'create:shaft'
 		})
 		
 		//Blue Bomb

@@ -1,0 +1,10 @@
+{
+  "name": "Nether Quartz",
+  "colors": [
+    "e7e2db",
+    "b4a28c"
+  ],
+  "ingredient": {
+    "tag": "forge:quartz"
+  }
+}

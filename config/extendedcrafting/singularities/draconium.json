@@ -1,0 +1,10 @@
+{
+  "name": "Draconium",
+  "colors": [
+    "7b49ac",
+    "470a77"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/draconium"
+  }
+}

@@ -20,6 +20,51 @@ ServerEvents.recipes(event => {
 			D: 'draconicevolution:draconium_ingot',
 			H: 'bloodmagic:ingot_hellforged'
 		})
+
+		//End game
+		event.custom({
+			"type": "draconicevolution:fusion_crafting",
+			"catalyst": {
+			  "item": "create:shadow_steel"
+			},
+			"ingredients": [
+			  {
+				"item": "kubejs:chaotic_singularity"
+			  },
+			  {
+				"item": "cataclysm:witherite_ingot"
+			  },
+			  {
+				"item": "alexscaves:pure_darkness"
+			  },
+			  {
+				"item": "alexscaves:fissile_core"
+			  },
+			  {
+				"item": "alexscaves:tectonic_shard"
+			  },
+			  {
+				"item": "alexscaves:immortal_embryo"
+			  },
+			  {
+				"item": "cataclysm:ancient_metal_ingot"
+			  },
+			  {
+				"item": "voidscape:astral_crystal"
+			  },
+			  {
+				"item": "rats:idol_of_ratlantis"
+			  },
+			  {
+				"item": "kubejs:chaotic_singularity"
+			  }
+			],
+			"result": {
+			  "item": "kubejs:chaotic_wormhole"
+			},
+			"tier": "CHAOTIC",
+			"total_energy": 2000000000
+		  })
 		
 		/*
 		   Dust Crushing

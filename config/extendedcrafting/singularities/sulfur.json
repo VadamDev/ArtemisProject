@@ -1,0 +1,11 @@
+{
+  "name": "Sulfur",
+  "colors": [
+    "eef071",
+    "c7a94a"
+  ],
+  "ingredient": {
+    "tag": "forge:gems/sulfur"
+  },
+  "materialCount": 262144
+}

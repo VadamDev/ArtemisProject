@@ -7,5 +7,6 @@
   "ingredient": {
     "tag": "forge:ingots/electrum"
   },
-  "enabled": false
+  "materialCount": 131072,
+  "inUltimateSingularity": false
 }

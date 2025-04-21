@@ -6,5 +6,6 @@
   ],
   "ingredient": {
     "item": "minecraft:coal"
-  }
+  },
+  "materialCount": 786432
 }

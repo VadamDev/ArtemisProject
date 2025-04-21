@@ -40,7 +40,11 @@ ItemEvents.tooltip(event => {
 	event.add('create:refined_radiance', ['', '§2A chromatic material forged from §aabsorbed light§2.', ''])
 	event.add('create:shadow_steel', ['', '§2A chromatic material forged §ain the void§2.', ''])
 	
-	//TODO: add pipez ?
+	//Pipez
+	event.add('pipez:basic_upgrade', ['', '§e8 items each 15 ticks', '§b100 mB/t', '§c1024 FE/t', '§a480 mB/t', '', '§7+ Redstone modes', ''])
+    event.add('pipez:improved_upgrade', ['', '§e16 items each 10 ticks', '§b500 mB/t', '§c8192 FE/t', '§a2000 mB/t', '', '§7+ Redstone modes', '§7+ Distribution modes', ''])
+    event.add('pipez:advanced_upgrade', ['', '§e32 items each 5 ticks', '§b2000 mB/t', '§c32768 FE/t', '§a8000 mB/t', '', '§7+ Redstone modes', '§7+ Distribution modes', '§7+ Filter modes', '§7+ Filters', ''])
+    event.add('pipez:ultimate_upgrade', ['', '§e64 items each tick', '§b10000 mB/t', '§c131072 FE/t', '§a40000 mB/t', '', '§7+ Redstone modes', '§7+ Distribution modes', '§7+ Filter modes', '§7+ Filters', ''])
 })
 
 // itemId : id of the item

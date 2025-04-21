@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
 			},
 			"itemInput": {
 				"ingredient": {
-					"item": "draconicevolution:large_chaos_frag"
+					"item": "kubejs:chaotic_wormhole"
 				}
 			},
 			"output": {

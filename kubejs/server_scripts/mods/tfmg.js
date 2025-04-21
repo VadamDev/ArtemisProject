@@ -77,6 +77,25 @@ ServerEvents.recipes(event => {
 
 		//Connector Uses Aluminum instead of Andesite Alloy
 		event.replaceInput([{output: 'createaddition:connector'}, {output: 'createaddition:large_connector'}], 'create:andesite_alloy', '#forge:ingots/aluminum')
+
+		//Missing flywheel recipes
+		event.shaped('tfmg:lead_flywheel', [
+		    'MMM',
+			'MSM',
+			'MMM'
+		], {
+			M: '#forge:ingots/lead',
+			S: 'create:shaft'
+		})
+		
+		event.shaped('tfmg:nickel_flywheel', [
+		    'MMM',
+			'MSM',
+			'MMM'
+		], {
+			M: '#forge:ingots/nickel',
+			S: 'create:shaft'
+		})
 	}
 
 	removeRecipes()

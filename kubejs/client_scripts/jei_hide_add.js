@@ -14,8 +14,7 @@ JEIEvents.hideItems(event => {
 		'tfmg:steel_cable_hub', 'tfmg:aluminum_cable_hub', 'tfmg:steel_casing_cable_hub', 'tfmg:heavy_cable_hub', 'tfmg:cable_tube', 'tfmg:neon_tube', 'tfmg:diagonal_cable_block',
 		'tfmg:capacitor', 'tfmg:converter', 'tfmg:voltmeter', 'tfmg:energy_meter', 'tfmg:fuse_block', 'tfmg:electric_pump', 'tfmg:voltage_observer', 'tfmg:transistor',
 		'tfmg:electric_post', 'tfmg:electric_diode', 'tfmg:generator', 'tfmg:galvanic_cell', 'tfmg:cable_connector', 'tfmg:copper_cable', 'tfmg:resistor', 'tfmg:polarizer',
-		'tfmg:magnetic_ingot', 'tfmg:fuse', 'tfmg:accumulator', 'tfmg:electric_motor', 'tfmg:creative_generator', 'tfmg:debug_source', 'tfmg:debug_electric_block',
-		'tfmg:lithium_charge'
+		'tfmg:fuse', 'tfmg:accumulator', 'tfmg:electric_motor', 'tfmg:creative_generator', 'tfmg:debug_source', 'tfmg:debug_electric_block', 'tfmg:lithium_charge'
 	])
 
 	//Create Additions
