@@ -193,12 +193,7 @@ ServerEvents.recipes(event => {
 				"A": { "item": "ad_astra:desh_plate" },
 				"B": { "item": "mekanism:ultimate_control_circuit" },
 				"C": { "item": "ad_astra:steel_tank" },
-				"D": { 
-					"type": "forge:nbt",
-					"item": "thermal:fluid_cell",
-					"count": 1,
-					"nbt": "{BlockEntityTag:{TankInv:[{Amount:0,Capacity:32000,FluidName:\"minecraft:empty\",Tank:0b}]}}"
-				},
+				"D": { "item": "thermal:fluid_cell" },
 				"E": { "item": "enderio:vibrant_crystal" },
 				"F": { "item": "ad_astra:steel_rod" }
 			},

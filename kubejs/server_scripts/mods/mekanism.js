@@ -38,6 +38,19 @@ ServerEvents.recipes(event => {
 		mekanismCrushing('thermal_extra:twinite_ingot', 'thermal_extra:twinite_dust')
 		mekanismCrushing('thermal_extra:dragonsteel_ingot', 'thermal_extra:dragonsteel_dust')
 		mekanismCrushing('thermal:coal_coke', 'tfmg:coal_coke_dust')
+
+		//Missing soul sand crushing recipe, not using the function above because it needs to be a tag
+		event.custom({
+			"type":"mekanism:crushing",
+			"input": {
+				"ingredient": {
+					"tag": "minecraft:soul_fire_base_blocks"
+				}
+			},
+			"output": {
+				"item": "thermal_extra:soul_sand_dust"
+			}
+		})
 		
 		const missingPlateAndIngotsCrushing = ['signalum', 'lumium', 'enderium', 'bronze', 'electrum', 'invar', 'constantan']
 		missingPlateAndIngotsCrushing.forEach(material => {
