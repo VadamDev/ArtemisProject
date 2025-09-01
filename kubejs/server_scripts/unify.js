@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
 		event.remove({id: 'electrodynamics:plate_' + plateName})
 	})
 	
-	event.remove({id: 'tfmg:sequenced_assembly/heavy_plate'})
+	event.replaceInput({mod: 'tfmg'}, 'tfmg:heavy_plate', '#forge:plates/steel')
 	
 	event.replaceInput({mod: 'createdeco'}, 'create:copper_sheet', '#forge:plates/copper')
 	event.replaceInput({mod: 'createdeco'}, 'create:iron_sheet', '#forge:plates/iron')
@@ -62,6 +62,13 @@ ServerEvents.recipes(event => {
 	
 	event.remove({id: 'createdeco:pressing/netherite_sheet'})
 	event.recipes.createPressing('thermal:netherite_plate', 'minecraft:netherite_ingot')
+
+	event.remove({id: 'tfmg:sequenced_assembly/heavy_plate'})
+	event.recipes.createPressing('thermal:steel_plate', 'mekanism:ingot_steel')
+
+	event.recipes.createPressing('thermal:iron_plate', 'minecraft:iron_ingot')
+	event.recipes.createPressing('thermal:gold_plate', 'minecraft:gold_ingot')
+	event.recipes.createPressing('thermal:copper_plate', 'minecraft:copper_ingot')
 	
 	const missingThermalExtraPlates = ['soul_infused', 'shellite', 'twinite', 'dragonsteel', 'abyssal']
 	missingThermalExtraPlates.forEach(metal => {
