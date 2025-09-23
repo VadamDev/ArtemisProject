@@ -1,5 +1,5 @@
-# Artemis: Project
-Artemis: Project a MC 1.20.1 Modpack
+# Artemis: Continuum
+Artemis: Continuum a MC 1.20.1 Modpack
 
 # Issues
 When reporting an issue, please use (MODPACK_VERSION) - PROBLEM
