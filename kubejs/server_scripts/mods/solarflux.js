@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 			S: 'thermal:silver_ingot'
 		})
 		
-		event.shaped('solarflux:photovoltaic_cell_1', [
+		event.shaped('2x solarflux:photovoltaic_cell_1', [
 			'LLL',
 			'MMM',
 			'RRR'
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 		], {
 			L: '#forge:glass',
 			C: 'solarflux:photovoltaic_cell_2',
-			S: 'create:sturdy_sheet',
+			S: 'mekanism:dust_obsidian',
 			G: 'minecraft:glowstone_dust'
 		})
 		

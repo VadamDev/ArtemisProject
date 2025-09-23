@@ -38,11 +38,11 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.5d
+			y: -2.8749999999999996d
 		}
 		{
 			dependencies: ["4C2C974E8C3F47C3"]
-			description: ["No need of placing a crafting table, when you can directly craft on it !"]
+			description: ["No need of placing a crafting table anymore =)"]
 			id: "1970E9525D8F99FB"
 			shape: "rsquare"
 			size: 1.2d
@@ -51,7 +51,7 @@
 				item: "crafting_on_a_stick:crafting_table"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.8d
 			y: 0.0d
 		}
 		{
@@ -72,7 +72,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.8d
 			y: 0.0d
 		}
 		{
@@ -91,7 +91,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4C2C974E8C3F47C3"]
@@ -104,12 +104,15 @@
 				item: "cookingforblockheads:sink"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 2.1d
+			y: 2.1d
 		}
 		{
 			dependencies: ["4C2C974E8C3F47C3"]
-			description: [""]
+			description: [
+				"Very effective for cable maintenance or just mess with your friends."
+				"Just shrink!"
+			]
 			id: "3A94D02747BAADFA"
 			shape: "octagon"
 			size: 1.4d
@@ -122,8 +125,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
+			x: -2.1d
+			y: 2.1d
 		}
 		{
 			dependencies: ["4C2C974E8C3F47C3"]
@@ -140,15 +143,15 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: -2.1d
+			y: -2.1d
 		}
 		{
 			dependencies: ["4C2C974E8C3F47C3"]
 			description: [
-				"Waystone don't cost XP for traveling, theses are the main way to travel in this modpack."
+				"Waystone don't cost XP for traveling, theses are the main way to travel in this &7"
 				""
-				"&nThey also can be found in villages or structures.&r"
+				"&7&nThey can also be found in villages or structures.&r"
 			]
 			id: "099BEFBBE936D47F"
 			shape: "octagon"
@@ -158,7 +161,96 @@
 				item: "waystones:waystone"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.1d
+			y: -2.1d
+		}
+		{
+			dependencies: [
+				"4C2C974E8C3F47C3"
+				"13D5B41991ADA394"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"With that many mods, your inventory will be quickly full."
+				"Make yourself a backpack which can be upgraded later to expand your inventory"
+			]
+			id: "46489A011D62C2F5"
+			size: 1.2d
+			tasks: [{
+				id: "3C2A06CE7E5C4438"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -3.5999999999999996d
+			y: -1.2d
+		}
+		{
+			dependencies: ["4C2C974E8C3F47C3"]
+			description: ["Early game transport made easy!"]
+			id: "3B46288DBC5CF3B7"
+			size: 1.2d
+			tasks: [{
+				id: "06EB6552E1423490"
+				item: "paraglider:paraglider"
+				type: "item"
+			}]
+			x: -3.5999999999999996d
+			y: 1.2d
+		}
+		{
+			dependencies: ["4C2C974E8C3F47C3"]
+			description: ["Theses drawer can store millions of items with enough upgrades"]
+			id: "3BF881E4FFDF9D3C"
+			size: 1.2d
+			tasks: [{
+				id: "6AEBEFC669FCE8B6"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: 3.5999999999999996d
+			y: -1.2d
+		}
+		{
+			dependencies: ["4C2C974E8C3F47C3"]
+			description: [
+				"Most of \"wiki\" books are stored in the eccentric tome given when you spawn."
+				""
+				"You can also craft one yourself and update it by putting it in a crafting table"
+			]
+			id: "4845297259AF3B3F"
+			size: 1.2d
+			tasks: [{
+				id: "5C8BC8B30116E617"
+				item: {
+					Count: 1
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": { }
+					}
+				}
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 3.5999999999999996d
+			y: 1.2d
+		}
+		{
+			description: [
+				"Rotten Leather can be used to make vanilla Leather."
+				"Very useful if you cannot find cows."
+				""
+				"&8&mSeriously where are they ?!&r&8 :(&r"
+			]
+			id: "13D5B41991ADA394"
+			shape: "gear"
+			size: 0.8d
+			tasks: [{
+				count: 4L
+				id: "18661CD2991DD4E1"
+				item: "forbidden_arcanus:rotten_leather"
+				type: "item"
+			}]
+			x: -4.0d
 			y: -2.0d
 		}
 	]

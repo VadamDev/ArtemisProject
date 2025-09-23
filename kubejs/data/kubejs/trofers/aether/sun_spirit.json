@@ -1,0 +1,17 @@
+{
+    "name": "Sun Spirit Trophy",
+    "entity": {
+        "type": "aether:sun_spirit"
+    },
+    "display": {
+        "scale": 0.2
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#CC610E"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "The Harbinger Trophy",
+    "entity": {
+        "type": "cataclysm:the_harbinger"
+    },
+    "display": {
+        "offset": {
+            "y": 1,
+            "z": -3
+        },
+        "scale": 0.2
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#FFAE2F"
+    }
+}

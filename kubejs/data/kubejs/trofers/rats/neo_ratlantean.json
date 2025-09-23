@@ -1,0 +1,20 @@
+{
+    "name": "Neo-Ratlantean Trophy",
+    "entity": {
+        "type": "rats:neo_ratlantean"
+    },
+    "display": {
+        "offset": {
+            "y": 0.25
+        },
+        "scale": 0.3
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#BEFFFF"
+    }
+}

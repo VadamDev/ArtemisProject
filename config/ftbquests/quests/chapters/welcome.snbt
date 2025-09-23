@@ -10,7 +10,12 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Welcome to Artemis: Project, I hope you will have a great time there ! :)"]
+			description: [
+				"Welcome to Artemis: Continuum, the successor of Artemis: Project."
+				""
+				"I hope you will have a great time there!"
+				"<3"
+			]
 			icon: "ad_astra:moon_globe"
 			id: "7A664C3AB5699FB0"
 			rewards: [
@@ -22,13 +27,7 @@
 				}
 				{
 					id: "30FB7EB224B59BF5"
-					item: {
-						Count: 1
-						id: "minecraft:stone_sword"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "rubber_duck:rubber_duck_item"
 					type: "item"
 				}
 			]
@@ -39,7 +38,7 @@
 				title: "Click Me"
 				type: "checkmark"
 			}]
-			title: "Welcome to: Artemis Project"
+			title: "&r&7Welcome to: &fArtemis &dContinuum&r"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -48,7 +47,8 @@
 			description: [
 				"This modpack features a small questline thats helps the progression."
 				""
-				"It's absolutly not mandatory to complete / follow them but can act as a path for players not familiar with mods."
+				"&7It's absolutly not mandatory to complete / follow them but can act as a path for players not familiar with mods.&r"
+				"&nHowever, some quests have rewards!"
 			]
 			disable_toast: true
 			icon: "ftbquests:book"
@@ -59,7 +59,8 @@
 				title: "Click Me"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			title: "Quests"
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -78,8 +79,34 @@
 				title: "Click Me"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			title: "Teams"
+			x: 2.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["7A664C3AB5699FB0"]
+			description: [
+				"This pack provides a way to claim land."
+				"&7Since \"Chicken Chunks 1.8+\" has been removed, chunk loading is done by claiming and force loading chunks with FTB Chunks.&r"
+				""
+				"Open journey map and click \"FTBChunks claiming mode\" on the right sidebar to claim land"
+				""
+				"- Left click to claim"
+				"- SHIFT + Left Click to force load the chunk"
+				"- Right click to unclaim"
+			]
+			icon: "ad_astra:earth_globe"
+			id: "68942F45BED87A23"
+			shape: "hexagon"
+			size: 1.8d
+			tasks: [{
+				id: "77333EA451218A82"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			title: "Claims"
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "Welcome"

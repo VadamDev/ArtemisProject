@@ -1,0 +1,21 @@
+{
+    "name": "Netherite Monstrosity Trophy",
+    "entity": {
+        "type": "cataclysm:netherite_monstrosity"
+    },
+    "display": {
+        "offset": {
+            "y": 1,
+            "z": 5
+        },
+        "scale": 0.09
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#383638"
+    }
+}

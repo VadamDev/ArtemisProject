@@ -98,6 +98,9 @@
 	},
 	
 	//Unknown seeds
+	"mysticalagriculture:aluminum": {
+		"enabled": false
+	},
 	"mysticalagriculture:rubber": {
 		"enabled": false
 	},

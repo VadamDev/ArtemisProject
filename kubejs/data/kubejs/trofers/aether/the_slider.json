@@ -1,0 +1,20 @@
+{
+    "name": "The Slider Trophy",
+    "entity": {
+        "type": "aether:slider"
+    },
+    "display": {
+        "offset": {
+            "y": 1.5
+        },
+        "scale": 0.2
+    },
+    "animation": {
+        "type": "tumbling",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#848484"
+    }
+}

@@ -1,30 +1,14 @@
 //Author: VadamDev
 
 JEIEvents.hideItems(event => {
-	//TFMG
-	event.hide(['tfmg:steel_helmet', 'tfmg:steel_chestplate', 'tfmg:steel_leggings', 'tfmg:steel_boots'])
-	event.hide(['tfmg:steel_axe', 'tfmg:steel_hoe', 'tfmg:steel_shovel', 'tfmg:steel_pickaxe', 'tfmg:steel_sword'])
+	//KubeJS
+	event.hide(['kubejs:incomplete_smeltery_controller', 'kubejs:blueskies_portal_mix', 'kubejs:bedrock'])
 
-	event.hide([
-		//Unify
-		'tfmg:sulfur_dust', 'tfmg:bitumen', 'tfmg:coal_coke', 'tfmg:coal_coke_block',
-
-		//Electric Items
-		'tfmg:light_bulb', 'tfmg:rgb_light_bulb', 'tfmg:traffic_light', 'tfmg:segmented_display', 'tfmg:copycat_cable_block', 'tfmg:brass_cable_hub', 'tfmg:copper_cable_hub', 
-		'tfmg:steel_cable_hub', 'tfmg:aluminum_cable_hub', 'tfmg:steel_casing_cable_hub', 'tfmg:heavy_cable_hub', 'tfmg:cable_tube', 'tfmg:neon_tube', 'tfmg:diagonal_cable_block',
-		'tfmg:capacitor', 'tfmg:converter', 'tfmg:voltmeter', 'tfmg:energy_meter', 'tfmg:fuse_block', 'tfmg:electric_pump', 'tfmg:voltage_observer', 'tfmg:transistor',
-		'tfmg:electric_post', 'tfmg:electric_diode', 'tfmg:generator', 'tfmg:galvanic_cell', 'tfmg:cable_connector', 'tfmg:copper_cable', 'tfmg:resistor', 'tfmg:polarizer',
-		'tfmg:fuse', 'tfmg:accumulator', 'tfmg:electric_motor', 'tfmg:creative_generator', 'tfmg:debug_source', 'tfmg:debug_electric_block', 'tfmg:lithium_charge'
-	])
-
-	//Create Additions
-	event.hide(['createaddition:capacitor', 'createaddition:zinc_sheet'])
-	
 	//Ad Astra
 	event.hide(['ad_astra:coal_generator', 'ad_astra_giselle_addon:gravity_normalizer'])
 	
 	//Draconic
-	event.hide(['draconicevolution:generator'])
+	event.hide('draconicevolution:generator')
 	
 	//MFFS
 	event.hide('mffs:steel_compound')
@@ -37,15 +21,32 @@ JEIEvents.hideItems(event => {
 	
 	//Ender IO
 	event.hide(['enderio:primitive_alloy_smelter', 'enderio:energy_conduit', 'enderio:silicon'])
+
+	//Ballistix
+	event.hide([
+		'ballistix:anvil', 'ballistix:grenadeanvil', 'ballistix:minecartanvil', 'ballistix:rejuvination', 'ballistix:minecartrejuvination',
+		'ballistix:darkmatter', 'ballistix:minecartdarkmatter'
+	])
 	
 	//Repetitive Items
-	event.hide(['ae2:facade', 'enderio:filled_soul_vial', 'enderio:broken_spawner'])
+	event.hide(['tconstruct:potion_bucket', 'ae2:facade', 'evilcraft:dark_tank', 'enderio:filled_soul_vial', 'enderio:broken_spawner', 'reliquary:mob_charm_fragment'])
+
+	//Compact Mekanism Machines
+	event.hide([
+		'compactmekanismmachines:compressed_wind_generator_x128',
+		'compactmekanismmachines:compressed_wind_generator_x512',
+		'compactmekanismmachines:compressed_wind_generator_x2048',
+		'compactmekanismmachines:compressed_wind_generator_x8192',
+		'compactmekanismmachines:compressed_wind_generator_x32768',
+		'compactmekanismmachines:compressed_wind_generator_x131072',
+		'compactmekanismmachines:compressed_wind_generator_x532480',
+
+		'compactmekanismmachines:compact_fission_reactor'
+	])
 	
 	//Random Disabled Items
 	event.hide([
 		'advancedperipherals:rs_bridge',
-		'tinyredstone:silicon',
-		'tinyredstone:silicon_compound',
 		'createdeco:netherite_sheet',
 		
 		'twilightforest:uncrafting_table',
@@ -58,7 +59,11 @@ JEIEvents.hideItems(event => {
 
 		'createendertransmission:chunk_loader',
 		'createendertransmission:item_transmitter',
-		'createendertransmission:fluid_transmitter'
+		'createendertransmission:fluid_transmitter',
+
+		'mae2:4x_crafting_accelerator',
+
+		'craftingstation:crafting_station'
 	])
 })
 
@@ -68,7 +73,8 @@ JEIEvents.addItems(event => {
 
 	event.add([
 		Item.of('ae2:facade', '{item:"minecraft:stone"}'),
-		Item.of('enderio:broken_spawner')
+		Item.of('enderio:broken_spawner'),
+		Item.of('evilcraft:dark_tank')
 	])
 })
 

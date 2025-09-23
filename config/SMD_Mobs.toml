@@ -1,0 +1,16 @@
+
+[Passives]
+	duck_enabled = true
+	chickshroom_enabled = true
+	red_slime_enabled = true
+
+[Hostiles]
+	shroombie_enabled = true
+	creeper_shade_enabled = true
+	dungeon_warrior_enabled = true
+	dungeon_archer_enabled = true
+	blazing_wither_skele_enabled = true
+
+["Portal Mobs"]
+	random_portal_mob = true
+

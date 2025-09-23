@@ -1,0 +1,22 @@
+{
+    "name": "Ancient Remnant Trophy",
+    "entity": {
+        "type": "cataclysm:ancient_remnant"
+    },
+    "display": {
+        "offset": {
+            "x": 1.7,
+            "y": 1,
+            "z": 0.8
+        },
+        "scale": 0.09
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#BBAE8F"
+    }
+}

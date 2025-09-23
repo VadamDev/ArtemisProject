@@ -1,0 +1,17 @@
+{
+    "name": "Black Death Trophy",
+    "entity": {
+        "type": "rats:black_death"
+    },
+    "display": {
+        "scale": 0.3
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#1B1B1B"
+    }
+}

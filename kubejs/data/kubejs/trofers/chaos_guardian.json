@@ -1,0 +1,20 @@
+{
+    "name": "Chaos Guardian Trophy",
+    "entity": {
+        "type": "draconicevolution:draconic_guardian"
+    },
+    "display": {
+        "offset": {
+            "y": 1.75
+        },
+        "scale": 0.075
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#7F0000"
+    }
+}

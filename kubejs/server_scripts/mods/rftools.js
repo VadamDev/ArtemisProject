@@ -6,8 +6,6 @@ ServerEvents.recipes(event => {
 		  RFTools
 		*/
 		
-		event.remove({id: 'deepresonance:machine_frame'})
-		
 		event.remove({id: 'rftoolsbuilder:builder'})
 		
 		/*
@@ -25,16 +23,6 @@ ServerEvents.recipes(event => {
 	function addRecipes() {
 		//New machine frame recipes that respect modpack progression
 		event.replaceInput({id: 'rftoolsbase:machine_frame'}, '#c:iron_ingots', '#forge:ingots/steel')
-		
-		event.shaped('deepresonance:machine_frame', [
-			'IPI',
-			'PFP',
-			'IPI'
-		], {
-			I: '#forge:ingots/iron',
-			P: 'deepresonance:resonating_plate',
-			F: 'rftoolsbase:machine_frame'
-		})
 		
 		//New, harder recipe for the rftools builder
 		event.shaped('rftoolsbuilder:builder', [
@@ -92,11 +80,11 @@ ServerEvents.recipes(event => {
 			'CFC',
 			'AOA'
 		], {
-			S: 'extendedcrafting:ultimate_singularity',
+			S: 'kubejs:chaotic_singularity',
 			C: 'mekanism:ultimate_control_circuit',
 			F: 'rftoolsbase:machine_frame',
 			A: 'mekanism:pellet_antimatter',
-			O: 'draconicevolution:large_chaos_frag'
+			O: 'mekanism_extras:alloy_shining'
 		})
 	}
 

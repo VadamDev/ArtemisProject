@@ -13,83 +13,63 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"4ECA31E531CB3299"
-				"072E0678B100C2B4"
-				"6B7B4570FD985951"
-				"38F90BD9671EF3EC"
-			]
 			icon_scale: 0.8d
 			id: "31179502DE552CD6"
 			shape: "diamond"
-			size: 2.5d
+			size: 2.0d
 			tasks: [{
 				id: "007160B59E43304C"
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"7A664C3AB5699FB0"
-				"5605FA2AEEB4E3E2"
-			]
-			id: "34393E8FCF59646D"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "1475B0577B18B13D"
-				item: "extendedcrafting:elite_table"
-				type: "item"
-			}]
-			title: "A better(?) crafting table"
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["34393E8FCF59646D"]
 			id: "072E0678B100C2B4"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				id: "522EE230318F4DCA"
 				item: "ad_astra:rocket_nose_cone"
 				type: "item"
 			}]
-			x: -0.75d
-			y: -2.25d
+			x: 1.25d
+			y: -1.875d
 		}
 		{
-			dependencies: ["34393E8FCF59646D"]
 			id: "4ECA31E531CB3299"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				count: 4L
 				id: "766B05CFBD4F42A5"
 				item: "ad_astra:rocket_fin"
 				type: "item"
 			}]
-			x: -0.75d
-			y: 0.75d
+			x: 1.25d
+			y: 1.875d
 		}
 		{
-			dependencies: ["34393E8FCF59646D"]
 			id: "6B7B4570FD985951"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				id: "470726DFE81E45F6"
 				item: "ad_astra:steel_engine"
 				type: "item"
 			}]
-			x: -0.75d
-			y: 2.25d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["31179502DE552CD6"]
+			dependencies: [
+				"31179502DE552CD6"
+				"072E0678B100C2B4"
+				"38F90BD9671EF3EC"
+				"6B7B4570FD985951"
+				"4ECA31E531CB3299"
+			]
 			icon_scale: 0.8d
 			id: "33F7A258FC159925"
 			shape: "gear"
@@ -103,23 +83,23 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["33F7A258FC159925"]
-			description: ["I hope you didn't forgot oxygen"]
+			dependencies: ["2A2E2F87DC599203"]
+			description: ["You made history!"]
 			id: "62672A38E6C0D08B"
 			shape: "square"
-			size: 1.25d
+			size: 2.75d
 			tasks: [{
-				biome: "ad_astra:lunar_wastelands"
+				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_sand"
-				id: "3ACC02A2BF93FD46"
-				type: "biome"
+				id: "10DC4E284797CFC1"
+				type: "dimension"
 			}]
-			title: "Reach the Moon"
-			x: 8.75d
+			title: "Apollo 11"
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -129,58 +109,57 @@
 			shape: "diamond"
 			size: 1.75d
 			tasks: [{
-				count: 48L
+				count: 69L
 				id: "2F0C6CACD0B86D0E"
-				item: { Count: 48, id: "ad_astra:desh_ingot" }
+				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			x: 11.375d
+			x: 11.875d
 			y: 0.0d
 		}
 		{
 			dependencies: ["62672A38E6C0D08B"]
 			id: "4F18D2A279617B8A"
 			shape: "square"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "6E7344A520C5E313"
 				item: "ad_astra:moon_globe"
 				type: "item"
 			}]
-			x: 8.776785714285715d
-			y: 2.0446428571428683d
+			x: 8.973214285714292d
+			y: 2.5000000000000213d
 		}
 		{
 			dependencies: ["4647E936F5A317AE"]
 			id: "553A2FC615DEA752"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				count: 2L
 				id: "67FA3E2FF2615939"
 				item: "ad_astra:desh_tank"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.5d
+			x: 12.375d
+			y: -1.875d
 		}
 		{
 			dependencies: ["4647E936F5A317AE"]
 			id: "5C35A8EE4F3C5C6C"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				id: "1AD27AD583F9B230"
 				item: "ad_astra:desh_engine"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.5d
+			x: 12.375d
+			y: 1.875d
 		}
 		{
 			dependencies: [
 				"553A2FC615DEA752"
-				"4647E936F5A317AE"
 				"5C35A8EE4F3C5C6C"
 			]
 			icon_scale: 0.8d
@@ -196,62 +175,56 @@
 				}
 				type: "item"
 			}]
-			x: 16.25d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["34393E8FCF59646D"]
 			id: "38F90BD9671EF3EC"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				count: 2L
 				id: "72F00535D44D9092"
 				item: { Count: 2, id: "ad_astra:steel_tank" }
 				type: "item"
 			}]
-			x: -0.75d
-			y: -0.75d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5124A519D63E0FE0"]
 			icon: "ad_astra:mars_sand"
 			id: "0F9459C7E4844C38"
 			shape: "square"
-			size: 1.25d
-			tasks: [
-				{
-					biome: "ad_astra:martian_canyon_creek"
-					id: "46367CECF5757B5F"
-					type: "biome"
-				}
-				{
-					biome: "ad_astra:martian_polar_caps"
-					id: "56B61C2CD00CA8B8"
-					type: "biome"
-				}
-				{
-					biome: "ad_astra:martian_wastelands"
-					id: "7B58CE9E82102BCA"
-					type: "biome"
-				}
-			]
+			size: 2.75d
+			tasks: [{
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_sand"
+				id: "5299AC48663C3FE5"
+				type: "dimension"
+			}]
 			title: "Reach Mars"
-			x: 19.5d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0F9459C7E4844C38"]
+			icon: "ad_astra:mars_globe"
 			id: "0B9CF956B3C4514D"
-			shape: "square"
-			size: 1.5d
-			tasks: [{
-				id: "1B7393871081F3CF"
+			rewards: [{
+				id: "246224FA6323EABB"
 				item: "ad_astra:mars_globe"
 				type: "item"
 			}]
-			x: 19.526785714285708d
-			y: 2.0089285714285836d
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				id: "364435C467A9C7A7"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			x: 18.04464285714287d
+			y: 2.500000000000014d
 		}
 		{
 			dependencies: ["0F9459C7E4844C38"]
@@ -265,41 +238,40 @@
 				item: { Count: 64, id: "ad_astra:ostrum_ingot" }
 				type: "item"
 			}]
-			x: 21.875d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["361C973AFB3C20CE"]
 			id: "61C58A2B16CCF7CE"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				count: 2L
 				id: "1DDF461E0F08550A"
 				item: "ad_astra:ostrum_tank"
 				type: "item"
 			}]
-			x: 24.0d
-			y: -1.5d
+			x: 22.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["361C973AFB3C20CE"]
 			id: "337B6CBE6EA58BBA"
-			shape: "rsquare"
-			size: 1.5d
+			shape: "octagon"
+			size: 1.25d
 			tasks: [{
 				id: "2FD951F5BAB3FAC8"
 				item: "ad_astra:ostrum_engine"
 				type: "item"
 			}]
-			x: 24.0d
-			y: 1.5d
+			x: 22.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"61C58A2B16CCF7CE"
 				"337B6CBE6EA58BBA"
-				"4647E936F5A317AE"
 			]
 			icon_scale: 0.75d
 			id: "117A9DE9AA8062DB"
@@ -314,7 +286,7 @@
 				}
 				type: "item"
 			}]
-			x: 27.25d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
@@ -322,33 +294,40 @@
 			icon: "ad_astra:venus_sand"
 			id: "050A64D65213B5E2"
 			shape: "square"
-			size: 1.5d
+			size: 2.75d
 			tasks: [{
-				biome: "ad_astra:venus_wastelands"
-				id: "5D1A70652E1FFA09"
-				type: "biome"
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_sand"
+				id: "2D7A52F0AC6C0668"
+				type: "dimension"
 			}]
 			title: "Reach Venus"
-			x: 30.75d
-			y: 0.0d
+			x: 27.794642857142875d
+			y: 1.4210854715202004E-14d
 		}
 		{
 			dependencies: ["050A64D65213B5E2"]
+			icon: "ad_astra:venus_globe"
 			id: "5DB66DEACF7EEA06"
-			shape: "square"
-			size: 1.75d
-			tasks: [{
-				id: "3ACFC3C2EE413470"
+			rewards: [{
+				id: "13293C427324D4AB"
 				item: "ad_astra:venus_globe"
 				type: "item"
 			}]
-			x: 30.78571428571425d
-			y: 1.9464285714285765d
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				id: "1D48CB517A5CF2B3"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			x: 27.758928571428584d
+			y: 2.5000000000000213d
 		}
 		{
 			dependencies: ["050A64D65213B5E2"]
 			id: "1970BD6BCE96356F"
-			shape: "hexagon"
+			shape: "diamond"
 			size: 2.0d
 			tasks: [{
 				count: 170L
@@ -356,37 +335,37 @@
 				item: { Count: 170, id: "ad_astra:calorite_ingot" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 31.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1970BD6BCE96356F"]
 			icon_scale: 0.8d
 			id: "1E6B07F8FED3355E"
-			shape: "diamond"
-			size: 3.0d
+			shape: "octagon"
+			size: 1.75d
 			tasks: [{
 				id: "7D23D8998BE2BD9D"
 				item: "ad_astra:calorite_engine"
 				type: "item"
 			}]
-			x: 36.0d
-			y: 2.0d
+			x: 32.375d
+			y: 2.625d
 		}
 		{
 			dependencies: ["1970BD6BCE96356F"]
 			icon_scale: 0.8d
 			id: "29E2DCD2B6E245FD"
-			shape: "diamond"
-			size: 3.0d
+			shape: "octagon"
+			size: 1.75d
 			tasks: [{
 				count: 2L
 				id: "34ACE259123CEDCA"
 				item: { Count: 2, id: "ad_astra:calorite_tank" }
 				type: "item"
 			}]
-			x: 36.0d
-			y: -2.0d
+			x: 32.375d
+			y: -2.625d
 		}
 		{
 			dependencies: [
@@ -394,9 +373,9 @@
 				"29E2DCD2B6E245FD"
 				"1E6B07F8FED3355E"
 			]
-			icon_scale: 0.75d
+			icon_scale: 0.65d
 			id: "4CE00B90BCF076B4"
-			shape: "octagon"
+			shape: "gear"
 			size: 4.5d
 			tasks: [{
 				id: "4828788B4B720BDC"
@@ -407,8 +386,8 @@
 				}
 				type: "item"
 			}]
-			x: 40.0d
-			y: 0.0d
+			x: 34.90178571428574d
+			y: -0.017857142857124586d
 		}
 		{
 			dependencies: ["4CE00B90BCF076B4"]
@@ -417,41 +396,41 @@
 				""
 				"The end ..?"
 			]
-			icon: "ad_astra:permafrost"
+			icon: "ad_astra:glacio_stone"
 			id: "415E0A85DED3645B"
 			shape: "square"
-			size: 2.25d
-			tasks: [
-				{
-					biome: "ad_astra:glacio_ice_peaks"
-					id: "359CC914AA9D1A78"
-					type: "biome"
-				}
-				{
-					biome: "ad_astra:glacio_snowy_barrens"
-					id: "07C93AAF5A52F02F"
-					type: "biome"
-				}
-			]
+			size: 2.75d
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				icon: "ad_astra:glacio_stone"
+				id: "4A2861C8CA460965"
+				type: "dimension"
+			}]
 			title: "Reach Glacio"
-			x: 44.25d
-			y: 0.0d
+			x: 39.1875d
+			y: 0.01785714285716722d
 		}
 		{
 			dependencies: ["415E0A85DED3645B"]
+			icon: "ad_astra:glacio_globe"
 			id: "485CDD3D7D954A86"
-			shape: "square"
-			size: 1.5d
-			tasks: [{
-				id: "64EED0F0B85194E3"
+			rewards: [{
+				id: "2262946D9A20FCD7"
 				item: "ad_astra:glacio_globe"
 				type: "item"
 			}]
-			x: 44.25d
-			y: 2.5d
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				id: "30579F59B86C5DB1"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			x: 39.22321428571428d
+			y: 2.4821428571428825d
 		}
 		{
-			dependencies: ["485CDD3D7D954A86"]
+			dependencies: ["415E0A85DED3645B"]
 			hide_until_deps_complete: true
 			icon: "ad_astra:earth_globe"
 			id: "0946EAD7B315C655"
@@ -490,8 +469,77 @@
 				}
 			]
 			title: "Collect them all!"
-			x: 44.25d
-			y: 4.75d
+			x: 39.187500000000014d
+			y: -2.9821428571428257d
+		}
+		{
+			dependencies: ["33F7A258FC159925"]
+			id: "2A2E2F87DC599203"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2BBA6B9CE033DD62"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62672A38E6C0D08B"]
+			id: "75473EC6A1C53C8A"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "ad_astra:moon_orbit"
+				icon: "ad_astra:iron_plating"
+				id: "58B24C83563D1A01"
+				type: "dimension"
+			}]
+			x: 10.187500000000007d
+			y: 2.500000000000014d
+		}
+		{
+			dependencies: ["0F9459C7E4844C38"]
+			id: "1D643C94A0692327"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "ad_astra:mars_orbit"
+				icon: "ad_astra:steel_plating"
+				id: "6AED85D47CBFCED7"
+				type: "dimension"
+			}]
+			x: 19.375d
+			y: 2.5d
+		}
+		{
+			dependencies: ["050A64D65213B5E2"]
+			id: "5D32BD127B2E07B5"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "ad_astra:venus_orbit"
+				icon: "ad_astra:ostrum_plating"
+				id: "51C68D65599354AC"
+				type: "dimension"
+			}]
+			x: 29.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["415E0A85DED3645B"]
+			id: "1C4E4E398954F991"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "ad_astra:glacio_orbit"
+				icon: "ad_astra:calorite_plating"
+				id: "0843B4367BFEBFA0"
+				type: "dimension"
+			}]
+			x: 40.625d
+			y: 2.5d
 		}
 	]
 	title: "Space Exploration"

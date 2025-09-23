@@ -1,0 +1,20 @@
+{
+    "name": "Ratlantean Automaton Trophy",
+    "entity": {
+        "type": "rats:ratlantean_automaton"
+    },
+    "display": {
+        "offset": {
+            "y": 1
+        },
+        "scale": 0.15
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#C4FF80"
+    }
+}

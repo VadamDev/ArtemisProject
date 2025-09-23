@@ -1,0 +1,17 @@
+{
+    "name": "Flying Dutchrat Trophy",
+    "entity": {
+        "type": "rats:dutchrat"
+    },
+    "display": {
+        "scale": 0.25
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#52A853"
+    }
+}

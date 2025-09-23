@@ -3,214 +3,341 @@
 	default_quest_shape: ""
 	filename: "steel_production"
 	group: "28ECA53A292863BA"
-	icon: "thermal:coal_coke"
+	icon: "tconstruct:ingot_sand_cast"
 	id: "66B45F85246712A8"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7A664C3AB5699FB0"]
-			description: ["Make some cast iron using a heated basin"]
+			description: [
+				"Make your first steps in the Create mod!"
+				""
+				"&lIf you are lost:&r"
+				"Create use a well made system called \"Ponder\" which explains how each item works."
+				""
+				"Hold \"Z\" while hovering a compatible item in your inventory or JEI."
+			]
+			icon: "create:andesite_alloy"
 			id: "11AAD82270617ADB"
+			rewards: [
+				{
+					count: 64
+					id: "7C5E615DC4AAF8EE"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "62038E6C2FE16CEC"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
-				count: 30L
+				count: 16L
 				id: "3DA71492B8F24616"
-				item: { Count: 30, id: "tfmg:cast_iron_ingot" }
+				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			title: "Make some cast iron"
+			title: "Make some andesite alloys"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["11AAD82270617ADB"]
-			description: [
-				"Build your first coke oven."
-				"More explanations available with Create Ponder (hold Z on the item)"
-			]
-			id: "59EFE894F414D463"
-			shape: "square"
-			size: 2.0d
-			tasks: [{
-				count: 9L
-				id: "1F545649E2A4E1B8"
-				item: { Count: 9, id: "tfmg:coke_oven" }
-				type: "item"
-			}]
-			title: "Make a Coke Oven"
-			x: 3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["59EFE894F414D463"]
-			id: "29CF2EC67D96BF72"
-			size: 1.25d
-			tasks: [{
-				id: "00057D34B4A00B0E"
-				item: "thermal:coal_coke"
-				type: "item"
-			}]
-			title: "Coke Production"
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["29CF2EC67D96BF72"]
-			id: "72ACCE7627E5EA6A"
-			shape: "rsquare"
-			size: 1.75d
-			tasks: [{
-				count: 2L
-				id: "6912AD914BA6F444"
-				item: "tfmg:coal_coke_dust"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 0.0d
-		}
-		{
 			dependencies: [
-				"4302C605B3824F68"
-				"2F0564A9633CFA08"
+				"6B23A2F54A10F4F7"
+				"707E6EEEF98EC6A1"
+				"41FB61E127A312D0"
 			]
-			id: "5ABDF685DCC3C788"
-			shape: "rsquare"
-			size: 1.75d
-			tasks: [{
-				id: "11A5D6E4F0163A96"
-				item: "tfmg:blasting_mixture"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["7A664C3AB5699FB0"]
-			id: "4302C605B3824F68"
-			tasks: [{
-				id: "64A2235186E91E56"
-				item: "tfmg:limesand"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A664C3AB5699FB0"]
-			id: "2F0564A9633CFA08"
-			tasks: [{
-				count: 3L
-				id: "1D88E5A8483618EA"
-				item: { Count: 3, id: "create:crushed_raw_iron" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"72ACCE7627E5EA6A"
-				"5ABDF685DCC3C788"
-				"0B767681E8A8D128"
-			]
-			description: [
-				"Build a Blast Furnace."
-				"Build instructions are available by pondering on the Blast Furnace Output!"
-			]
-			icon_scale: 0.9d
-			id: "09435A046F09076E"
-			shape: "diamond"
-			size: 2.5d
-			tasks: [{
-				id: "3704ECCBCBD52781"
-				item: "tfmg:blast_furnace_output"
-				type: "item"
-			}]
-			title: "Build a Blast Furnace"
-			x: 9.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7A664C3AB5699FB0"]
-			id: "0B767681E8A8D128"
-			shape: "rsquare"
-			size: 1.75d
-			tasks: [{
-				count: 32L
-				id: "5EC2DFF5BE7BB7A6"
-				item: { Count: 32, id: "tfmg:fireproof_brick" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 1.75d
-		}
-		{
-			dependencies: ["09435A046F09076E"]
-			icon: "tfmg:molten_steel_bucket"
-			id: "48D923F3BA6936C0"
-			shape: "octagon"
-			size: 2.25d
-			tasks: [{
-				id: "6BB917DF5CABE530"
-				title: "Molten Steel"
-				type: "checkmark"
-			}]
-			x: 12.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["48D923F3BA6936C0"]
-			id: "4DD7D067088146E1"
-			shape: "square"
-			size: 2.0d
-			tasks: [{
-				id: "65845E12B57F33E7"
-				item: "tfmg:casting_spout"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["36049BB059797D03"]
-			description: ["Items can be removed from the container using a funnel"]
-			id: "2980FD569D24BE2F"
-			shape: "square"
-			size: 2.0d
-			tasks: [{
-				id: "08BA0EC4169ED434"
-				item: "tfmg:casting_basin"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["4DD7D067088146E1"]
-			id: "36049BB059797D03"
-			tasks: [{
-				id: "41F491009B701479"
-				item: "tfmg:ingot_mold"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["2980FD569D24BE2F"]
 			description: ["New technologies ahead :)"]
 			id: "1BAFEC6886EE2343"
-			shape: "pentagon"
+			min_required_dependencies: 1
+			shape: "hexagon"
 			size: 3.0d
 			tasks: [{
 				id: "574E72760B77EE3E"
 				item: "mekanism:ingot_steel"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 3.0d
+			x: 8.892857142857153d
+			y: -3.339285714285694d
+		}
+		{
+			dependencies: ["11AAD82270617ADB"]
+			description: [
+				"Shafts are used to transport rotational force in the create mod."
+				"You are gonna need a lot of them"
+			]
+			id: "68D3589FF7EEE5FF"
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				count: 8L
+				id: "7964EAE6F4982530"
+				item: { Count: 8, id: "create:shaft" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["11AAD82270617ADB"]
+			description: ["You are gonna like them"]
+			id: "37D6D77415ADD3E3"
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				count: 8L
+				id: "6C67D8A9ECD44F31"
+				item: { Count: 8, id: "create:andesite_casing" }
+				type: "item"
+			}]
+			x: 1.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["11AAD82270617ADB"]
+			id: "69A442072DF78A8A"
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				id: "1A976E2440AD9F06"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"68D3589FF7EEE5FF"
+				"37D6D77415ADD3E3"
+			]
+			description: ["Bonk"]
+			id: "4710FAA6F3DCD454"
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				id: "468F154E817656D1"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["4710FAA6F3DCD454"]
+			id: "1FF2FE6AAFD7DA10"
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				id: "37E2B55681BC53A0"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.25d
+		}
+		{
+			dependencies: ["06D1EE159048075E"]
+			description: ["Your first steps into Tinker Construct!"]
+			id: "251C21B236FCB7E1"
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				count: 128L
+				id: "1FB4E9F2A8ED05C1"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 1.875d
+			y: 8.125d
+		}
+		{
+			dependencies: ["1FF2FE6AAFD7DA10"]
+			description: [
+				"Getting Hot!"
+				""
+				"A blaze burner is crafted by right clicking on a \"Blaze\" with a \"Empty Blaze Burner\"!"
+			]
+			id: "06D1EE159048075E"
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				id: "29EBCF2A50F2FAE0"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -1.25d
+			y: 8.125d
+		}
+		{
+			dependencies: ["251C21B236FCB7E1"]
+			id: "367CCE921F752CD0"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				count: 38L
+				id: "3221C7034C6A55C9"
+				item: "tconstruct:seared_bricks"
+				type: "item"
+			}]
+			x: 5.64285714285716d
+			y: 8.125000000000021d
+		}
+		{
+			dependencies: ["20CCE6384CC87D2E"]
+			id: "345FA39DA0811168"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "5E7E677E4A211700"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 6.821428571428591d
+			y: 1.910714285714306d
+		}
+		{
+			dependencies: [
+				"69A442072DF78A8A"
+				"68D3589FF7EEE5FF"
+				"37D6D77415ADD3E3"
+			]
+			dependency_requirement: "one_completed"
+			description: ["The revolutions begins!"]
+			icon_scale: 0.8d
+			id: "7604046DD28B67E3"
+			min_required_dependencies: 1
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "330795AB3212B632"
+					item: "create:water_wheel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1A371D739B422898"
+					item: "create:windmill_bearing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Rotational Force"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["367CCE921F752CD0"]
+			description: [
+				"The \"Seared Melter\" is used to make the \"Smeltery Controller Base\"."
+				"To see information on how to use it, watch the ponder."
+			]
+			id: "3495831A6AA2695A"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "6D796C5CE6B807A8"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			x: 5.64285714285716d
+			y: 5.517857142857167d
+		}
+		{
+			dependencies: ["20CCE6384CC87D2E"]
+			id: "14599D04EDB48CCD"
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				id: "71B8CBD0E9C52801"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 4.375d
+			y: 1.875d
+		}
+		{
+			dependencies: ["3495831A6AA2695A"]
+			id: "20CCE6384CC87D2E"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "6D5B047529E3B2C1"
+				item: "kubejs:smeltery_controller_frame"
+				type: "item"
+			}]
+			x: 5.64285714285716d
+			y: 3.410714285714313d
+		}
+		{
+			dependencies: [
+				"14599D04EDB48CCD"
+				"345FA39DA0811168"
+			]
+			description: ["Build a smeltery, watch the ponder of the \"Smeltery Controller\" to know how to proceed"]
+			id: "043B9DF81E313CD5"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "45730B37E35047F8"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			title: "Smeltery"
+			x: 5.64285714285716d
+			y: 0.08928571428573662d
+		}
+		{
+			dependencies: ["043B9DF81E313CD5"]
+			id: "6B23A2F54A10F4F7"
+			shape: "rsquare"
+			tasks: [{
+				id: "49C6D76D551C64DB"
+				item: "tconstruct:seared_table"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["043B9DF81E313CD5"]
+			id: "707E6EEEF98EC6A1"
+			shape: "rsquare"
+			tasks: [{
+				id: "13EF3A2F87C93197"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["043B9DF81E313CD5"]
+			icon: "tconstruct:molten_steel_bucket"
+			id: "41FB61E127A312D0"
+			shape: "rsquare"
+			tasks: [
+				{
+					amount: 90L
+					fluid: "tconstruct:molten_steel"
+					id: "2DE2C6154B1FE69C"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "11E1BEA940EDA8E0"
+					title: "Done"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: -0.5d
 		}
 	]
 	title: "Steel Production"

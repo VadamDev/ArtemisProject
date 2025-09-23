@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 
 	function addRecipes() {
 		//Update existing eccentric tomes
-		event.shapeless(Item.of('eccentrictome:tome', '{"eccentrictome:mods":{ad_astra:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"ad_astra:astrodux"}}},advancedperipherals:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}}},alexsmobs:{0:{Count:1b,id:"alexsmobs:animal_dictionary"}},apotheosis:{0:{Count:1b,id:"patchouli:guide_book",tag:{Enchantments:[],"patchouli:book":"apotheosis:apoth_chronicle"}}},ars_nouveau:{0:{Count:1b,id:"ars_nouveau:worn_notebook"}},bloodmagic:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"bloodmagic:guide"}}},botania:{0:{Count:1b,id:"botania:lexicon"}},buildinggadgets2:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"buildinggadgets2:buildinggadgets2book"}}},electrodynamics:{0:{Count:1b,id:"electrodynamics:guidebook"}},elementalcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"elementalcraft:element_book"}}},extendedcrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"extendedcrafting:guide"}}},industrialforegoing:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"industrialforegoing:industrial_foregoing"}}},integrateddynamics:{0:{Count:1b,id:"integrateddynamics:on_the_dynamics_of_integration"}},irons_spellbooks:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"irons_spellbooks:iss_guide_book"}}},mffs:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"mffs:handbook"}}},modonomicon:{0:{Count:1b,id:"modonomicon:modonomicon",tag:{"modonomicon:book_id":"theurgy:the_hermetica"}}},modularrouters:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"modularrouters:book"}}},mysticalagriculture:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"mysticalagriculture:guide"}}},pneumaticcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}}},productivebees:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"productivebees:guide"}}},securitycraft:{0:{Count:1b,id:"securitycraft:sc_manual"}},simplyswords:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"simplyswords:runic_grimoire"}}},solcarrot:{0:{Count:1b,id:"solcarrot:food_book",tag:{Enchantments:[]}}},sushigocrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"sushigocrafting:sushigocrafting"}}},twilightdelight:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"twilightdelight:twilight_guide"}}},unusualprehistory:{0:{Count:1b,id:"unusualprehistory:encyclopedia"}}},"eccentrictome:version":1}'), Item.of('eccentrictome:tome'))
+		event.shapeless(Item.of('eccentrictome:tome', '{"eccentrictome:mods":{ad_astra:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"ad_astra:astrodux"}}},advancedperipherals:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"advancedperipherals:manual"}}},alexsmobs:{0:{Count:1b,id:"alexsmobs:animal_dictionary"}},apotheosis:{0:{Count:1b,id:"patchouli:guide_book",tag:{Enchantments:[],"patchouli:book":"apotheosis:apoth_chronicle"}}},ars_nouveau:{0:{Count:1b,id:"ars_nouveau:worn_notebook"}},bloodmagic:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"bloodmagic:guide"}}},botania:{0:{Count:1b,id:"botania:lexicon"}},buildinggadgets2:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"buildinggadgets2:buildinggadgets2book"}}},extendedcrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"extendedcrafting:guide"}}},industrialforegoing:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"industrialforegoing:industrial_foregoing"}}},integrateddynamics:{0:{Count:1b,id:"integrateddynamics:on_the_dynamics_of_integration"}},irons_spellbooks:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"irons_spellbooks:iss_guide_book"}}},mffs:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"mffs:handbook"}}},modonomicon:{0:{Count:1b,id:"modonomicon:modonomicon",tag:{"modonomicon:book_id":"theurgy:the_hermetica"}}},modularrouters:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"modularrouters:book"}}},mysticalagriculture:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"mysticalagriculture:guide"}}},pneumaticcraft:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}}},productivebees:{0:{Count:1b,id:"patchouli:guide_book",tag:{Enchantments:[],"patchouli:book":"productivebees:guide"}}},securitycraft:{0:{Count:1b,id:"securitycraft:sc_manual"}},simplyswords:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"simplyswords:runic_grimoire"}}},solcarrot:{0:{Count:1b,id:"solcarrot:food_book",tag:{Enchantments:[]}}},sushigocrafting:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"sushigocrafting:sushigocrafting"}}},tconstruct:{0:{Count:1b,id:"tconstruct:fantastic_foundry"},1:{Count:1b,id:"tconstruct:tinkers_gadgetry",tag:{mantle:{book:{current_page:"staffs.tconstruct.ender_staff"}}}},2:{Count:1b,id:"tconstruct:materials_and_you"},3:{Count:1b,id:"tconstruct:mighty_smelting"},4:{Count:1b,id:"tconstruct:encyclopedia",tag:{mantle:{book:{current_page:"tools.tconstruct.dagger"}}}},5:{Count:1b,id:"tconstruct:puny_smelting"}},twilightdelight:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"twilightdelight:twilight_guide"}}},voltaic:{0:{Count:1b,id:"voltaic:guidebook"}}},"eccentrictome:version":1}'), Item.of('eccentrictome:tome'))
 
 		//Easy Wool gin
 		event.replaceInput({id: 'projectred_exploration:wool_gin'}, 'projectred_core:iron_coil', '#forge:ingots/iron')
@@ -67,34 +67,6 @@ ServerEvents.recipes(event => {
 			D: 'thermal:dynamo_stirling'
 		})
 		
-		//Create Chunk Loader
-		event.remove({output: 'createchunkloading:chunk_loader'})
-		event.shaped('createchunkloading:chunk_loader', [
-			' G ',
-			'GLG',
-			' G '
-		], {
-		    G: 'create:framed_glass',
-			L: 'chickenchunks:chunk_loader'
-		})
-		
-		event.shapeless('chickenchunks:chunk_loader', 'createchunkloading:chunk_loader')
-		
-		//Easy Spot Loader
-		event.remove({id: 'chickenchunks:spot_loader'})
-		event.shapeless('9x chickenchunks:spot_loader', 'chickenchunks:chunk_loader')
-		
-		event.shaped('chickenchunks:chunk_loader', [
-			'SSS',
-			'SSS',
-			'SSS'
-		], {
-		    S: 'chickenchunks:spot_loader'
-		})
-		
-		//Unpack resonating plates
-		event.shapeless('9x deepresonance:resonating_plate', 'deepresonance:resonating_plate_block')
-		
 		//MobGrindingUtils looting upgrade
 		event.remove({id: 'mob_grinding_utils:recipe_saw_upgrade_looting'})
 		event.shaped('mob_grinding_utils:saw_upgrade_looting', [
@@ -110,13 +82,14 @@ ServerEvents.recipes(event => {
 		//Explorer Compass
 		event.remove({id: 'explorerscompass:explorers_compass'})
 		event.shaped('explorerscompass:explorerscompass', [
-			' S ',
-			'NCN',
-			' N '
+			' P ',
+			'DCD',
+			'SSS'
 		], {
-		    S: 'bloodmagic:demonslate',
-		    N: 'minecraft:netherite_ingot',
-		    C: 'naturescompass:naturescompass'
+		    P: 'forbidden_arcanus:corrupted_pixie',
+		    D: 'forbidden_arcanus:golden_dragon_scale',
+		    C: 'naturescompass:naturescompass',
+			S: 'minecraft:stone'
 		})
 		
 		//Time In A Bottle

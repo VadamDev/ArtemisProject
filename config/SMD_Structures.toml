@@ -1,0 +1,53 @@
+
+[Dungeons]
+	#NOT YET IMPLEMENTED
+	iron_dungeon = true
+	#NOT YET IMPLEMENTED
+	amber_dungeon = true
+	#NOT YET IMPLEMENTED
+	ancient_dungeon = true
+	#NOT YET IMPLEMENTED
+	amethyst_dungeon = true
+	#NOT YET IMPLEMENTED
+	gold_dungeon = true
+	#NOT YET IMPLEMENTED
+	silver_dungeon = true
+	#NOT IMPLEMENTED YET || It will be the lava dungeon in the nether isles
+	pit_dungeon = true
+
+[Blocks]
+	#Controls whether the toxicshroom poisons you on touch
+	shroom_poisoner = true
+	#Controls if the angelshroom can heal players
+	shroom_healer = true
+	#DEFAULT: FALSE || Controls if end soil can spread to dirt
+	end_soil_spread = false
+	#DEFAULT: FALSE || Controls if shade soil can spread to dirt
+	shade_soil_spread = false
+	shade_stone_spread = false
+
+["Ancient forest"]
+	big_as_spruce_tree = true
+	ancient_oak = true
+
+["Mushroom Forest"]
+	large_blueshroom = false
+	small_blueshroom = false
+	large_crimsonshroom = true
+	small_crimsonshroom = true
+	large_cyanshroom = true
+	small_cyanshroom = true
+	large_greenshroom = true
+	small_greenshroom = true
+	large_orangeshroom = true
+	small_orangeshroom = true
+	large_purpleshroom = true
+	small_purpleshroom = true
+	large_whiteshroom = true
+	small_whiteshroom = true
+	large_yellowshroom = true
+	small_yellowshroom = true
+	large_blackshroom = true
+	small_blackshroom = true
+	mushroom_village = true
+

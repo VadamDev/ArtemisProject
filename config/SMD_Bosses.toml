@@ -1,0 +1,35 @@
+
+["Blazing Wither Master"]
+	#DEFAULT: 160
+	max_health = 160.0
+	#DEFAULT: 10
+	heal_delay_seconds = 10.0
+	#DEFAULT: TRUE
+	glow_when_healing = true
+	#DEFAULT: 10   ||   This is the number of hits the Blazing Wither Master needs to take before they will spam lightning and fireballs for a short moment
+	hits_before_heavy_attack = 10.0
+	#DEFAULT: TRUE
+	fireball_size_increase = true
+	#DEFAULT: FALSE
+	withering_fireball_explosion = false
+	#DEFAULT: TRUE
+	death_explosion = true
+	#DEFAULT: FALSE
+	death_explosion_break_blocks = true
+	#DEFAULT: 3.0
+	death_explosion_delay_seconds = 3.0
+	#DEFAULT: 2.3
+	death_explosion_power = 2.3
+
+["Miner Brothers"]
+	#DEFAULT: TRUE
+	is_prospector_immortal_with_brothers = true
+	#DEFAULT: 21 || delay before the jumping explosion
+	explode_delay_ticks_when_still = 21.0
+	#DEFAULT: 2.2
+	prospector_explosive_power = 2.2
+	#DEFAULT: 2.0
+	time_explosion_seconds = 2.0
+	#DEFAULT: 0.33
+	percent_faulty = 0.33
+

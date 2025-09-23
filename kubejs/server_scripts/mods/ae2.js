@@ -34,6 +34,12 @@ ServerEvents.recipes(event => {
 		//New infinity booster recipes
 		event.remove({id: 'aeinfinitybooster:infinity_card'})
 		event.remove({id: 'aeinfinitybooster:dimension_card'})
+
+		//Modern AE2 Accelerators
+		event.remove({id: 'mae2:network/crafting/4x_crafting_accelerator'})
+		event.remove({id: 'mae2:network/crafting/16x_crafting_accelerator'})
+		event.remove({id: 'mae2:network/crafting/64x_crafting_accelerator'})
+		event.remove({id: 'mae2:network/crafting/256x_crafting_accelerator'})
 	}
 
 	function addRecipes() {
@@ -71,6 +77,40 @@ ServerEvents.recipes(event => {
 			P: 'ae2:fluix_pearl',
 			A: 'megacells:accumulation_processor',
 			N: 'minecraft:netherite_ingot'
+		})
+
+		//Modern AE2 Accelerators
+		event.shaped('mae2:16x_crafting_accelerator', [
+			' UP',
+			'USU',
+			'PU '
+		], {
+			U: 'megacells:mega_crafting_accelerator',
+			P: 'megacells:accumulation_processor',
+			S: 'ae2:cell_component_4k'
+		})
+
+		event.shaped('mae2:64x_crafting_accelerator', [
+			'EPE',
+			'USU',
+			'EUE'
+		], {
+			E: 'megacells:sky_steel_ingot',
+			P: 'megacells:accumulation_processor',
+			U: 'mae2:16x_crafting_accelerator',
+			S: 'ae2:cell_component_16k'
+		})
+
+		event.shaped('mae2:256x_crafting_accelerator', [
+			'EPE',
+			'USU',
+			'BUB'
+		], {
+			E: 'megacells:sky_steel_ingot',
+			P: 'megacells:accumulation_processor',
+			U: 'mae2:64x_crafting_accelerator',
+			S: 'ae2:cell_component_64k',
+			B: 'megacells:sky_steel_block'
 		})
 	}
 

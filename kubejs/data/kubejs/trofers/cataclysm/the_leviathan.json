@@ -1,0 +1,20 @@
+{
+    "name": "The Leviathan Trophy",
+    "entity": {
+        "type": "cataclysm:the_leviathan"
+    },
+    "display": {
+        "offset": {
+            "y": 5
+        },
+        "scale": 0.06
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#C4FFFF"
+    }
+}

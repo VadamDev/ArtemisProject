@@ -1,0 +1,17 @@
+{
+    "name": "Mutant Zombie Trophy",
+    "entity": {
+        "type": "mutantmonsters:mutant_zombie"
+    },
+    "display": {
+        "scale": 0.15
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#537243"
+    }
+}

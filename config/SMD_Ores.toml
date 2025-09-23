@@ -1,0 +1,39 @@
+
+["Dense Ores"]
+	dense_ores_enabled = true
+	dense_andesite = true
+	dense_coal_ore = true
+	dense_copper_ore = true
+	dense_diamond_ore = true
+	dense_emerald_ore = true
+	dense_gold_ore = true
+	dense_iron_ore = true
+	dense_lapis_ore = true
+	dense_redstone_ore = true
+
+[Ores]
+	aluminum_ore = true
+	antimony_ore = true
+	cobalt_ore = true
+	#DEFAULT: FALSE || COMPAT FOR DIAMONDGLASS
+	diamond_sand_ore = false
+	#DEFAULT: FALSE || COMPAT FOR DIAMONDGLASS
+	diamond_gravel_ore = false
+	lead_ore = true
+	nickel_ore = true
+	palladium_ore = true
+	platinum_ore = true
+	quartz_ore = true
+	silver_ore = true
+	sphalerite_ore = true
+	sulphur_ore = true
+	tin_ore = true
+	titanium_ore = true
+	tungsten_ore = true
+	uranium_ore = true
+	zinc_ore = true
+
+[Crystals]
+	#This controls whether benitoite can grow into full blocks
+	benitoite_full_grow = false
+

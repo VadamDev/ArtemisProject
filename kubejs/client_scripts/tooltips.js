@@ -26,10 +26,6 @@ ItemEvents.tooltip(event => {
 	addTooltip('bhc:green_heart', 1, Text.of('Dropped by the Ender Dragon').italic().green(), true)
 	addTooltip('bhc:blue_heart', 1, Text.of('Dropped by Wardens').italic().blue(), true)
 
-	//TFMG
-	event.add('tfmg:rotor', ['', '§c§nUse it to make the alternator from Create Craft & Additions', ''])
-	event.add('tfmg:stator', ['', '§c§nUses them to make the alternator from Create Craft & Additions', ''])
-
 	//Create Additions
 	event.add('createaddition:connector', ['', '§c2048 FE/t', ''])
 	event.add('createaddition:large_connector', ['', '§c8192 FE/t', ''])

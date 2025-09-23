@@ -18,5 +18,5 @@ ServerEvents.recipes(event => {
 		})
 	}
 
-	quantumCompressorRecipe('draconicevolution:chaos_shard', 128, 'kubejs:chaotic_singularity')
+	quantumCompressorRecipe('draconicevolution:chaos_shard', 256, 'kubejs:chaotic_singularity')
 })

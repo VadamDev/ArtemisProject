@@ -9,10 +9,7 @@ ServerEvents.tags('item', event => {
 	event.add('forge:nuggets/netherite', 'createdeco:netherite_nugget')
 	
 	//Silicon
-	event.remove('forge:silicon', ['tinyredstone:silicon', 'enderio:silicon'])
-	
-	//Coal Coke
-	event.remove('forge:coal_coke', 'electrodynamics:coalcoke')
+	event.remove('forge:silicon', 'enderio:silicon')
 	
 	//Thallasium
 	event.remove('forge:ingots/iron', 'betterend:thallasium_ingot')
@@ -37,18 +34,10 @@ ServerEvents.recipes(event => {
 	
 	thermalPulverizer('minecraft:coal', 'mekanism:dust_coal')
 	thermalPulverizer('minecraft:charcoal', 'mekanism:dust_charcoal')
-	thermalPulverizer('thermal:coal_coke', 'tfmg:coal_coke_dust')
 
 	/*
 	  Plates
 	*/
-	
-	const metalsToUnify = ['iron', 'copper', 'lead', 'steel', 'bronze']
-	metalsToUnify.forEach(plateName => {
-		event.remove({id: 'electrodynamics:plate_' + plateName})
-	})
-	
-	event.replaceInput({mod: 'tfmg'}, 'tfmg:heavy_plate', '#forge:plates/steel')
 	
 	event.replaceInput({mod: 'createdeco'}, 'create:copper_sheet', '#forge:plates/copper')
 	event.replaceInput({mod: 'createdeco'}, 'create:iron_sheet', '#forge:plates/iron')
@@ -63,7 +52,6 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'createdeco:pressing/netherite_sheet'})
 	event.recipes.createPressing('thermal:netherite_plate', 'minecraft:netherite_ingot')
 
-	event.remove({id: 'tfmg:sequenced_assembly/heavy_plate'})
 	event.recipes.createPressing('thermal:steel_plate', 'mekanism:ingot_steel')
 
 	event.recipes.createPressing('thermal:iron_plate', 'minecraft:iron_ingot')
@@ -96,12 +84,6 @@ ServerEvents.recipes(event => {
 	  Gears
 	*/
 	
-	metalsToUnify.forEach(gearName => {
-		event.remove({id: 'electrodynamics:gear_' + gearName})
-	})
-	
-	event.remove({id: 'electrodynamics:gear_tin'}) //No plate recipe, so its here and not in the loop above
-	
 	event.remove({id: 'industrialforegoing:iron_gear'})
 	event.remove({id: 'industrialforegoing:gold_gear'})
 	event.remove({id: 'industrialforegoing:diamond_gear'})
@@ -124,24 +106,7 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'ad_astra:steel_ingot_from_steel_block'})
 	event.remove({id: 'ad_astra:steel_block'})
 	
-	event.remove({id: 'electrodynamics:blasting/steel_ingot_from_iron_ingot'})
-	event.remove({id: 'electrodynamics:blasting/steel_ingot_from_dust'})
-	event.remove({id: 'electrodynamics:smelting/steel_ingot_from_dust'})
-	
 	event.remove({id: 'enderio:smelting/mffs/steel_ingot'})
-	
-	event.remove({id: 'tfmg:crafting/steel_from_block'})
-
-	event.remove({output: 'tfmg:steel_helmet'})
-	event.remove({output: 'tfmg:steel_chestplate'})
-	event.remove({output: 'tfmg:steel_leggings'})
-	event.remove({output: 'tfmg:steel_boots'})
-
-	event.remove({output: 'tfmg:steel_axe'})
-	event.remove({output: 'tfmg:steel_hoe'})
-	event.remove({output: 'tfmg:steel_shovel'})
-	event.remove({output: 'tfmg:steel_pickaxe'})
-	event.remove({output: 'tfmg:steel_sword'})
 
 	/*
 	  Cast Iron
@@ -152,69 +117,11 @@ ServerEvents.recipes(event => {
 
 	event.remove({id: 'createbigcannons:compacting/iron_to_cast_iron_ingot'})
 	event.remove({id: 'createbigcannons:compacting/iron_to_cast_iron_block'})
-
-	/*
-	  Bitumen
-	*/
-
-	event.replaceInput({id: 'tfmg:mixing/liquid_asphalt'}, 'tfmg:bitumen', 'thermal:bitumen')
-
-	event.replaceOutput({id: 'tfmg:compacting/bitumen'}, 'tfmg:bitumen', 'thermal:bitumen')
-	event.replaceOutput({id: 'tfmg:compacting/bitumen'}, 'tfmg:sulfur_dust', 'thermal:sulfur_dust')
-
-	/*
-	  Sulfur
-	*/
-
-	event.replaceInput({output: 'tfmg:zinc_grenade'}, 'tfmg:sulfur_dust', '#forge:dusts/sulfur')
-	event.replaceInput({id: 'tfmg:mixing/gun_powder'}, 'tfmg:sulfur_dust', '#forge:dusts/sulfur')
-
-	event.replaceOutput({id: 'tfmg:crushing/sulfur'}, 'tfmg:sulfur_dust', 'thermal:sulfur_dust')
-
-	event.remove({id: 'tfmg:mixing/sulfuric_acid'})
-	event.recipes.create.mixing(Fluid.of('tfmg:sulfuric_acid', 500), ['#forge:dusts/sulfur', 'tfmg:nitrate_dust', Fluid.water(500)])
-
-	/*
-	  Electrodynamics
-	*/
-
-	const duplicatesRawMaterialBlocks = ['tin', 'lead', 'silver', 'uranium']
-	duplicatesRawMaterialBlocks.forEach(metal => event.remove({id: 'electrodynamics:raw_ore_block_' + metal}))
-
-	/*
-	  Coke
-	*/
-
-	event.remove({id: 'tfmg:coking/coal_coke'})
-	event.custom({
-		"type": "tfmg:coking",
-		"ingredients": [
-		{
-			"count": 1,
-			"item": "minecraft:coal"
-		}],
-		"processingTime": 1000,
-		"results": [
-		{
-			"count": 1,
-			"item": "thermal:coal_coke"
-		},
-		{
-			"fluid": "tfmg:creosote",
-			"amount": 1
-		}]
-	})
-
-	event.replaceInput({id: 'tfmg:crushing/coal_coke_dust'}, 'tfmg:coal_coke', 'thermal:coal_coke')
-	event.remove({id: 'tfmg:crafting/coal_coke_block'})
-	
-	event.remove({output: 'electrodynamics:coalcoke'})
 	
 	/*
 	   Copper
 	*/
 	
-	event.remove({id: 'electrodynamics:copper_nuggets_to_copper_ingot'})
 	event.remove({id: 'pneumaticcraft:copper_ingot_from_nugget'})
 	
 	/*
@@ -222,7 +129,6 @@ ServerEvents.recipes(event => {
 	*/
 	
 	event.remove({id: 'silentgear:bronze_ingot'})
-	event.remove({id: 'electrodynamics:dust_bronze'})
 	
 	/*
 	   Uranium
@@ -234,11 +140,6 @@ ServerEvents.recipes(event => {
 	/*
 	  Silicon
 	*/
-	
-	event.remove({output: 'tinyredstone:silicon'})
-	
-	event.remove({input: 'tinyredstone:silicon_compound'})
-	event.remove({output: 'tinyredstone:silicon_compound'})
 	
 	event.replaceOutput({mod: 'enderio'}, 'enderio:silicon', 'ae2:silicon')
 	

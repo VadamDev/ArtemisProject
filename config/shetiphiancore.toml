@@ -14,5 +14,5 @@
 	bonemeal_restores_bark = true
 	#When enabled using bonemeal on grass blocks also generates flowers from mods
 	#By default Minecraft only picks flowers from its own FlowerFeature list, but when mods add flowers they get added to there own list
-	bonemeal_flowerfix = true
+	bonemeal_flowerfix = false
 

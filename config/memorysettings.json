@@ -29,7 +29,7 @@
   },
   "warningTolerance": {
     "desc:": "Set how many percent the memory is allowed to deviate from the recommended for the system before warning about it, default: 30, max 100",
-    "warningTolerance": 30
+    "warningTolerance": 50
   },
   "recommendedMemory": {
     "desc:": "Set the recommended memory values based off system memory in MB. [\"system memory:recommended\"]",
@@ -38,7 +38,7 @@
       "16000:10000",
       "20000:12000",
       "24000:12000",
-      "32000:16000",
+      "32000:12000",
       "64000:16000"
     ]
   }

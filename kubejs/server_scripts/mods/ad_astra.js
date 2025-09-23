@@ -65,24 +65,25 @@ ServerEvents.recipes(event => {
 		event.custom({
 			"type": "extendedcrafting:shaped_table",
 			"pattern": [
-				"  A A  ",
 				"  A AB ",
+				"  A A  ",
 				" CA A  ",
-				" DA AD ",
+				" JA AD ",
 				" EA AE ",
 				"FEGGGEF",
 				"HEHIHEH"
 			],
 			"key": {
-				"A": { "item": "tfmg:steel_scaffolding" },
+				"A": { "item": "gtceu:steel_crate" },
 				"B": { "item": "computercraft:wireless_modem_normal" },
-				"C": { "item": "tfmg:steel_mechanism" },
+				"C": { "item": "create_things_and_misc:vibration_mechanism" },
 				"D": { "item": "pneumaticcraft:safety_tube_module" },
 				"E": { "item": "pneumaticcraft:advanced_pressure_tube" },
 				"F": { "item": "mekanism:ultimate_control_circuit" },
 				"G": { "item": "thermal:steel_plate" },
 				"H": { "item": "mekanism:block_steel" },
-				"I": { "item": "computercraft:computer_normal" }
+				"I": { "item": "computercraft:computer_normal" },
+				"J": { "item": "create:precision_mechanism" }
 			},
 			"result": {
 				"item": "ad_astra:launch_pad"
@@ -106,7 +107,7 @@ ServerEvents.recipes(event => {
 			"key": {
 				"A": { "item": "thermal:steel_plate" },
 				"B": { "item": "pneumaticcraft:pneumatic_cylinder" },
-				"C": { "item": "tfmg:steel_mechanism" },
+				"C": { "item": "create:chromatic_compound" },
 				"D": { "item": "pneumaticcraft:printed_circuit_board" },
 				"E": { "item": "create:precision_mechanism" },
 				"F": { "item": "industrialforegoing:machine_frame_advanced" },
@@ -342,7 +343,7 @@ ServerEvents.recipes(event => {
 				"D": { "item": "ad_astra:cable_duct" },
 				"E": { "item": "ad_astra:steel_cable" },
 				"F": { "item": "mekanism:alloy_reinforced" },
-				"G": { "item": "tfmg:machine_input" },
+				"G": { "item": "mekanism_extras:absolute_control_circuit" },
 				"H": { "item": "mekanism:ultimate_energy_cube" },
 				"I": { "item": "draconicevolution:draconium_core" },
 				"J": { "item": "thermal_extra:upgrade_augment" },
@@ -402,38 +403,84 @@ ServerEvents.recipes(event => {
 		//Calorite Engine
 		event.custom({
 			"type": "extendedcrafting:shaped_table",
-			"pattern": [
+		  	"pattern": [
 				"ABBCDCBBA",
-				" ABBEBBA ",
-				" AFGEGFA ",
-				"AHGIJIGHA",
-				"AKLJMJLKA",
-				"AHNIJINHA",
-				" AOPQPOA ",
-				" ARSSSRA ",
-				"  ATTTA  "
+		    	" AEBFBEA ",
+		    	" AGEFEHA ",
+		    	"AI JKJ IA",
+		    	"ALMKNKMOA",
+		    	"AI JKJ IA",
+		    	" APQRQSA ",
+		    	" A TUT A ",
+		    	"  AVVVA  "
 			],
 			"key": {
-				"A": {  "item": "ad_astra:calorite_plate" },
-				"B": { "item": "ad_astra:calorite_block" },
-				"C": { "item": "mekanism:hdpe_sheet" },
-				"D": { "item": "ad_astra:cable_duct" },
-				"E": { "item": "ad_astra:desh_cable" },
-				"F": { "item": "megacells:accumulation_processor" },
-				"G": { "item": "mekanism:pellet_antimatter" },
-				"H": { "item": "draconicevolution:awakened_core" },
-				"I": { "item": "mekanism:ultimate_induction_provider" },
-				"J": { "item": "mekanism:ultimate_induction_cell" },
-				"K": { "item": "mythicbotany:alfsteel_block" },
-				"L": { "item": "electrodynamics:platehslasteel" },
-				"M": { "item": "mekanism:module_gravitational_modulating_unit" },
-				"N": { "item": "kubejs:pellet_exoticmatter" },
-				"O": { "item": "electrodynamics:ingothslasteel" },
-				"P": { "item": "extendedcrafting:ultimate_singularity" },
-				"Q": { "item": "draconicevolution:reactor_core" },
-				"R": { "item": "nuclearscience:lifthf4uf4" },
-				"S": { "item": "ad_astra:ostrum_engine" },
-				"T": { "item": "ad_astra:fan" }
+				"A": {
+					"item": "ad_astra:calorite_plate"
+				},
+		    	"B": {
+					"item": "ad_astra:calorite_block"
+		    	},
+		    	"C": {
+					"item": "mekanism:hdpe_sheet"
+		    	},
+		    	"D": {
+					"item": "ad_astra:cable_duct"
+		    	},
+		    	"E": {
+					"item": "mekanism_extras:cosmic_control_circuit"
+		    	},
+		    	"F": {
+					"item": "ad_astra:desh_cable"
+		    	},
+		    	"G": {
+					"item": "gtceu:luv_sensor"
+		    	},
+		    	"H": {
+					"item": "gtceu:luv_emitter"
+		    	},
+		    	"I": {
+					"item": "draconicevolution:chaotic_core"
+		    	},
+		    	"J": {
+					"item": "mekanism_extras:cosmic_induction_provider"
+		    	},
+		    	"K": {
+					"item": "mekanism_extras:cosmic_induction_cell"
+		    	},
+		    	"L": {
+					"item": "draconicevolution:item_chaotic_shield_capacity"
+		    	},
+		    	"M": {
+					"item": "gtceu:nano_processor_mainframe"
+		    	},
+		    	"N": {
+					"item": "gtceu:uv_field_generator"
+		    	},
+		    	"O": {
+					"item": "draconicevolution:item_chaotic_shield_recovery"
+		    	},
+		    	"P": {
+					"item": "gtceu:quantum_processor"
+		    	},
+		    	"Q": {
+					"item": "extendedcrafting:ultimate_singularity"
+		    	},
+		    	"R": {
+					"item": "gtceu:wetware_processor_mainframe"
+		    	},
+		    	"S": {
+					"item": "gtceu:quantum_processor_mainframe"
+		    	},
+		    	"T": {
+					"item": "ad_astra:ostrum_engine"
+		    	},
+		    	"U": {
+					"item": "kubejs:pellet_exoticmatter"
+		    	},
+		    	"V": {
+					"item": "ad_astra:fan"
+		    	}
 			},
 			"result": {
 				"item": "ad_astra:calorite_engine"

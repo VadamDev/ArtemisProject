@@ -10,7 +10,7 @@ entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
 invertYMouse:false
-realmsNotifications:false
+realmsNotifications:true
 reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
@@ -21,7 +21,7 @@ toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:true
 hideLightningFlashes:false
-mouseSensitivity:0.5046948356807511
+mouseSensitivity:0.4014084507042254
 fov:0.5
 screenEffectScale:1.0
 fovEffectScale:1.0
@@ -31,7 +31,7 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
-renderDistance:12
+renderDistance:16
 simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:3
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","builtin/towntalk","Moonlight Mods Dynamic Assets","dyenamicsandfriends:connectedglass_resources","fabric"]
+resourcePacks:["vanilla","pointblank_resources","mod_resources","builtin/towntalk","Moonlight Mods Dynamic Assets","builtin/aether_ctm_fix","dyenamicsandfriends:connectedglass_resources","fabric"]
 incompatibleResourcePacks:["builtin/towntalk"]
 lastServer:
 lang:en_us
@@ -72,7 +72,7 @@ tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 skipRealms32bitWarning:false
 hideMatchedNames:true
 joinedFirstServer:false
@@ -84,8 +84,8 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-soundCategory_master:0.750551876379691
-soundCategory_music:0.2511737089201877
+soundCategory_master:0.75
+soundCategory_music:0.25
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

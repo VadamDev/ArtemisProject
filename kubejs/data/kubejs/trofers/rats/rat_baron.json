@@ -1,0 +1,21 @@
+{
+    "name": "Rat Baron Trophy",
+    "entity": {
+        "type": "rats:rat_baron_plane"
+    },
+    "display": {
+        "offset": {
+            "y": 1.5,
+            "z": -2
+        },
+        "scale": 0.1
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.15
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#BC0D07"
+    }
+}

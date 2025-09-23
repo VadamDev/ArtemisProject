@@ -1,0 +1,20 @@
+{
+    "name": "Twin Realms Trophy",
+    "item": {
+        "item": "kubejs:blueskies_portal_mix"
+    },
+    "display": {
+        "offset": {
+            "y": 1
+        },
+        "scale": 1.2
+    },
+    "animation": {
+        "type": "tumbling",
+        "speed": 0.2
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#A0B2FF"
+    }
+}

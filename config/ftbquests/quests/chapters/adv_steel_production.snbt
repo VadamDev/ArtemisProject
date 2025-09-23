@@ -25,6 +25,7 @@
 		}
 		{
 			dependencies: ["407E8897B35792AC"]
+			description: ["The factory must grow =)"]
 			id: "582F48D9D7FD3DAE"
 			shape: "square"
 			size: 1.25d
@@ -37,7 +38,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["582F48D9D7FD3DAE"]
+			dependencies: [
+				"582F48D9D7FD3DAE"
+				"76BA31FBBC122865"
+			]
+			description: [
+				"Make a Metallurgic Infuser."
+				"It needs to be powered with FE &7(Forge Energy)&f.&r"
+			]
 			id: "2484EC60E5CED531"
 			shape: "rsquare"
 			size: 2.0d
@@ -78,7 +86,10 @@
 		}
 		{
 			dependencies: ["448A7B57DF88E762"]
-			description: ["You are now free... Do wathever you want and once you're ready you can start Space Exploration !"]
+			description: [
+				"You are now free!"
+				"Do wathever you want and once you're ready you can start &nSpace Exploration&r !"
+			]
 			id: "789EF323EEACBE5E"
 			shape: "rsquare"
 			size: 2.0d
@@ -90,6 +101,76 @@
 			title: "Another Steel Ingot"
 			x: 9.0d
 			y: 1.25d
+		}
+		{
+			dependencies: [
+				"5FAECAE441974AE7"
+				"2A101113341A5B14"
+				"64F9FB9EDA3255E6"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A metallurgic infuser need FE to work."
+				""
+				"In early game, you can create FE with the following methods:"
+				"- Solar Panels"
+				"- Stirling Dynamo"
+				"- Heat Generator"
+			]
+			id: "76BA31FBBC122865"
+			min_required_dependencies: 1
+			optional: true
+			rewards: [{
+				count: 16
+				id: "68A8DB202F6E5F90"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6CBCEE321F080713"
+				title: "Done"
+				type: "checkmark"
+			}]
+			title: "FE Production"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			description: ["Lava comes in, FE come out"]
+			id: "2A101113341A5B14"
+			tasks: [{
+				id: "27E3083ADA8EF020"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			description: ["Water goes in, FE comes out"]
+			id: "5FAECAE441974AE7"
+			tasks: [{
+				id: "58C3F0C522498F97"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			id: "64F9FB9EDA3255E6"
+			tasks: [{
+				id: "588925C004B369FF"
+				item: "solarflux:sp_1"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "Advanced Steel Production"

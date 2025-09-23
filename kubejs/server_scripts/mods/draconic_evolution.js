@@ -10,6 +10,9 @@ ServerEvents.recipes(event => {
 	}
 
 	function addRecipes() {
+		event.shapeless('4x kubejs:shard_hellforged', ['bloodmagic:ingot_hellforged'])
+		event.shapeless('bloodmagic:ingot_hellforged', ['4x kubejs:shard_hellforged'])
+
 		//New draconium core recipe, working with bloodmagic
 		event.shaped('3x draconicevolution:draconium_core', [
 			'GDG',
@@ -18,18 +21,24 @@ ServerEvents.recipes(event => {
 		], {
 			G: '#forge:ingots/gold',
 			D: 'draconicevolution:draconium_ingot',
-			H: 'bloodmagic:ingot_hellforged'
+			H: 'kubejs:shard_hellforged'
 		})
 
 		//End game
 		event.custom({
 			"type": "draconicevolution:fusion_crafting",
 			"catalyst": {
-			  "item": "create:shadow_steel"
+			  "item": "occultism:stable_wormhole"
 			},
 			"ingredients": [
 			  {
 				"item": "kubejs:chaotic_singularity"
+			  },
+			  {
+				"item": "alexscaves:tremorzilla_egg"
+			  },
+			  {
+				"item": "evilcraft:piercing_vengeance_focus"
 			  },
 			  {
 				"item": "cataclysm:witherite_ingot"
@@ -38,16 +47,10 @@ ServerEvents.recipes(event => {
 				"item": "alexscaves:pure_darkness"
 			  },
 			  {
-				"item": "alexscaves:fissile_core"
+				"item": "ars_nouveau:summon_focus"
 			  },
 			  {
-				"item": "alexscaves:tectonic_shard"
-			  },
-			  {
-				"item": "alexscaves:immortal_embryo"
-			  },
-			  {
-				"item": "cataclysm:ancient_metal_ingot"
+				"tag": "blue_skies:arcs"
 			  },
 			  {
 				"item": "voidscape:astral_crystal"
@@ -56,14 +59,14 @@ ServerEvents.recipes(event => {
 				"item": "rats:idol_of_ratlantis"
 			  },
 			  {
-				"item": "kubejs:chaotic_singularity"
+				"item": "create:refined_radiance"
 			  }
 			],
 			"result": {
 			  "item": "kubejs:chaotic_wormhole"
 			},
 			"tier": "CHAOTIC",
-			"total_energy": 2000000000
+			"total_energy": 1000000000
 		  })
 		
 		/*

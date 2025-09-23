@@ -1,0 +1,1633 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bosses"
+	group: "28ECA53A292863BA"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "37A9BBB07D6B35A6"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["067FFC702089E6B3"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:twilight_forest"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "53B6D324EF0FB8B7"
+			rewards: [{
+				id: "5924C1141278BF2E"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:twilight_forest"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "6E6DB1FA59EF83DD"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			title: "&r&5Twilight Conquerant&r"
+			x: -3.75d
+			y: -3.75d
+		}
+		{
+			description: [
+				"The &2Naga&r is the first boss in the &5Twilight Forest&r."
+				""
+				"This dimension can be entered by digging a &72x2 hole&r, &7fill it with water&f and placing &7poppy around it&f. Then just &7drop a Diamond&f and the portal will open!"
+				""
+				"Tip:"
+				"Every boss can be located using a &7Blank Magic Map&r."
+			]
+			icon: "twilightforest:naga_trophy"
+			id: "4BF60EAEA5AE7A9F"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "twilightforest:naga"
+					icon: "twilightforest:naga_spawn_egg"
+					id: "50316CEDB2A3D7F3"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1C1FD11778B8D946"
+					item: "twilightforest:magic_map"
+					type: "item"
+				}
+			]
+			title: "&r&fDeafeat the &2Naga&r"
+			x: -3.75d
+			y: -5.625d
+		}
+		{
+			dependencies: ["4BF60EAEA5AE7A9F"]
+			icon: "twilightforest:lich_trophy"
+			id: "33FD19F1CBCA580E"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:lich"
+				icon: "twilightforest:lich_spawn_egg"
+				id: "0021E31A5DCBF022"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &eLich&r"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2F34FA2803F40B3C"]
+			icon: "twilightforest:hydra_trophy"
+			id: "7A9847D23A6D6F52"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:hydra"
+				icon: "twilightforest:hydra_spawn_egg"
+				id: "4A5828CBE4CCF42D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &3Hydra&r"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2ED962B9DA91A93B"]
+			icon: "twilightforest:ur_ghast_trophy"
+			id: "28B0D02428555A17"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				icon: "twilightforest:ur_ghast_spawn_egg"
+				id: "2203FD878BF683C9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &cUr-Ghast&r"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["28B0D02428555A17"]
+			icon: "twilightforest:alpha_yeti_trophy"
+			id: "028A1DEA364F9707"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				icon: "twilightforest:alpha_yeti_spawn_egg"
+				id: "4F622E5B624D98E1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &bAlpha Yeti&r"
+			x: -5.625d
+			y: -3.75d
+		}
+		{
+			dependencies: ["028A1DEA364F9707"]
+			icon: "twilightforest:snow_queen_trophy"
+			id: "067FFC702089E6B3"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				icon: "twilightforest:snow_queen_spawn_egg"
+				id: "74B8D123CF672FEB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat The &9Snow Queen&r"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["33FD19F1CBCA580E"]
+			icon: "twilightforest:minoshroom_trophy"
+			id: "2F34FA2803F40B3C"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				icon: "twilightforest:minoshroom_spawn_egg"
+				id: "2E608B88D179C665"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &4Minoshroom&r"
+			x: -1.875d
+			y: -3.75d
+		}
+		{
+			dependencies: ["7A9847D23A6D6F52"]
+			icon: "twilightforest:knight_phantom_trophy"
+			id: "2ED962B9DA91A93B"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				icon: "twilightforest:knight_phantom_spawn_egg"
+				id: "2F6B31BA672A219F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &7Knight Phantoms&r"
+			x: -3.75d
+			y: -1.75d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "trofers:medium_plate"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:mutant_monsters/mutant_zombie"
+						id: "trofers:trophy"
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "5FDAC61B214B3498"
+			rewards: [
+				{
+					id: "09335B322C60991A"
+					item: {
+						Count: 1
+						id: "trofers:medium_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "kubejs:mutant_monsters/mutant_zombie"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75D9FB517BDEA864"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "mutantmonsters:chemical_x"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				entity: "mutantmonsters:mutant_zombie"
+				icon: "mutantmonsters:mutant_zombie_spawn_egg"
+				id: "1489159B7C040417"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a Mutant Zombie"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "trofers:medium_plate"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:mutant_monsters/mutant_creeper"
+						id: "trofers:trophy"
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "168361BFD8968533"
+			rewards: [
+				{
+					id: "48004BBAE675D57A"
+					item: {
+						Count: 1
+						id: "trofers:medium_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "kubejs:mutant_monsters/mutant_creeper"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7189B0ED3D0F53DC"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "mutantmonsters:chemical_x"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				entity: "mutantmonsters:mutant_creeper"
+				icon: "mutantmonsters:mutant_creeper_spawn_egg"
+				id: "5454E4D430B6FB90"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a Mutant Creeper"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "trofers:medium_plate"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:mutant_monsters/mutant_skeleton"
+						id: "trofers:trophy"
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "1810305BDF4283EF"
+			rewards: [
+				{
+					id: "52A88007A04ED668"
+					item: {
+						Count: 1
+						id: "trofers:medium_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "kubejs:mutant_monsters/mutant_skeleton"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0FF78EB42DB060AC"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "mutantmonsters:chemical_x"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				entity: "mutantmonsters:mutant_skeleton"
+				icon: "mutantmonsters:mutant_skeleton_spawn_egg"
+				id: "0DD36276AD45FEB0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a Mutant Skeleton"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "trofers:medium_plate"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:mutant_monsters/mutant_enderman"
+						id: "trofers:trophy"
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			icon_scale: 1.2d
+			id: "42DB8D2D288F9BA5"
+			rewards: [
+				{
+					id: "5EEA9E150BFCEA19"
+					item: {
+						Count: 1
+						id: "trofers:medium_plate"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "kubejs:mutant_monsters/mutant_enderman"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "668F882852BA2CF3"
+					item: {
+						Count: 1
+						id: "mutantmonsters:endersoul_hand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "04E44FF2438D0AAD"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "mutantmonsters:chemical_x"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				entity: "mutantmonsters:mutant_enderman"
+				icon: "mutantmonsters:mutant_enderman_spawn_egg"
+				id: "4298629D82BD3142"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a Mutant Enderman"
+			x: -3.75d
+			y: 3.75d
+		}
+		{
+			description: [
+				"The chaos guardian is located on a huge island generating &7every 10 000 blocks&r in the &7X&r and &7Z&r axis in the &dEnd&r dimension."
+				"&8So for example: X: 10000 and Z: 10000 or X: 20000 and Z: -20000"
+				""
+				"Note:"
+				"A &7Draconic Bow &fis almost mandatory."
+				"A fully upgraded &7Draconic Armor&r or &7Mekasuit&r is &nHEAVILY&r recommended"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:chaos_guardian"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "170492BD01C1BE96"
+			rewards: [{
+				id: "2A8C8C818B54E6B1"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:chaos_guardian"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 3.5d
+			tasks: [{
+				entity: "draconicevolution:draconic_guardian"
+				icon: "minecraft:spawner"
+				id: "5985C29DEA34C1C0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &4&lChaos Guardian"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"697FE213574A2084"
+				"0C03F5FB781FA2C3"
+				"5FED84E03DF7B886"
+				"14C074158396F7FE"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:blue_skies"
+					}
+				}
+			}
+			id: "7AF00B24B4F76929"
+			rewards: [{
+				id: "326AA77C083E2B39"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:blue_skies"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2DDD397FB5E6EB81"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			title: "&r&bTwin Realms&r"
+			x: 3.75d
+			y: -3.75d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "blue_skies:summoner_trophy"
+				tag: {
+					BlockStateTag: {
+						tier: "platinum"
+					}
+				}
+			}
+			id: "0C03F5FB781FA2C3"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "blue_skies:summoner"
+					id: "4914B39A462824E5"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "550A99408EF6AEF3"
+					item: {
+						Count: 1
+						id: "blue_skies:summoner_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "platinum"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Defeat the Summoner"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "blue_skies:starlit_crusher_trophy"
+				tag: {
+					BlockStateTag: {
+						tier: "platinum"
+					}
+				}
+			}
+			id: "5FED84E03DF7B886"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "blue_skies:starlit_crusher"
+					id: "5F6C9D2429C8A613"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1160270FE90394E2"
+					item: {
+						Count: 1
+						id: "blue_skies:starlit_crusher_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "platinum"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Defeat the Starlit Crusher"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "blue_skies:alchemist_trophy"
+				tag: {
+					BlockStateTag: {
+						tier: "platinum"
+					}
+				}
+			}
+			id: "697FE213574A2084"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "blue_skies:alchemist"
+					id: "152BA5ABE1D909CA"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "0DA27B7A77646807"
+					item: {
+						Count: 1
+						id: "blue_skies:alchemist_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "platinum"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Defeat the Alchemist"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "blue_skies:arachnarch_trophy"
+				tag: {
+					BlockStateTag: {
+						tier: "platinum"
+					}
+				}
+			}
+			id: "14C074158396F7FE"
+			shape: "pentagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "blue_skies:arachnarch"
+					id: "6362AFFBD5935CE2"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "0D832B3659A6620C"
+					item: {
+						Count: 1
+						id: "blue_skies:arachnarch_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "platinum"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Defeat Arachnarch"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Monstrous"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/netherite_monstrosity"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "0B5CCF2CF34DE88F"
+			rewards: [{
+				id: "4BFA1367F14E968D"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/netherite_monstrosity"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.4d
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					icon: "cataclysm:netherite_monstrosity_spawn_egg"
+					id: "1C5AFFD0AA7FC553"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "2B03BEA64AAB2CF6"
+					optional_task: true
+					structure: "cataclysm:soul_black_smith"
+					type: "structure"
+				}
+			]
+			title: "&r&fDefeat the &8Netherite Monstrosity&r"
+			x: 3.5d
+			y: 1.4d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Mech&r"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/the_harbinger"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "0B7A1F52819AD455"
+			rewards: [{
+				id: "33E8D76AD93FECB4"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/the_harbinger"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.4d
+			tasks: [
+				{
+					entity: "cataclysm:the_harbinger"
+					icon: "cataclysm:the_harbinger_spawn_egg"
+					id: "605ABD92A2792C44"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "590F04FD07B7D52B"
+					optional_task: true
+					structure: "cataclysm:ancient_factory"
+					type: "structure"
+				}
+				{
+					id: "32BE27CE7F804580"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat the &6Harbinger&r"
+			x: 4.8999999999999995d
+			y: 2.1d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Flame&r"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/ignis"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "308378B76DE44478"
+			rewards: [{
+				id: "688BB18D1C363B99"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/ignis"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.4d
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					icon: "cataclysm:ignis_spawn_egg"
+					id: "06ED44BD9160F6BB"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "404076965731841C"
+					optional_task: true
+					structure: "cataclysm:burning_arena"
+					type: "structure"
+				}
+				{
+					id: "42DBBB2D872238EF"
+					item: "cataclysm:burning_ashes"
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat &6Ignis&r"
+			x: 5.6d
+			y: 3.5d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Abyss&r"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/the_leviathan"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "107CF1822F98CDA2"
+			rewards: [{
+				id: "6E740241D0CEA33A"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/the_leviathan"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.4d
+			tasks: [
+				{
+					entity: "cataclysm:the_leviathan"
+					icon: "cataclysm:the_leviathan_spawn_egg"
+					id: "1A88F32CC95B609C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "2772B24CD7F45913"
+					optional_task: true
+					structure: "cataclysm:sunken_city"
+					type: "structure"
+				}
+				{
+					id: "59C39F723E0E2612"
+					item: "cataclysm:abyssal_sacrifice"
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat the &5Leviathan&r"
+			x: 1.4d
+			y: 3.5d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Desert"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/ancient_remnant"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "0E40504235FFBC63"
+			rewards: [{
+				id: "2958BADC27EC314D"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/ancient_remnant"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.4d
+			tasks: [
+				{
+					entity: "cataclysm:ancient_remnant"
+					icon: "cataclysm:ancient_remnant_spawn_egg"
+					id: "73D4293A628D1C09"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "131DEC99550FEB3F"
+					optional_task: true
+					structure: "cataclysm:cursed_pyramid"
+					type: "structure"
+				}
+				{
+					id: "290B83095D695CA4"
+					item: "cataclysm:necklace_of_the_desert"
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat the &eAncient Remnants&r"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Void"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/ender_guardian"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "3E8F5FE40E6595B0"
+			rewards: [{
+				id: "72BC6F5632387DB1"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/ender_guardian"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.4d
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				icon: "cataclysm:ender_guardian_spawn_egg"
+				id: "5D1606531452C3CA"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &dEnder Guardian&r"
+			x: 3.5d
+			y: 5.6d
+		}
+		{
+			description: ["&r&fCan be located using a &7Eye of Curse&r"]
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:cataclysm/maledictus"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "7BEFFFE60A3009C9"
+			rewards: [{
+				id: "7ADC27F7C46E73BF"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:cataclysm/maledictus"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.4d
+			tasks: [
+				{
+					entity: "cataclysm:maledictus"
+					icon: "cataclysm:maledictus_spawn_egg"
+					id: "12A647A371F1E3D2"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1EFA20953C99D13D"
+					optional_task: true
+					structure: "cataclysm:frosted_prison"
+					type: "structure"
+				}
+			]
+			title: "&r&fDefeat &3Maledictus&r"
+			x: 2.1d
+			y: 4.8999999999999995d
+		}
+		{
+			icon: "mutantmonsters:mutant_snow_golem_spawn_egg"
+			id: "673F84CC29305D17"
+			shape: "heart"
+			size: 1.4d
+			tasks: [{
+				icon: "mutantmonsters:mutant_snow_golem_spawn_egg"
+				id: "3395336A451EE5B2"
+				observe_type: 5
+				timer: 0L
+				title: "Summon a Mutant Snow Golem"
+				to_observe: "mutantmonsters:mutant_snow_golem"
+				type: "observation"
+			}]
+			x: -5.046428571428578d
+			y: 5.0428571428571445d
+		}
+		{
+			dependencies: ["129E4EC5B8ECAF07"]
+			description: ["Use your magic beans and climb the roots to reach a Giant's house"]
+			icon: {
+				Count: 1
+				id: "twilightforest:giant_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6BE9EFAD1E943D92"
+			shape: "octagon"
+			size: 0.8d
+			tasks: [
+				{
+					entity: "twilightforest:giant_miner"
+					icon: "twilightforest:giant_miner_spawn_egg"
+					id: "5AADE40943B7BAE3"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "6D4E5A6C7B6D5EF0"
+					item: {
+						Count: 1
+						id: "twilightforest:giant_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat The &7&kGiant Miner&r"
+			x: -5.2d
+			y: -6.8d
+		}
+		{
+			dependencies: ["067FFC702089E6B3"]
+			description: [
+				"&eWARNING:"
+				"&eYou are entering the unifished part of Twilight Forest."
+				""
+				"You can find magic beans inside a troll cave."
+				""
+				"&8Where is the troll cave?"
+				"&8Under a cloud."
+			]
+			icon: "twilightforest:magic_beans"
+			id: "129E4EC5B8ECAF07"
+			shape: "octagon"
+			size: 0.8d
+			tasks: [{
+				id: "0E95FE6218561897"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			title: "My name is Jack"
+			x: -5.6d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6BE9EFAD1E943D92"]
+			description: [
+				"Burnt thorns wont hurt you. =)"
+				""
+				"{image:twilightforest:block/burnt_thorns_side width:50 height:50 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "twilightforest:lamp_of_cinders"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "490056A99FE39FC8"
+			shape: "octagon"
+			size: 0.8d
+			tasks: [
+				{
+					id: "47FB1AC375A9AD71"
+					item: {
+						Count: 1
+						id: "twilightforest:lamp_of_cinders"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					biome: "twilightforest:thornlands"
+					icon: "twilightforest:brown_thorns"
+					id: "47F99F51A42E22B3"
+					type: "biome"
+				}
+			]
+			title: "Now I'm lost"
+			x: -5.6d
+			y: -7.6d
+		}
+		{
+			dependencies: [
+				"490056A99FE39FC8"
+				"129E4EC5B8ECAF07"
+			]
+			description: ["Have a look at the castle!"]
+			icon: "twilightforest:yellow_castle_rune_brick"
+			id: "0CD3E8BD8F888FCD"
+			rewards: [
+				{
+					id: "50F7F051A39DC8C6"
+					item: "twilightforest:twilight_portal_miniature_structure"
+					type: "item"
+				}
+				{
+					id: "76E3C7714CF68C92"
+					item: "twilightforest:naga_courtyard_miniature_structure"
+					type: "item"
+				}
+				{
+					id: "3E566DE098FE9DBA"
+					item: "twilightforest:lich_tower_miniature_structure"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "294AA47A1B0AF27B"
+					item: "twilightforest:cicada"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.2d
+			tasks: [{
+				biome: "twilightforest:final_plateau"
+				icon: "twilightforest:weathered_deadrock"
+				id: "71769BD06AF4A006"
+				type: "biome"
+			}]
+			title: "Havn't changed since 2013"
+			x: -6.8d
+			y: -6.8d
+		}
+		{
+			dependencies: ["69CFF739C58B9AB2"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:rats/dutchrat"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "340F273236DA1F10"
+			rewards: [{
+				id: "2DBFC795B0150AA8"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:rats/dutchrat"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "rats:dutchrat"
+					icon: "rats:dutchrat_wheel"
+					id: "41E84FA0D9FBDE6F"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "75E7B53A10CC4FD5"
+					optional_task: true
+					structure: "rats:baron_runway"
+					type: "structure"
+				}
+			]
+			title: "&r&fDefeat the &aFlying Dutchrat&r"
+			x: 7.5d
+			y: 0.25d
+		}
+		{
+			description: [
+				"&r&fSummoned by right clicking on a &7Plague Doctor&f with a &7Plague Tome&f.&r"
+				""
+				"Alternatively, it spawns when a &7Plague Doctor&f is struck by a lightning"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:rats/black_death"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "0ABC5A75BEC7C148"
+			rewards: [{
+				id: "0FC7A143A94D2D49"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:rats/black_death"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "rats:black_death"
+					icon: {
+						Count: 1
+						id: "rats:black_death_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "17961FF6C5EE95C5"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1F96A63F7D2B0C19"
+					item: "rats:plague_tome"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat &cBlack Death&r"
+			x: 8.125d
+			y: -1.25d
+		}
+		{
+			dependencies: ["69CFF739C58B9AB2"]
+			description: ["&r&fCan be summoned by throwing a &7Vial of Consciousness&f at a &7Feral Ratlantean&f.&r"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:rats/neo_ratlantean"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "15E714EFE05924E1"
+			rewards: [{
+				id: "211E8BF29F93DA71"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:rats/neo_ratlantean"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				entity: "rats:neo_ratlantean"
+				icon: "rats:psionic_rat_brain"
+				id: "2674B79D32F60056"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &bNeo-Ratlantean&r"
+			x: 10.625d
+			y: 1.25d
+		}
+		{
+			dependencies: ["69CFF739C58B9AB2"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:rats/rat_baron"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "6C11886254EF9A8D"
+			rewards: [{
+				id: "5CAD2B0E0F33AD75"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:rats/rat_baron"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "rats:rat_baron"
+					icon: "rats:biplane_wing"
+					id: "5ABE7F9C8B945974"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1B2E93E8054C3618"
+					optional_task: true
+					structure: "rats:baron_runway"
+					type: "structure"
+				}
+			]
+			title: "&r&fDefeat the &4Rat Baron&r"
+			x: 8.75d
+			y: 1.25d
+		}
+		{
+			description: ["&r&fCan be summoned by &nright-clicking&r&f on a &7rat&f with a &7Ball of Filth&f in your hand."]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:rats/rat_king"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "62D857F4172919D9"
+			rewards: [{
+				id: "0190E998904E8810"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:rats/rat_king"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "rats:rat_king"
+					icon: "rats:rat_king_crown"
+					id: "6C3644BB424018F2"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5D374847E2BDB583"
+					item: "rats:filth_corruption"
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat the &eRat King&r"
+			x: 11.25d
+			y: -1.25d
+		}
+		{
+			dependencies: ["69CFF739C58B9AB2"]
+			description: [
+				"&r&fCan be summoned by placing a &7Ratlantean Automaton Core&f and a &7Ratlantean Automaton Head&f. It also requires &73 Marbled Cheese&f.&r"
+				""
+				"&r&f&nIt is assembled in the same way a vanilla Iron Golem is.&r"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:rats/ratlantean_automaton"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "147616B9ACD1EE7E"
+			rewards: [{
+				id: "2039E1AF1EE5DD40"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:rats/ratlantean_automaton"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					entity: "rats:ratlantean_automaton"
+					icon: "rats:ancient_sawblade"
+					id: "07C902225DE85C0A"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "56FF523489D350D4"
+					item: "rats:marbled_cheese_golem_core"
+					type: "item"
+				}
+				{
+					id: "062BA92CD17B4D15"
+					item: "rats:marbled_cheese_rat_head"
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat the &l&nRatlantean Automaton&r"
+			x: 11.914285714285718d
+			y: 0.25714285714284557d
+		}
+		{
+			icon: "rats:chunky_cheese_token"
+			icon_scale: 0.9d
+			id: "69CFF739C58B9AB2"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "3B67244A8A0E97BE"
+				item: "rats:chunky_cheese_token"
+				type: "item"
+			}]
+			x: 9.664285714285718d
+			y: -0.36785714285715443d
+		}
+		{
+			dependencies: ["69CFF739C58B9AB2"]
+			id: "1C96CEA7BDA72F42"
+			shape: "rsquare"
+			tasks: [{
+				id: "3857D9F639F4CE4A"
+				item: "rats:idol_of_ratlantis"
+				type: "item"
+			}]
+			x: 9.625d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11E939BB45312F15"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:aether/the_slider"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "553384A840350840"
+			rewards: [{
+				id: "60ED837440F3E898"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:aether/the_slider"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				entity: "aether:slider"
+				id: "727616411348296C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat &7Slider"
+			x: -8.125d
+			y: -1.875d
+		}
+		{
+			dependencies: [
+				"63BA11BBD644DF3D"
+				"553384A840350840"
+			]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:aether/valkyrie_queen"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "39ACFD8ED874B7B6"
+			rewards: [{
+				id: "280E49C302F60ADE"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:aether/valkyrie_queen"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "aether:valkyrie_queen"
+					id: "7FB6DE93F51C2B37"
+					type: "kill"
+					value: 1L
+				}
+				{
+					count: 10L
+					id: "53C7992E04E4C62A"
+					item: { Count: 10, id: "aether:victory_medal" }
+					type: "item"
+				}
+			]
+			title: "&r&fDefeat the &dValkyrie Queen"
+			x: -9.375d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11E939BB45312F15"]
+			icon: {
+				Count: 1
+				id: "trofers:medium_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "kubejs:aether/sun_spirit"
+					}
+				}
+			}
+			icon_scale: 1.5d
+			id: "63BA11BBD644DF3D"
+			rewards: [{
+				id: "5CDC7E04B744D52B"
+				item: {
+					Count: 1
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "kubejs:aether/sun_spirit"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				entity: "aether:sun_spirit"
+				id: "110FCABF0C6698E1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&r&fDefeat the &6Sun Spirit"
+			x: -8.125d
+			y: 1.875d
+		}
+		{
+			description: ["Reach the aether by creating a nether portal made out of glowstone and turning it on with a water bucket"]
+			icon_scale: 1.25d
+			id: "11E939BB45312F15"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "77EFCD89E9BC6ACA"
+				type: "dimension"
+			}]
+			title: "Visit The Aether"
+			x: -7.0d
+			y: 0.0d
+		}
+	]
+	title: "Bosses"
+}

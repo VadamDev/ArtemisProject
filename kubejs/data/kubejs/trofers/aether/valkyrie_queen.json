@@ -1,0 +1,17 @@
+{
+    "name": "Valkyrie Queen Trophy",
+    "entity": {
+        "type": "aether:valkyrie_queen"
+    },
+    "display": {
+        "scale": 0.35
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#7E859C"
+    }
+}

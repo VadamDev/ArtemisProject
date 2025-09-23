@@ -32,10 +32,27 @@ StartupEvents.registry('item', event => {
 		.fireResistant(true)
 		.rarity('epic')
 		.glow(true)
+	
+	//TConstruct smelter
+	event.create('smeltery_controller_frame')
+		.displayName('Smeltery Controller Frame')
+
+	event.create('incomplete_smeltery_controller', 'create:sequenced_assembly')
+		.displayName('Incomplete Smeltery Controller')
+
+	//Hellforged Shard
+	event.create('shard_hellforged')
+		.displayName('Hellforged Shard')
+
+	//Blue Skies Combined Portal
+	event.create('blueskies_portal_mix')
+		.texture('blue_skies:item/misc/portal_mix')
+		.displayName('Blueskies Portals')
 })
 
 StartupEvents.registry('block', event => {
-	const makeCrystallizedFluid = (id, name, texture, color) => {
+	//Crystallized Fluids
+	const makeCrystallizedFluid = (id, name, texture) => {
 		event.create(id)
 			.opaque(false)
 			.noValidSpawns(true)
@@ -45,9 +62,8 @@ StartupEvents.registry('block', event => {
 			.hardness(0.3)
 			.resistance(0.3)
 			.lightLevel(1.0)
-			.soundType('glass')
+			.glassSoundType()
 			.textureAll(texture)
-			.mapColor(color)
 	}
 
 	makeCrystallizedFluid('crystallized_voidic_source', 'Crystallized Voidic Crystal', 'voidscape:block/fluid/voidic/still', 'color_purple')

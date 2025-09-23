@@ -1,0 +1,17 @@
+{
+    "name": "Mutant Skeleton Trophy",
+    "entity": {
+        "type": "mutantmonsters:mutant_skeleton"
+    },
+    "display": {
+        "scale": 0.15
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#797979"
+    }
+}

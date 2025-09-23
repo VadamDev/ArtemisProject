@@ -1,0 +1,28 @@
+
+[Portals]
+	false_ow = true
+	underground = true
+	caverns = true
+	deep_caverns = true
+	strange_forests = true
+	ender_caves = true
+	nether_isles = true
+	shifted_sands = true
+	#Default: False || Void world for modpack creators, define by datapack.
+	void_world = false
+
+["Nice Portal Placement"]
+	nice_false_ow = true
+	nice_underground = true
+	nice_caverns = true
+	nice_deep_caverns = true
+	nice_strange_forests = true
+
+["False OW Away From Portal"]
+	#DEFAULT: 100
+	false_ow_min = 100.0
+	#DEFAULT: 150
+	false_ow_max = 150.0
+	#DEFAULT: FALSE
+	false_ow_away = false
+

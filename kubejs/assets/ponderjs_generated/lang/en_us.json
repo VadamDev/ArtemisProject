@@ -1,0 +1,10 @@
+{
+  "kubejs.ponder.seared_smelter_ponder.header": "Seared Smelter",
+  "kubejs.ponder.seared_smelter_ponder.text_1": "The Seared Smelter is an early game smeltery. It can be used to melt metals",
+  "kubejs.ponder.seared_smelter_ponder.text_2": "You must provide a Heat source (with a Seared Heater)",
+  "kubejs.ponder.smeltery_ponder.header": "Smeltery",
+  "kubejs.ponder.smeltery_ponder.text_1": "The Smeltery Controller must be placed on a side",
+  "kubejs.ponder.smeltery_ponder.text_2": "A heat source must be provided (with a Seared Fluid Tank)",
+  "kubejs.ponder.smeltery_ponder.text_3": "A Seared Drain can be used to pull the liquified metal out",
+  "kubejs.ponder.smeltery_ponder.text_4": "The liquified metal can be molded in an casting table using a cast"
+}

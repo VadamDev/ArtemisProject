@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
                 "item": result
               }
             ],
-            "energy": 60000
+            "energy": 15000
         })
     
         event.custom({
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
                 "amount": cost
               }
             ],
-            "energy": 40000
+            "energy": 10000
         })
     }
 

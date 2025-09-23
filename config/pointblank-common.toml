@@ -39,7 +39,7 @@ customShadersEnabled = true
 explosionDestroyBlocksEnabled = true
 #Sets the probability of dropping some item(s) by monster mobs.
 #Range: 0.0 ~ 1.0
-itemDropChance = 0.35
+itemDropChance = 0.03
 #Sets the max count of items to be dropped by a monster mob.
 #Range: 2 ~ 64
 maxItemDropCount = 7

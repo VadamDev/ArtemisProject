@@ -1,0 +1,17 @@
+{
+    "name": "Mutant Enderman Trophy",
+    "entity": {
+        "type": "mutantmonsters:mutant_enderman"
+    },
+    "display": {
+        "scale": 0.15
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#CC00FA"
+    }
+}

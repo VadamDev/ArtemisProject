@@ -1,0 +1,17 @@
+{
+    "name": "Rat King Trophy",
+    "entity": {
+        "type": "rats:rat_king"
+    },
+    "display": {
+        "scale": 0.3
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#A8755F"
+    }
+}

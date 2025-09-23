@@ -1,0 +1,20 @@
+{
+    "name": "Twilight Conquerant Trophy",
+    "item": {
+        "item": "twilightforest:twilight_portal_miniature_structure"
+    },
+    "display": {
+        "offset": {
+            "y": 1
+        },
+        "scale": 1.2
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#9F46E0"
+    }
+}
