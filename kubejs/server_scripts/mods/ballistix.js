@@ -152,27 +152,52 @@ ServerEvents.recipes(event => {
 		event.replaceInput({output: 'ballistix:bullet'}, 'minecraft:copper_ingot', '#forge:plates/bronze')
 
 		//Rocket Launcher
-		event.replaceInput({output: 'ballistix:rocketlauncher'}, 'minecraft:gold_ingot', 'mekanism:advanced_control_circuit')
+		event.replaceInput({output: 'ballistix:rocketlauncher'}, 'minecraft:gold_ingot', 'mekanism_extras:absolute_control_circuit')
 
 		//Radar Gun
+		const poweredRadarGun = Item.of('ballistix:radargun', '{joules:1666666,maximumcapacity:1666666.0d}')
+
 		event.replaceInput({output: 'ballistix:radargun'}, 'minecraft:redstone', 'mekanism:basic_control_circuit')
 		event.replaceInput({output: 'ballistix:radargun'}, 'minecraft:diamond', 'mekanism:energy_tablet')
+		event.replaceOutput({output: 'ballistix:radargun'}, 'ballistix:radargun', poweredRadarGun)
+
+		event.shapeless(poweredRadarGun, [Item.of('ballistix:radargun')])
 
 		//Tracker
+		const poweredTracker = Item.of('ballistix:tracker', '{joules:1666666,maximumcapacity:1666666.0d}')
+
 		event.replaceInput({output: 'ballistix:tracker'}, 'minecraft:iron_ingot', '#forge:plates/steel')
 		event.replaceInput({output: 'ballistix:tracker'}, 'minecraft:diamond', 'mekanism:energy_tablet')
 		event.replaceInput({output: 'ballistix:tracker'}, 'minecraft:gold_ingot', 'mekanism:advanced_control_circuit')
+		event.replaceOutput({output: 'ballistix:tracker'}, 'ballistix:tracker', poweredTracker)
+
+		event.shapeless(poweredTracker, [Item.of('ballistix:tracker')])
 
 		//Jammer
+		const poweredJammer = Item.of('ballistix:scanner', '{joules:1666666,maximumcapacity:1666666.0d}')
+
 		event.replaceInput({output: 'ballistix:scanner'}, 'minecraft:diamond', 'mekanism:energy_tablet')
+		event.replaceOutput({output: 'ballistix:scanner'}, 'ballistix:scanner', poweredJammer)
+
+		event.shapeless(poweredJammer, [Item.of('ballistix:scanner')])
 
 		//Laser Designator
+		const poweredLaserDesignator = Item.of('ballistix:laserdesignator', '{joules:1666666,maximumcapacity:1666666.0d}')
+
 		event.replaceInput({output: 'ballistix:laserdesignator'}, 'minecraft:gold_ingot', 'mekanism:elite_control_circuit')
 		event.replaceInput({output: 'ballistix:laserdesignator'}, 'minecraft:diamond', 'mekanism:energy_tablet')
+		event.replaceOutput({output: 'ballistix:laserdesignator'}, 'ballistix:laserdesignator', poweredLaserDesignator)
+
+		event.shapeless(poweredLaserDesignator, [Item.of('ballistix:laserdesignator')])
 
 		//Defuser
+		const poweredDefuser = Item.of('ballistix:defuser', '{joules:1666666,maximumcapacity:1666666.0d}')
+
 		event.replaceInput({output: 'ballistix:defuser'}, 'minecraft:diamond', 'mekanism:energy_tablet')
 		event.replaceInput({output: 'ballistix:defuser'}, 'minecraft:redstone', 'mekanism:basic_control_circuit')
+		event.replaceOutput({output: 'ballistix:defuser'}, 'ballistix:defuser', poweredDefuser)
+
+		event.shapeless(poweredDefuser, [Item.of('ballistix:defuser')])
 
 		/*
 		  Replacing iron by steel, done after recipes changes since some recipes use iron ingots to replace steel plates
