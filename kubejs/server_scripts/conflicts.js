@@ -3,7 +3,10 @@
 ServerEvents.recipes(event => {	
 	//Remove minecraft recipe, productive bee's one is better
 	event.remove({id: 'minecraft:beehive'})
-		
+
+	//Bone Meal to white dye gregtech compat
+	event.shapeless('2x minecraft:white_dye', ['2x minecraft:bone_meal'])
+
 	//Conflicts with Quark chests to vanilla chest
 	event.remove({id: 'functionalstorage:oak_drawer_alternate_x1'})
 	event.remove({id: 'functionalstorage:oak_drawer_alternate_x2'})

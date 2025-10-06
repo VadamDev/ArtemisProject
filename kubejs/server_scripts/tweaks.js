@@ -121,17 +121,6 @@ ServerEvents.recipes(event => {
 			},
 			"upgradeLevel": 0
 		})
-
-		//Point blank villager workstation
-		event.shaped('pointblank:workstation', [
-			'SSS',
-			' M ',
-			'MCM'
-		], {
-		    S: 'minecraft:smooth_stone_slab',
-		    M: 'pointblank:gunmetal_ingot',
-		    C: 'pointblank:processor'
-		})
 		
 		//Mana Cell Mythic Botany compat
 		event.custom({

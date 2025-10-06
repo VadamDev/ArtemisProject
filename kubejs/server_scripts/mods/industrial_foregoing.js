@@ -1,5 +1,9 @@
 //Author: VadamDev
 
+ServerEvents.tags('entity_type', event => {
+	event.add('industrialforegoing:mob_crusher_blacklist', ['minecraft:warden'])
+})
+
 ServerEvents.recipes(event => {
 	function removeRecipes() {
 		//New machine frame recipe that respect modpack progression
