@@ -48,18 +48,18 @@
 		turbineBladesPerCoil = 4
 		#The rate at which steam is vented into the turbine.
 		#Range: 0.1 ~ 1024000.0
-		turbineVentGasFlow = 32000.0
+		turbineVentGasFlow = 256000.0
 		#The rate at which steam is dispersed into the turbine.
 		#Range: 0.1 ~ 1024000.0
-		turbineDisperserGasFlow = 1280.0
+		turbineDisperserGasFlow = 10240.0
 		#Amount of energy (J) that each block of the turbine contributes to the total energy capacity. Max = volume * energyCapacityPerVolume
 		energyCapacityPerVolume = "16000000"
 		#Amount of gas (mB) that each block of the turbine's steam cavity contributes to the volume. Max = volume * gasPerTank
 		#Range: 1 ~ 1773043451913643
-		gasPerTank = 64000
+		gasPerTank = 512000
 		#The rate at which steam is condensed in the turbine.
 		#Range: 1 ~ 2000000
-		condenserRate = 64000
+		condenserRate = 512000
 
 	#Wind Generator Settings
 	[generators.wind_generator]

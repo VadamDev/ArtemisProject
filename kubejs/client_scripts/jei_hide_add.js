@@ -30,19 +30,6 @@ JEIEvents.hideItems(event => {
 	
 	//Repetitive Items
 	event.hide(['tconstruct:potion_bucket', 'ae2:facade', 'evilcraft:dark_tank', 'enderio:filled_soul_vial', 'enderio:broken_spawner', 'reliquary:mob_charm_fragment'])
-
-	//Compact Mekanism Machines
-	event.hide([
-		'compactmekanismmachines:compressed_wind_generator_x128',
-		'compactmekanismmachines:compressed_wind_generator_x512',
-		'compactmekanismmachines:compressed_wind_generator_x2048',
-		'compactmekanismmachines:compressed_wind_generator_x8192',
-		'compactmekanismmachines:compressed_wind_generator_x32768',
-		'compactmekanismmachines:compressed_wind_generator_x131072',
-		'compactmekanismmachines:compressed_wind_generator_x532480',
-
-		'compactmekanismmachines:compact_fission_reactor'
-	])
 	
 	//Random Disabled Items
 	event.hide([

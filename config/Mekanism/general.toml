@@ -34,7 +34,7 @@
 	superheatingHeatTransfer = 1.6E7
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	#Range: 1 ~ 1024
-	maxSolarNeutronActivatorRate = 64
+	maxSolarNeutronActivatorRate = 128
 
 	#Dynamic Tank Settings
 	[general.dynamic_tank]
@@ -93,7 +93,7 @@
 		radiationEnabled = true
 		#The radius of chunks checked when running radiation calculations. The algorithm is efficient, but don't abuse it by making this crazy high.
 		#Range: 1 ~ 100
-		chunkCheckRadius = 5
+		chunkCheckRadius = 8
 		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 hours to remove a 1,000 Sv/h (crazy high) source.
 		#Range: 0.0 ~ 1.0
 		sourceDecayRate = 0.9995
@@ -159,13 +159,13 @@
 	#Quantum Entangloporter Settings
 	[general.quantum_entangloporter]
 		#Maximum energy buffer (Mekanism Joules) of an Entangoloporter frequency - i.e. the maximum transfer per tick per frequency. Default is ultimate tier energy cube capacity.
-		energyBuffer = "256000000"
+		energyBuffer = "33554432000"
 		#Maximum fluid buffer (mb) of an Entangoloporter frequency - i.e. the maximum transfer per tick per frequency. Default is ultimate tier tank capacity.
 		#Range: > 1
-		fluidBuffer = 256000
+		fluidBuffer = 131072000
 		#Maximum chemical buffer (mb) of an Entangoloporter frequency - i.e. the maximum transfer per tick per frequency. Default is ultimate tier tank capacity.
 		#Range: 1 ~ 9223372036854775807
-		chemicalBuffer = 8192000
+		chemicalBuffer = 1048576000
 
 	#Block security/protection Settings
 	[general.security]
@@ -205,7 +205,7 @@
 		heatDissipation = 0.02
 		#Temperature to amount produced ratio for Thermal Evaporation Tower.
 		#Range: 0.001 ~ 1000000.0
-		tempMultiplier = 0.4
+		tempMultiplier = 1.2
 		#Heat to absorb per Solar Panel array of Thermal Evaporation Tower.
 		#Range: 0.001 ~ 1000000.0
 		solarMultiplier = 0.2

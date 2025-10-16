@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
 	*/
 	
 	event.replaceInput({mod: 'createdeco'}, 'create:copper_sheet', '#forge:plates/copper')
+	event.replaceInput({mod: 'createdeco'}, 'create:copper_nugget', '#forge:nuggets/copper')
 	event.replaceInput({mod: 'createdeco'}, 'create:iron_sheet', '#forge:plates/iron')
 
 	event.remove({id: 'createaddition:pressing/electrum_ingot'})
