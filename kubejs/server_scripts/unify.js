@@ -1,10 +1,7 @@
 // priority: 100
 //Author VadamDev
 
-ServerEvents.tags('item', event => {
-	//Cast Iron
-	event.add('forge:storage_blocks/cast_iron', 'createbigcannons:cast_iron_block')
-	
+ServerEvents.tags('item', event => {	
 	//Netherite
 	event.add('forge:nuggets/netherite', 'createdeco:netherite_nugget')
 	
@@ -108,16 +105,6 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'ad_astra:steel_block'})
 	
 	event.remove({id: 'enderio:smelting/mffs/steel_ingot'})
-
-	/*
-	  Cast Iron
-	*/
-
-	event.remove({id: 'createbigcannons:cast_iron_block'})
-	event.remove({id: 'createbigcannons:cast_iron_ingot_from_block'})
-
-	event.remove({id: 'createbigcannons:compacting/iron_to_cast_iron_ingot'})
-	event.remove({id: 'createbigcannons:compacting/iron_to_cast_iron_block'})
 	
 	/*
 	   Copper

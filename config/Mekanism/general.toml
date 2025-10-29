@@ -34,7 +34,7 @@
 	superheatingHeatTransfer = 1.6E7
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	#Range: 1 ~ 1024
-	maxSolarNeutronActivatorRate = 128
+	maxSolarNeutronActivatorRate = 192
 
 	#Dynamic Tank Settings
 	[general.dynamic_tank]
@@ -205,7 +205,7 @@
 		heatDissipation = 0.02
 		#Temperature to amount produced ratio for Thermal Evaporation Tower.
 		#Range: 0.001 ~ 1000000.0
-		tempMultiplier = 1.2
+		tempMultiplier = 1.6
 		#Heat to absorb per Solar Panel array of Thermal Evaporation Tower.
 		#Range: 0.001 ~ 1000000.0
 		solarMultiplier = 0.2

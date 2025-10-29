@@ -4,6 +4,9 @@ ServerEvents.recipes(event => {
 	function removeRecipes() {
 		//New metallurgic Infuser recipe
 		event.remove({id: 'mekanism:metallurgic_infuser'})
+
+		//Obsidian Dust incompatibility
+		event.remove({id: 'create_things_and_misc:powder_obsi_c_raft'})
 	}
 
 	function addRecipes() {
@@ -23,6 +26,14 @@ ServerEvents.recipes(event => {
 		
 		//Obsidian dust recipe
 		mekanismCrushing('minecraft:obsidian', 'mekanism:dust_obsidian')
+
+		event.shapeless('4x #forge:dusts/obsidian', ['create_things_and_misc:powdered_obsidian_block'])
+		event.shaped('create_things_and_misc:powdered_obsidian_block', [
+		    'DD',
+			'DD',
+		], {
+			D: '#forge:dusts/obsidian'
+		})
 		
 		//Missing crusher recipes that exists in thermal
 		mekanismCrushing('thermal:apatite', 'thermal:apatite_dust')
@@ -37,6 +48,7 @@ ServerEvents.recipes(event => {
 		mekanismCrushing('thermal_extra:shellite_ingot', 'thermal_extra:shellite_dust')
 		mekanismCrushing('thermal_extra:twinite_ingot', 'thermal_extra:twinite_dust')
 		mekanismCrushing('thermal_extra:dragonsteel_ingot', 'thermal_extra:dragonsteel_dust')
+		mekanismCrushing('minecraft:netherrack', 'create:cinder_flour')
 
 		//Missing soul sand crushing recipe, not using the function above because it needs to be a tag
 		event.custom({
@@ -132,7 +144,7 @@ ServerEvents.recipes(event => {
 			B: 'mekanism:block_steel'
 		})
 		
-		//Endgame antimatter
+		//Endgame exotic matter
 		event.custom({
 			"type": "mekanism:nucleosynthesizing",
 			"duration": 30000,

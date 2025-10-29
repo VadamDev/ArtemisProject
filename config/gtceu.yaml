@@ -550,17 +550,17 @@ compat:
 
     # Enable GTEU to FE (and vice versa) Converters.
     # Default: false
-    enableFEConverters: false
+    enableFEConverters: true
 
     # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
     # Default: 4 FE == 1 EU
-    feToEuRatio: 4
+    feToEuRatio: 8
 
     # GTEU to Forge Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
     # Default: 4 FE == 1 EU
-    euToFeRatio: 4
+    euToFeRatio: 8
 
   # Config options regarding GTCEu compatibility with AE2
   ae2:
@@ -644,6 +644,10 @@ compat:
   # Whether dimension markers should show the dimension tier value.
   # Default: false
   showDimensionTier: false
+
+  # Whether Create compatibility will be available.
+  # Default: true
+  createCompat: true
 
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)

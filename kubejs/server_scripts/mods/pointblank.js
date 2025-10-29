@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 		})
 
         const ammoRecipe = (count, output, shape) => {
-            event.shaped(count + 'x pointblank:' + output, shape, {C: 'minecraft:copper_ingot', G: 'minecraft:gunpowder'})
+            event.shaped(count + 'x pointblank:' + output, shape, { C: 'minecraft:copper_ingot', G: 'minecraft:gunpowder' }).noMirror()
         }
 
         //1 Copper
@@ -92,6 +92,17 @@ ServerEvents.recipes(event => {
             'CCC',
             'GC '
         ])
+
+        //Laser Charge
+        event.shaped('5x pointblank:ammolasercharge', [
+            '  C',
+            'RRR',
+            ' IC'
+        ], {
+            C: 'minecraft:copper_ingot',
+            R: 'minecraft:redstone',
+            I: 'minecraft:iron_ingot'
+        })
 
         //Grenades
         event.shaped('pointblank:grenade20mm', [

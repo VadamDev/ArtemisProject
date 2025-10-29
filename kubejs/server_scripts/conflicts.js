@@ -1,6 +1,6 @@
 //Author: VadamDev
 
-ServerEvents.recipes(event => {	
+ServerEvents.recipes(event => {
 	//Remove minecraft recipe, productive bee's one is better
 	event.remove({id: 'minecraft:beehive'})
 

@@ -14,7 +14,10 @@ JEIEvents.hideItems(event => {
 	event.hide('mffs:steel_compound')
 	
 	//Angel Ring
-	event.hide(['angelring:diamond_ring', 'angelring:energetic_angel_ring', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring', 'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring'])
+	event.hide([
+		'angelring:diamond_ring', 'angelring:energetic_angel_ring', 'angelring:leadstone_angel_ring', 'angelring:hardened_angel_ring',
+		'angelring:reinforced_angel_ring', 'angelring:resonant_angel_ring'
+	])
 	
 	//Iron Furnaces
 	event.hide(['ironfurnaces:augment_generator', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:million_furnace', 'ironfurnaces:rainbow_coal'])
