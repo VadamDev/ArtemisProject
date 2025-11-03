@@ -5,10 +5,11 @@
     "thermal",
     "mekanism",
     "create",
-	"createaddition",
-	"ad_astra",
-	"ae2",
-	"gtceu"
+	  "createaddition",
+	  "ad_astra",
+	  "ae2",
+    "thermal_extra",
+	  "gtceu"
   ],
   "stoneStrata": [
     "stone",

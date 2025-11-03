@@ -6,15 +6,19 @@
       "item": "productivebees:configurable_honeycomb",
       "nbt": {
         "EntityTag": {
-          "type": "productivebees:gaiasteel"
+          "type": "productivebees:sulfur"
         }
       }
     }
   ],
   "results": [
     {
-      "item": "botanicadds:gaiasteel_nugget",
-      "count": 3
+      "item": "thermal:sulfur",
+      "count": 2,
+      "chance": 0.4
+    },
+    {
+      "item": "productivebees:wax"
     },
     {
       "fluid": "productivebees:honey",
@@ -29,11 +33,7 @@
     },
     {
       "type": "forge:mod_loaded",
-      "modid": "botanicadds"
-    },
-    {
-      "type": "productivebees:bee_exists",
-      "bee": "productivebees:gaiasteel"
+      "modid": "thermal"
     }
   ]
 }

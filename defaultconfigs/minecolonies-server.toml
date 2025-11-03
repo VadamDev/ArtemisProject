@@ -12,7 +12,7 @@
 	allowotherdimcolonies = true
 	#Max citizens in one colony. [Default: 250, min: 30, max: 500]
 	#Range: 30 ~ 500
-	maxcitizenpercolony = 96
+	maxcitizenpercolony = 100
 	#Should development features be enabled (might be buggy)? [Default: false]
 	enableindevelopmentfeatures = false
 	#Should citizen name tags be rendered? [Default: true]
@@ -81,7 +81,7 @@
 [claims]
 	#Maximum claim range for a colony. This is the radius, measured in chunks. [Default: 20, min: 1, max: 250]
 	#Range: 1 ~ 250
-	maxColonySize = 32
+	maxColonySize = 20
 	#The minimum distance (in chunks) between colonies. [Default: 8, min: 1, max: 200]
 	#Range: 1 ~ 200
 	minColonyDistance = 8
@@ -93,7 +93,7 @@
 	maxdistancefromworldspawn = 2147483647
 	#Min distance (in blocks) from world spawn for a colony. [Default: 0, min: 0, max: 1000]
 	#Range: 0 ~ 1000
-	mindistancefromworldspawn = 512
+	mindistancefromworldspawn = 256
 
 #All configuration items related to the combat elements of MineColonies
 [combat]
@@ -155,7 +155,7 @@
 	minimumrailstopath = 8
 	#Amount of additional threads to be used for pathfinding. [Default: 1, min: 1, max: 10]
 	#Range: 1 ~ 10
-	pathfindingmaxthreadcount = 2
+	pathfindingmaxthreadcount = 3
 
 #All configurations related to the request system
 [requestSystem]

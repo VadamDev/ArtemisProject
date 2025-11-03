@@ -49,6 +49,7 @@ ServerEvents.recipes(event => {
 		mekanismCrushing('thermal_extra:twinite_ingot', 'thermal_extra:twinite_dust')
 		mekanismCrushing('thermal_extra:dragonsteel_ingot', 'thermal_extra:dragonsteel_dust')
 		mekanismCrushing('minecraft:netherrack', 'create:cinder_flour')
+		mekanismCrushing('create:zinc_ingot', 'thermal_extra:zinc_dust')
 
 		//Missing soul sand crushing recipe, not using the function above because it needs to be a tag
 		event.custom({

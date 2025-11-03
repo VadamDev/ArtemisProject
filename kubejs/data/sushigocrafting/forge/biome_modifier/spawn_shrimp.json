@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#forge:is_water",
+  "spawners":
+  {
+    "type": "sushigocrafting:shrimp",
+    "weight": 100,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

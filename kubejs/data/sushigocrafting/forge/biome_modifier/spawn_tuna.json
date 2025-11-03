@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#forge:is_water",
+  "spawners":
+  {
+    "type": "sushigocrafting:tuna",
+    "weight": 100,
+    "minCount": 3,
+    "maxCount": 6
+  }
+}
