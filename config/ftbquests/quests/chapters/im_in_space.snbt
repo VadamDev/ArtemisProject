@@ -566,6 +566,41 @@
 			x: 27.80357142857143d
 			y: -2.6874999999999396d
 		}
+		{
+			dependencies: ["348E8279E7A750D5"]
+			icon: "ad_astra:mercury_globe"
+			id: "3CC73367D88CE94B"
+			rewards: [{
+				id: "158FDE43807D6308"
+				item: "ad_astra:mercury_globe"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				id: "09C2E75C57A54DEA"
+				title: "Click Me"
+				type: "checkmark"
+			}]
+			title: "Mercury Globe"
+			x: 27.839285714285708d
+			y: -4.651785714285726d
+		}
+		{
+			dependencies: ["348E8279E7A750D5"]
+			id: "654503E0242D4853"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				dimension: "ad_astra:mercury_orbit"
+				icon: "ad_astra:ostrum_plating"
+				id: "26CFB61A3DF086F5"
+				type: "dimension"
+			}]
+			title: "Mercury Orbiter"
+			x: 29.053571428571416d
+			y: -4.687500000000014d
+		}
 	]
 	title: "Space Exploration"
 }
