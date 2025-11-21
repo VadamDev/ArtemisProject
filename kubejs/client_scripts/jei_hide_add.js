@@ -1,4 +1,4 @@
-//Author: VadamDev
+-//Author: VadamDev
 
 JEIEvents.hideItems(event => {
 	//KubeJS
@@ -30,6 +30,9 @@ JEIEvents.hideItems(event => {
 		'ballistix:anvil', 'ballistix:grenadeanvil', 'ballistix:minecartanvil', 'ballistix:rejuvination', 'ballistix:minecartrejuvination',
 		'ballistix:darkmatter', 'ballistix:minecartdarkmatter'
 	])
+
+	//Aviator Dreams
+	event.hide(['aviator_dream:test', 'aviator_dream:toyota_stout_k100'])
 	
 	//Repetitive Items
 	event.hide(['tconstruct:potion_bucket', 'ae2:facade', 'evilcraft:dark_tank', 'enderio:filled_soul_vial', 'enderio:broken_spawner', 'reliquary:mob_charm_fragment'])

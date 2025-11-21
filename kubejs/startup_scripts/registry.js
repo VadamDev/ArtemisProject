@@ -69,6 +69,14 @@ StartupEvents.registry('block', event => {
 	makeCrystallizedFluid('crystallized_voidic_source', 'Crystallized Voidic Crystal', 'voidscape:block/fluid/voidic/still', 'color_purple')
 	makeCrystallizedFluid('crystallized_experience', 'Crystallized Experience', 'create_enchantment_industry:fluid/experience_still', 'emerald')
 	makeCrystallizedFluid('crystallized_hyper_experience', 'Crystallized Hyper Experience', 'create_enchantment_industry:fluid/hyper_experience_still', 'lapis')
+
+	//Sulfur Dust
+	event.create('sulfur_dust_block', 'falling')
+		.displayName('Sulfur Dust Block')
+		.hardness(0.5)
+		.resistance(0.5)
+		.sandSoundType()
+		.textureAll('kubejs:block/sulfur_dust')
 })
 
 EnderIOEvents.conduits(event => {

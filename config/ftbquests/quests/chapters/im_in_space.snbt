@@ -104,12 +104,12 @@
 		}
 		{
 			dependencies: ["62672A38E6C0D08B"]
+			description: ["&7&n123 desh ingots&r &7is needed to make the rocket&r"]
 			icon_scale: 0.9d
 			id: "4647E936F5A317AE"
 			shape: "diamond"
 			size: 1.75d
 			tasks: [{
-				count: 69L
 				id: "2F0C6CACD0B86D0E"
 				item: "ad_astra:desh_ingot"
 				type: "item"
@@ -119,6 +119,7 @@
 		}
 		{
 			dependencies: ["62672A38E6C0D08B"]
+			description: ["Can be found while exploring dungeons on the moon!"]
 			id: "4F18D2A279617B8A"
 			shape: "square"
 			size: 1.25d
@@ -223,19 +224,20 @@
 				title: "Click Me"
 				type: "checkmark"
 			}]
+			title: "Mars Globe"
 			x: 18.04464285714287d
 			y: 2.500000000000014d
 		}
 		{
 			dependencies: ["0F9459C7E4844C38"]
+			description: ["&7&n142 ostrum ingots&r &7is needed to make the rocket&r"]
 			icon_scale: 0.9d
 			id: "361C973AFB3C20CE"
 			shape: "diamond"
 			size: 1.75d
 			tasks: [{
-				count: 48L
 				id: "37E49C22C2D97039"
-				item: { Count: 64, id: "ad_astra:ostrum_ingot" }
+				item: "ad_astra:ostrum_ingot"
 				type: "item"
 			}]
 			x: 21.0d
@@ -321,18 +323,19 @@
 				title: "Click Me"
 				type: "checkmark"
 			}]
+			title: "Venus Globe"
 			x: 27.758928571428584d
 			y: 2.5000000000000213d
 		}
 		{
 			dependencies: ["050A64D65213B5E2"]
+			description: ["&7&n152 calorite ingots&r &7is needed to make the rocket&r"]
 			id: "1970BD6BCE96356F"
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
-				count: 170L
 				id: "380D8FFC88A32940"
-				item: { Count: 170, id: "ad_astra:calorite_ingot" }
+				item: "ad_astra:calorite_ingot"
 				type: "item"
 			}]
 			x: 31.0d
@@ -426,6 +429,7 @@
 				title: "Click Me"
 				type: "checkmark"
 			}]
+			title: "Glacio Globe"
 			x: 39.22321428571428d
 			y: 2.4821428571428825d
 		}
@@ -496,6 +500,7 @@
 				id: "58B24C83563D1A01"
 				type: "dimension"
 			}]
+			title: "Moon Orbiter"
 			x: 10.187500000000007d
 			y: 2.500000000000014d
 		}
@@ -510,6 +515,7 @@
 				id: "6AED85D47CBFCED7"
 				type: "dimension"
 			}]
+			title: "Mars Orbiter"
 			x: 19.375d
 			y: 2.5d
 		}
@@ -524,6 +530,7 @@
 				id: "51C68D65599354AC"
 				type: "dimension"
 			}]
+			title: "Venus Orbiter"
 			x: 29.0d
 			y: 2.5d
 		}
@@ -538,8 +545,26 @@
 				id: "0843B4367BFEBFA0"
 				type: "dimension"
 			}]
+			title: "Glacio Orbiter"
 			x: 40.625d
 			y: 2.5d
+		}
+		{
+			dependencies: ["117A9DE9AA8062DB"]
+			hide_dependency_lines: false
+			icon: "ad_astra:mercury_stone"
+			id: "348E8279E7A750D5"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				icon: "ad_astra:mercury_stone"
+				id: "01916C1AD8CF4832"
+				type: "dimension"
+			}]
+			title: "Reach Mercury"
+			x: 27.80357142857143d
+			y: -2.6874999999999396d
 		}
 	]
 	title: "Space Exploration"

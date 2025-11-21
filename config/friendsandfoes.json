@@ -11,7 +11,7 @@
   "crabSpawnMinGroupSize": 2,
   "crabSpawnMaxGroupSize": 4,
   "reachingStatusEffectModifier": 1,
-  "enableGlare": true,
+  "enableGlare": false,
   "enableGlareSpawn": true,
   "enableGlareGriefing": true,
   "glareSpawnWeight": 4,

@@ -6,7 +6,10 @@ ServerEvents.recipes(event => {
 		event.remove({output: 'ironfurnaces:augment_generator'})
 		
 		//AlexMobs Transmutation table
-		event.remove({id: 'alexsmobs:transmutation_table'})		
+		event.remove({id: 'alexsmobs:transmutation_table'})
+
+		//Aviator Dreams
+		event.remove({output: 'aviator_dream:toyota_stout_k100'})
 	}
 
 	function addRecipes() {

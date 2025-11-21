@@ -162,6 +162,29 @@ ServerEvents.recipes(event => {
 				"item": "kubejs:pellet_exoticmatter"
 			}
 		})
+
+		//Sulfur Dust
+		event.shapeless('9x thermal:sulfur_dust', 'kubejs:sulfur_dust_block') //Almost Unified doesn't seems to unify this recipe, return wrong tag output ??
+		event.shaped('kubejs:sulfur_dust_block', [
+		    'SSS',
+			'SSS',
+			'SSS'
+		], {
+			S: '#forge:dusts/sulfur'
+		})
+
+		event.custom({
+			"type":"mekanism:oxidizing",
+			"input": {
+				"ingredient": {
+					"item": "kubejs:sulfur_dust_block"
+				}
+			},
+			"output": {
+				"amount": 900,
+				"gas": "mekanism:sulfur_dioxide"
+			}
+		})
 	}
 
 	removeRecipes()
