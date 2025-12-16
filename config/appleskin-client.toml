@@ -13,7 +13,7 @@
 	#If true, shows your food exhaustion as a progress bar behind the hunger bars
 	showFoodExhaustionHudUnderlay = true
 	#If true, adds a line that shows your hunger, saturation, and exhaustion level in the F3 debug overlay
-	showFoodStatsInDebugOverlay = true
+	showFoodStatsInDebugOverlay = false
 	#If true, shows estimated health restored by food on the health bar
 	showFoodHealthHudOverlay = true
 	#If true, health/hunger overlay will shake to match Minecraft's icon animations

@@ -14,7 +14,7 @@
   "results": [
     {
       "tag": "forge:raw_materials/uranium",
-      "chance": 0.4
+      "chance": 0.6
     },
     {
       "item": "productivebees:wax"

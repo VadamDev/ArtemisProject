@@ -34,4 +34,8 @@ VS2Color = 16776960
 #This is the color of neutral entities on the monitor
 #Range: > 0
 neutralEntityColor = 16777215
+#.
+#This is the color of dropped items on the monitor
+#Range: > 0
+itemcolor = 16753920
 

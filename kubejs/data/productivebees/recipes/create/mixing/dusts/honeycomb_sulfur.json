@@ -14,7 +14,7 @@
   "results": [
     {
       "item": "kubejs:sulfur_dust_block",
-      "chance": 0.4
+      "chance": 0.75
     },
     {
       "item": "productivebees:wax"
