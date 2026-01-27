@@ -62,4 +62,8 @@ advancedIrisIntegrationEnabled = true
 firstPersonAnimationsEnabled = true
 #Enables advanced third person animations
 thirdPersonAnimationsEnabled = true
+#List of mod IDs that automatically trigger PIP fallback mode when loaded. PIP scopes will use see-through fallback instead of rendering a second world view when any of these mods are present.
+pipFallbackModIds = ["distanthorizons"]
+#When PIP fallback is required, dynamically calibrate fallback zoom based on the on-screen size of the scope lens. Disable to revert to the legacy fallback zoom behavior.
+pipFallbackLensCalibrationEnabled = true
 
