@@ -38,4 +38,7 @@ neutralEntityColor = 16777215
 #This is the color of dropped items on the monitor
 #Range: > 0
 itemcolor = 16753920
+#.
+#if any interaction with the monitor should open up the GUI
+useGuiByDefault = true
 
