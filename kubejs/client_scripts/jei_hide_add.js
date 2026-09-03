@@ -1,8 +1,8 @@
--//Author: VadamDev
+//Author: VadamDev
 
 JEIEvents.hideItems(event => {
 	//KubeJS
-	event.hide(['kubejs:incomplete_smeltery_controller', 'kubejs:blueskies_portal_mix', 'kubejs:bedrock'])
+	event.hide(['kubejs:incomplete_smeltery_controller', 'kubejs:blueskies_portal_mix'])
 
 	//Ad Astra
 	event.hide(['ad_astra:coal_generator', 'ad_astra_giselle_addon:gravity_normalizer'])
@@ -49,10 +49,6 @@ JEIEvents.hideItems(event => {
 		'paraglider:spirit_orb',
 		'paraglider:anti_vessel',
 		'paraglider:essence',
-
-		'createendertransmission:chunk_loader',
-		'createendertransmission:item_transmitter',
-		'createendertransmission:fluid_transmitter',
 
 		'mae2:4x_crafting_accelerator',
 

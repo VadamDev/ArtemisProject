@@ -39,23 +39,6 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'structurize:sceptersteel'})
 	straightWandRecipe('structurize:sceptersteel', '#forge:ingots/iron')
 	
-	//Simply Swords / Construction Wand
-	const reverseWandRecipe = (output, material) => {
-		event.shaped(output, ['S  ', ' S ', '  M'], {
-			S: '#forge:rods/wooden',
-			M: material
-		})
-	}
-	
-	event.remove({id: 'simplyswords:iron_spear'})
-	reverseWandRecipe('simplyswords:iron_spear', '#forge:ingots/iron')
-	
-	event.remove({id: 'simplyswords:gold_spear'})
-	reverseWandRecipe('simplyswords:gold_spear', '#forge:ingots/gold')
-	
-	event.remove({id: 'simplyswords:diamond_spear'})
-	reverseWandRecipe('simplyswords:diamond_spear', '#forge:gems/diamond')
-	
 	//Log to stick recipe but without Botania magic wood
 	event.remove({id: 'enderio:stick'})
 	event.shaped('16x minecraft:stick', [ 'L', 'L' ], {

@@ -1,0 +1,5 @@
+
+[general]
+	#Show the beta warning with the project issue tracker when entering a world.
+	showBetaWarning = false
+

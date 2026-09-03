@@ -23,7 +23,7 @@ thirdPersonArmPoseAlwaysOn = true
 #Range: 0 ~ 5
 pipScopeRefreshRate = 2
 #Enables pip scopes
-pipScopesEnabled = true
+pipScopesEnabled = false
 #Sets pip scope red color balance. This options works for shaders only.
 #Range: 0 ~ 255
 pipScopeColorBalanceRed = 90
@@ -66,4 +66,6 @@ thirdPersonAnimationsEnabled = true
 pipFallbackModIds = ["distanthorizons"]
 #When PIP fallback is required, dynamically calibrate fallback zoom based on the on-screen size of the scope lens. Disable to revert to the legacy fallback zoom behavior.
 pipFallbackLensCalibrationEnabled = true
+#URL to open when clicking the Browse button in the Extension Packs screen
+extensionPackBrowseUrl = "https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortBy=relevancy&class=customization&search=point+blank"
 

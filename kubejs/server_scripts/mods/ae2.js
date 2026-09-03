@@ -31,9 +31,8 @@ ServerEvents.recipes(event => {
 		event.remove({id: 'ae2:network/cables/dense_covered_fluix_clean'})
 		event.remove({id: 'ae2:network/cables/dense_smart_fluix_clean'})
 		
-		//New infinity booster recipes
-		event.remove({id: 'aeinfinitybooster:infinity_card'})
-		event.remove({id: 'aeinfinitybooster:dimension_card'})
+		// Quantum bridge card
+		event.remove({id: 'ae2wtlib:quantum_bridge_card'})
 
 		//Modern AE2 Accelerators
 		event.remove({id: 'mae2:network/crafting/4x_crafting_accelerator'})
@@ -55,28 +54,17 @@ ServerEvents.recipes(event => {
 		event.shapeless('ae2:fluix_covered_dense_cable', ['#ae2:covered_dense_cable'])
 		event.shapeless('ae2:fluix_smart_dense_cable', ['#ae2:smart_dense_cable'])
 		
-		//New infinity booster recipes
-		event.shaped('aeinfinitybooster:infinity_card', [
-			'DRD',
-			'CNC',
+		// New quantum bridge card recipe
+		event.shaped('ae2wtlib:quantum_bridge_card', [
+			'BRB',
+			'PNP',
 			'SSS'
 		], {
-			D: 'ae2:sky_dust',
+			B: 'ae2:wireless_booster',
 			R: 'ae2:wireless_receiver',
-			C: 'ae2:wireless_booster',
+			P: 'megacells:accumulation_processor',
 			N: 'minecraft:nether_star',
 			S: 'megacells:sky_steel_ingot'
-		})
-		
-		event.shaped('aeinfinitybooster:dimension_card', [
-			'CPC',
-			'ANA',
-			'CPC'
-		], {
-			C: 'aeinfinitybooster:infinity_card',
-			P: 'ae2:fluix_pearl',
-			A: 'megacells:accumulation_processor',
-			N: 'minecraft:netherite_ingot'
 		})
 
 		//Modern AE2 Accelerators

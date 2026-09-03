@@ -1,5 +1,6 @@
 {
   "entityBackFaceCulling": false,
   "itemBackFaceCulling": true,
-  "reduceTerrainParticles": true
+  "reduceTerrainParticles": true,
+  "disableSoundDistanceCull": false
 }

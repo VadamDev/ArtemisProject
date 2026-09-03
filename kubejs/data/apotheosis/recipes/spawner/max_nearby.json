@@ -5,7 +5,7 @@
 		"module": "spawner"
 	}],
 	"mainhand": {
-		"item": "minecraft:ghast_tear"
+		"item": "forbidden_arcanus:dark_rune"
 	},
 	"stat_changes": [{
 		"id": "max_nearby_entities",

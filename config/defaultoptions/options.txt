@@ -42,8 +42,6 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","pointblank_resources","mod_resources","builtin/towntalk","Moonlight Mods Dynamic Assets","builtin/aether_ctm_fix","dyenamicsandfriends:connectedglass_resources","fabric"]
-incompatibleResourcePacks:["builtin/towntalk"]
 lastServer:
 lang:en_us
 soundDevice:""

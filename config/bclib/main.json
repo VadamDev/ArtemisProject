@@ -4,6 +4,6 @@
     "repairBiomesOnLoad [default: false]": false
   },
   "infos": {
-    "verbose [default: true]": false
+    "verbose [default: true]": true
   }
 }

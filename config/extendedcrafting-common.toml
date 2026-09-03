@@ -5,12 +5,12 @@
 	ultimateSingularityRecipe = true
 	#The default amount of items required to create a Singularity.
 	#Range: > 1
-	defaultMaterialsRequired = 524288
+	defaultMaterialsRequired = 270000
 	#Should default recipes be generated for Singularities?
 	defaultRecipes = true
 	#The default amount of FE required to create a Singularity.
 	#Range: > 0
-	defaultPowerRequired = 1500000000
+	defaultPowerRequired = 500000000
 	#Should the Singularities be enabled?
 	enabled = true
 	#The item to use as the Catalyst in default Singularity recipes.

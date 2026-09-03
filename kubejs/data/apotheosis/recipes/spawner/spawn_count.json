@@ -5,11 +5,11 @@
 		"module": "spawner"
 	}],
 	"mainhand": {
-		"item": "minecraft:fermented_spider_eye"
+		"item": "irons_spellbooks:evocation_rune"
 	},
 	"stat_changes": [{
 		"id": "spawn_count",
-		"value": 1,
+		"value": 2,
 		"min": -1,
 		"max": 8
 	}]

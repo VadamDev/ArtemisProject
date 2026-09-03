@@ -23,8 +23,8 @@ ItemEvents.tooltip(event => {
 	//BHC
 	addTooltip('bhc:red_heart', 1, Text.of('Dropped by hostile mobs').italic().red(), true)
 	addTooltip('bhc:yellow_heart', 1, Text.of('Dropped by bosses').italic().yellow(), true)
-	addTooltip('bhc:green_heart', 1, Text.of('Dropped by the Ender Dragon').italic().green(), true)
-	addTooltip('bhc:blue_heart', 1, Text.of('Dropped by Wardens').italic().blue(), true)
+	addTooltip('bhc:green_heart', 1, Text.of('Dropped by Twilight Forest bosses').italic().green(), true)
+	addTooltip('bhc:blue_heart', 1, Text.of('Dropped by L_Ender Cataclysm bosses').italic().blue(), true)
 
 	//Create Additions
 	event.add('createaddition:connector', ['', '§c2048 FE/t', ''])

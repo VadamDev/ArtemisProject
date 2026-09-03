@@ -3,9 +3,6 @@
 ServerEvents.recipes(event => {
 	function removeRecipes() {
 		event.remove({id: 'thermal:compat/create/smelter_create_alloy_chromatic_compound'})
-
-		//Create Ender Transmission
-		event.remove({mod: 'createendertransmission'})
 	}
 
 	function addRecipes() {
@@ -34,24 +31,6 @@ ServerEvents.recipes(event => {
 			P: '#minecraft:planks',
 			S: 'create:shadow_steel',
 			O: 'minecraft:obsidian'
-		})
-
-		/*
-		  Create Ender Transmission
-		*/
-
-		event.recipes.createMechanicalCrafting('2x createendertransmission:energy_transmitter', [
-			'CCSCC',
-			'CRRMC',
-			'CRPRC',
-			'CMRRC',
-			'CCSCC'
-		], {
-			C: 'create:shadow_steel_casing',
-			S: 'create:shaft',
-			R: 'create:refined_radiance',
-			M: 'tfmg:steel_mechanism',
-			P: 'ae2:fluix_pearl'
 		})
 	}
 
