@@ -22,6 +22,10 @@ ServerEvents.recipes(event => {
 		//Convert back Dragon Mounts Eggs to Vanilla Eggs
 		event.shapeless('minecraft:dragon_egg', Item.of('dragonmounts:dragon_egg'))
 
+		// Fix smelt mithril inside machines
+		event.smelting('irons_spellbooks:mithril_scrap', 'irons_spellbooks:raw_mithril')
+		event.smelting('4x irons_spellbooks:mithril_scrap', 'irons_spellbooks:mithril_ingot')
+
 		//Nametag
 		event.shaped('minecraft:name_tag', [
 			' IS',
